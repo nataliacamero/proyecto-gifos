@@ -1,0 +1,37 @@
+/*colores*/
+$color-backgroud_light: #fef4fd;
+$color-pestaña_ligth: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+$color-boton_ligth: #F7C9F3;
+$color-caja_busqueda: #FFFFFF;
+$color-background_cajas: #808080;
+$box-shadow: 0 1px 0 0 #110038;
+
+/*medidas*/
+$alto-pagina:100%; //1632px;
+$alto-pestaña_principal:1.4%;//23px;
+$alto-pestaña_ligth: 1.5%; //24px;
+$alto-caja_busqueda_contenedora: 6.0%; //99px;
+$alto-caja_busqueda: 2.9%; //48px;
+$alto-caja_hoysugerimos:1.9%; //32px;
+$alto-logo: 3.9%; //64px;
+$ancho-pestaña_principal: 100%; //1438px;
+$ancho-pestañas: 83.45%; //1200px;
+$ancho-logo: 7.13%; //102.6px;
+$ancho-boton_crearguifos: 10.1%; //144px;
+$ancho-boton_elegirtema: 9.1%; //131px;
+$ancho-boton_flecha: 2.5%; //36px;
+$tamaño-cajas_gifs:19.5%; //280px;
+
+/*fuentes*/
+$font-family_principal: 'Chakra Petch', sans-serif;
+$font-family_titulos: 'Chakra Petch', bold, sans-serif;
+$font-size_pequeña: 12px;
+$font-size_grande: 16px;
+$font-size_mediana: 14px;
+
+body {
+    background-color: $color-backgroud_light;
+    margin: 0px;
+    padding: 0px;
+}
+

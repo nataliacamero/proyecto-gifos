@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*colores*/
+/*medidas*/
+/*fuentes*/
+body {
+  background-color: #fef4fd;
+  margin: 0px;
+  padding: 0px; }
+
+.pestañaPrincipal {
+  background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  width: 1438px;
+  height: 1.4%;
+  box-shadow: 0 1px 0 0 #110038; }
+
+.pestañaPrincipal-h1 {
+  color: #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 12px; }
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,12 @@
+.pestañaPrincipal {
+    background: $color-pestaña_ligth;
+    width: 1438px;
+    height: $alto-pestaña_principal;
+    box-shadow: $box-shadow;
+}
+
+.pestañaPrincipal-h1 {
+    color: $color-caja_busqueda;
+    font-family: $font-family_principal;
+    font-size: $font-size_pequeña;
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,WAAW;AAQX,WAAW;AAgBX,WAAW;AAOX,IAAK;EACD,gBAAgB,EA/BI,OAAO;EAgC3B,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;;AClChB,iBAAkB;EACd,UAAU,EDCQ,iDAAiD;ECAnE,KAAK,EAAE,MAAM;EACb,MAAM,EDOc,IAAI;ECNxB,UAAU,EDED,iBAAiB;;ACC9B,oBAAqB;EACjB,KAAK,EDJa,OAAO;ECKzB,WAAW,EDgBS,0BAA0B;ECf9C,SAAS,EDiBO,IAAI",
+"sources": ["_elementos.scss","_bloques.scss"],
+"names": [],
+"file": "estilo.css"
+}
