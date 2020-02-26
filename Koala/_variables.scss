@@ -12,12 +12,14 @@ $color-caja-gifs-sugeridos: rgba(230, 230, 230, 0) ;
 $color-texto-day:#110038;
 $color-texto_botones-oscuro: #110038;
 $color-texto_botones-claro: #FFFFFF;
+$color-texto_botones-tono-medio: #B4B4B4;
 $color-texto_pestañas: #FFFFFF;
 $box-shadow_oscuro: 0 1px 0 0 #110038;
 $box-shadow_claro: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 $box-shadow_caja_titulo:inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
 $box-shadow-caja-contenedor-busqueda-blanco:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
 $box-shadow_boton_ver-mas: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow-boton-buscar: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
 
 
 
@@ -42,7 +44,10 @@ $ancho-logo: 7.13%; //102.6px;
 $ancho-boton_grande: 12.1%; //144px;
 $ancho-boton_mediano: 11%; //131px;
 $ancho-boton_pequeño: 3.1%; //36px;
-$ancho-boton_buscar: 102px; //;
+
+$ancho-boton_buscar:  8.5%;//102px;
+$alto-boton_buscar: 36px; // 2.2%
+
 $ancho-boton_ver-mas: 81px; //;
 $alto-boton_ver-mas: 34px;
 $ancho-caja-gifs-sugeridos:25%; //288px;
@@ -64,3 +69,4 @@ $line-height_pequena: 12px*2;
 
 /*Bordes*/
 $border-caja_titulo:1px solid #E6BBE2;
+$border-caja-gris-claro: 1px solid #808080;

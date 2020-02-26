@@ -16,10 +16,18 @@
     box-shadow: $box-shadow_boton_ver-mas ;
 }
 
+.boton--buscar  {    
+    width:$ancho-boton_buscar;
+    height: $alto-boton_buscar;
+    background: $color-background_cajas_clara; 
+    border: $border-caja-gris-claro;  
+    box-shadow: $box-shadow-boton-buscar;
+}
+
 .boton--grande  {width: $ancho-boton_grande;}
 .boton--mediano {width: $ancho-boton_mediano;}
 .boton--pequeno {width:$ancho-boton_pequeño;}
-.boton--buscar  {width:$ancho-boton_buscar;}
+
 
 
 
@@ -34,8 +42,17 @@
 .boton-texto--grande {font-size: $font-size_grande; line-height: $line-height_mediana;}
 .boton-texto--mediano {font-size: $font-size_grande; line-height: $line-height_mediana;}
 .boton-texto--pequeno {font-size: $font-size_pequeña; line-height: $line-height_pequena;}
-.boton-texto--buscar {font-size: $font-size_grande; line-height: $line-height_grande;}
-.boton-texto--ver-mas {font-size: $font-size_mediana; line-height: $line-height_grande;  color: $color-texto_botones-claro;}
+
+.boton-texto--buscar {
+    font-size: $font-size_grande; 
+    line-height: $line-height_grande;
+    color:$color-texto_botones-tono-medio;
+}
+.boton-texto--ver-mas {
+    font-size: $font-size_mediana; 
+    line-height: $line-height_grande;  
+    color: $color-texto_botones-claro;
+}
     
 
 .texto {
@@ -52,6 +69,7 @@
 .texto--caja-titulo__margin {
     margin: 0px 0px 0px 0.5%;
 }
+
 
 
 .pestaña {
@@ -94,7 +112,7 @@
     box-shadow: $box-shadow-caja-contenedor-busqueda-blanco;
     border: 1px solid #979797;
 }
-.caja-contenedor-busqueda-blanco__margin {margin: 0px 0px 0px 15px;}
+.caja-contenedor-busqueda-blanco__margin {margin: 0px 0px 0px 0px;}
 
 .caja-titulo {
     width: $ancho-caja_titulo; 
