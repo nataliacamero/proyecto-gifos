@@ -26,8 +26,14 @@
 
 .boton--crear-gifos {
     width: 144px;
-    margin-right: 2.5%;
+    margin-right: 30px;
 }
+
+.boton-cancelar-blanco{
+    background: #FFFFFF;
+    margin-right: 15px;
+}
+
 
 .boton--grande  {width: $ancho-boton_grande;}
 .boton--mediano {width: $ancho-boton_mediano;}
