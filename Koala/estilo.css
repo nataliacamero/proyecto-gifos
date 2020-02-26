@@ -78,6 +78,10 @@
 .texto--caja-titulo__margin {
   margin: 0px 0px 0px 0.5%; }
 
+.texto--h2-caja-crear-guifos {
+  font-weight: bold;
+  margin-top: 35px; }
+
 .texto--p-numeros-lista {
   font-size: 14px;
   font-weight: bold;
@@ -171,9 +175,14 @@
   margin: 1% 0px 0px 0.6%; }
 
 .caja-crear-guifos-inicio {
-  width: 684px;
+  width: 47.5%;
   height: 386px;
-  background: #E6E6E6; }
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+
+.caja-crear-guifos-inicio-texto {
+  width: 75.73%;
+  height: 190px; }
 
 /*Comportamiento*/
 body {
@@ -210,6 +219,21 @@ body {
     left: -40px;
     height: 24px;
     width: 24px; }
+  body .div-pestaña-crear-guifos-1 {
+    width: 98.8%; }
+  body .caja-crear-guifos-inicio-texto {
+    justify-content: space-between; }
+  body .div-contenedor-texto-crear {
+    height: 362px;
+    justify-content: flex-start; }
+  body .div-titulo-crear-guifos {
+    position: relative;
+    justify-content: flex-start;
+    width: 75.73%; }
+  body .imagen-window {
+    position: absolute;
+    top: 35px;
+    left: -10%; }
   body .section-mis-guifos--crear-guifo--html {
     margin-top: 64px;
     width: 100%; }

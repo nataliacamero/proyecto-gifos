@@ -62,7 +62,7 @@
     color: $color-texto-day;
     
 }
-.texto--caja-titulo {
+.texto--caja-titulo {// Son todas las cajas blancas titulo de seccion
     font-size: $font-size_mediana;
     line-height: $line-height_grande;
 }
@@ -70,7 +70,12 @@
     margin: 0px 0px 0px 0.5%;
 }
 
-.texto--p-numeros-lista { // Texto cuadro de Dialogo primera pantalla
+.texto--h2-caja-crear-guifos {
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.texto--p-numeros-lista { // Texto cuadro de Dialogo primera pantalla crear-guifo.html
     font-size: $font-size_mediana;
     font-weight: bold;
     margin: 0px 3px 0px 0px;
@@ -99,6 +104,9 @@
 .pestaña--caja-buscar__margin {margin: 3px 0px 0px 0px;}
 .pestaña--gif-sugeridos {width: $ancho-pestañas_caja-gifs-sugeridos}
 .pestaña--gif-sugeridos__margin {margin:2px 0px 0px 0px;}
+
+
+
 
 
 .pestaña-texto {
@@ -156,10 +164,15 @@
 .cajas-gifs-resultados__margin {margin: 1% 0px 0px 0.6%}
 
 .caja-crear-guifos-inicio {
-    width: 684px;
-    height: 386px;
+    width: $ancho-caja-crear-gifos-1;
+    height: $alto-caja-crear-gifos-1;
     background: $color-background_cajas_clara;
+    box-shadow: $box-shadow_claro;
+}
 
+.caja-crear-guifos-inicio-texto {
+    width: $ancho-caja-crear-guifos-inicio-texto;
+    height: $alto-caja-crear-guifos-inicio-texto;
 }
 
 
