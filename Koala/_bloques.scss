@@ -39,6 +39,23 @@ body {
       top: 237px;
       left: -80px;
     }
+    .div-superior-pestaña {
+        display: flex;
+        flex-flow: row-reverse;
+        position: relative;
+        width: 100%;
+    }
+
+    .pestaña-1 {
+        z-index: 1;
+        margin-right: 4px;
+    }
+
+    .boton-ver-mas-position {
+        position: absolute;
+        top:260px ;
+        left: 10px;
+    }
 
     .x-close {
         position: absolute;
@@ -46,8 +63,7 @@ body {
         height: 14px;
         z-index: 10000;
         margin-top: 7px;
-        margin-right: 10px;
-
+        right: 8px;
     }
 
 }
@@ -95,23 +111,7 @@ body {
             .caja-gifs-sugeridos-1 {
                 position: relative;                
             }
-                .div-superior-pestaña{
-                    display: flex;
-                    flex-flow: row-reverse;
-                    position: relative;
-                    width: 100%;
-                }
-                .pestaña-1 {
-                    z-index: 1;
-                    margin-right: 4px;
-                }
 
-
-                .boton-gif-1 {
-                    position: absolute;
-                    top:260px ;
-                    left: 10px;
-                }
 
 
 

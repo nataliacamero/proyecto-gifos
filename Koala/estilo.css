@@ -178,13 +178,25 @@ body {
     position: relative;
     top: 237px;
     left: -80px; }
+  body .div-superior-pestaña {
+    display: flex;
+    flex-flow: row-reverse;
+    position: relative;
+    width: 100%; }
+  body .pestaña-1 {
+    z-index: 1;
+    margin-right: 4px; }
+  body .boton-ver-mas-position {
+    position: absolute;
+    top: 260px;
+    left: 10px; }
   body .x-close {
     position: absolute;
     width: 16px;
     height: 14px;
     z-index: 10000;
     margin-top: 7px;
-    margin-right: 10px; }
+    right: 8px; }
 
 /*------------------------------------------------------------------------------------------------------------*/
 .seccion-barra-navegacion {
@@ -220,21 +232,6 @@ body {
 
 .caja-gifs-sugeridos-1 {
   position: relative; }
-
-.div-superior-pestaña {
-  display: flex;
-  flex-flow: row-reverse;
-  position: relative;
-  width: 100%; }
-
-.pestaña-1 {
-  z-index: 1;
-  margin-right: 4px; }
-
-.boton-gif-1 {
-  position: absolute;
-  top: 260px;
-  left: 10px; }
 
 .section-tendencias {
   margin-top: 64px;
