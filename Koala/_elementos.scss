@@ -24,6 +24,11 @@
     box-shadow: $box-shadow-boton-buscar;
 }
 
+.boton--crear-gifos {
+    width: 144px;
+    margin-right: 2.5%;
+}
+
 .boton--grande  {width: $ancho-boton_grande;}
 .boton--mediano {width: $ancho-boton_mediano;}
 .boton--pequeno {width:$ancho-boton_pequeño;}
@@ -173,6 +178,11 @@
 .caja-crear-guifos-inicio-texto {
     width: $ancho-caja-crear-guifos-inicio-texto;
     height: $alto-caja-crear-guifos-inicio-texto;
+}
+
+.caja-botones-crear-guifos-inicio {
+    width: $ancho-caja-botones-crear-guifos-inicio;
+    height: $alto-caja-botones-crear-guifos-inicio;
 }
 
 
