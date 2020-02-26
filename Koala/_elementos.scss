@@ -70,12 +70,21 @@
     margin: 0px 0px 0px 0.5%;
 }
 
-.p-numeros-lista { // Texto cuadro de Dialogo primera pantalla
+.texto--p-numeros-lista { // Texto cuadro de Dialogo primera pantalla
+    font-size: $font-size_mediana;
+    font-weight: bold;
+    margin: 0px 3px 0px 0px;
     
 }
 
-.p-texto-lista { // Texto cuadro de Dialogo primera pantalla
+.texto--p-lista { // Texto cuadro de Dialogo primera pantalla
+    font-size: $font-size_mediana;
+    margin: 0px 0px 0px 0px;
+}
 
+.texto--parrafo-final{
+    font-size: $font-size_mediana;
+    margin: 0px 0px 0px 0px;
 }
 
 .pestaña {
@@ -143,5 +152,12 @@
     box-shadow: $box-shadow_claro;
 }
 .cajas-gifs-resultados__margin {margin: 1% 0px 0px 0.6%}
+
+.caja-crear-guifos-inicio {
+    width: 684px;
+    height: 386;
+    background: $color-background_cajas_clara;
+
+}
 
 
