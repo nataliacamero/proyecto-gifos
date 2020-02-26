@@ -163,7 +163,9 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /*------------------Clases principales de flex y centrado------------------------*/ }
+  /*------------------Clases principales de flex y centrado------------------------*/
+  /*------------------------------------HTML CREAR-GUIFOS-------------------------------------*/
+  /*-------------------------------------------------------------------------*/ }
   body .flex-column {
     display: flex;
     flex-flow: column nowrap; }
@@ -179,6 +181,23 @@ body {
     align-items: center; }
   body .justify-center {
     justify-content: center; }
+  body .div-barra-navegacion--crear-guifo--html {
+    position: relative;
+    height: 102.6px;
+    width: 82.9%;
+    justify-content: start; }
+  body .flecha-atras {
+    position: absolute;
+    top: 35px;
+    left: -40px;
+    height: 24px;
+    width: 24px; }
+  body .section-mis-guifos--crear-guifo--html {
+    margin-top: 64px;
+    width: 100%; }
+  body .div-resultados-mis-guifos--crear-guifo--html {
+    margin-top: 17px;
+    width: 83.4%; }
   body .boton_buscar {
     position: relative;
     justify-content: space-around; }
@@ -215,7 +234,8 @@ body {
   width: 82.9%; }
 
 .logo {
-  width: 7.13%; }
+  width: 102.6px;
+  height: 64px; }
 
 .div-botones--barra-navegacion {
   width: 92.9%;

@@ -33,6 +33,35 @@ body {
     .justify-center {
         justify-content: center;
     }
+/*------------------------------------HTML CREAR-GUIFOS-------------------------------------*/
+.div-barra-navegacion--crear-guifo--html {
+    position: relative;
+    height: 102.6px;
+    width: 82.9%;
+    justify-content: start;
+}
+
+.flecha-atras{
+    position: absolute;
+    top: 35px;
+    left: -40px;
+    height: 24px;
+    width: 24px;
+}
+
+.section-mis-guifos--crear-guifo--html {
+    margin-top: 64px;
+    width: 100%;
+}
+    .div-resultados-mis-guifos--crear-guifo--html {
+        margin-top: 17px;
+        width: 83.4%;
+    }
+
+
+
+
+/*-------------------------------------------------------------------------*/
 
     .boton_buscar {
         position: relative;
@@ -44,25 +73,25 @@ body {
       top: 237px;
       left: -80px;
     }
-    .div-superior-pestaña {
+    .div-superior-pestaña {//Caja gifs sugeridos
         display: flex;
         flex-flow: row-reverse;
         position: relative;
         width: 100%;
     }
 
-    .pestaña-1 {
+    .pestaña-1 {//Caja gifs sugeridos
         z-index: 1;
         margin-right: 4px;
     }
 
-    .boton-ver-mas-position {
+    .boton-ver-mas-position { //Caja gifs sugeridos
         position: absolute;
         top:260px ;
         left: 10px;
     }
 
-    .x-close {
+    .x-close { //Caja gifs sugeridos
         position: absolute;
         width: 16px;
         height: 14px;
@@ -72,7 +101,6 @@ body {
     }
 
     
-
 }
 /*------------------------------------------------------------------------------------------------------------*/
     .seccion-barra-navegacion {
@@ -86,6 +114,7 @@ body {
 
             .logo {
                 width: $ancho-logo;               
+                height: $alto-logo;
             }
 
             .div-botones--barra-navegacion {
