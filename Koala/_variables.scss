@@ -1,0 +1,66 @@
+/*colores*/
+$color-backgroud_light: #fef4fd;
+$color-pestaña_ligth: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+$color-boton_ligth: #F7C9F3;
+$color-caja_busqueda: #FFFFFF;
+$color-background_caja_titulo: #FFFFFF;
+$color-background_caja-contenedor-busqueda-blanco: #FFFFFF;
+$color-background_cajas_oscura: #808080;
+$color-background_cajas_clara: #E6E6E6;
+$color-background_boton_ver-mas: #2E32FB;
+$color-caja-gifs-sugeridos: rgba(230, 230, 230, 0) ;
+$color-texto-day:#110038;
+$color-texto_botones-oscuro: #110038;
+$color-texto_botones-claro: #FFFFFF;
+$color-texto_pestañas: #FFFFFF;
+$box-shadow_oscuro: 0 1px 0 0 #110038;
+$box-shadow_claro: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow_caja_titulo:inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+$box-shadow-caja-contenedor-busqueda-blanco:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow_boton_ver-mas: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+
+
+
+/*medidas*/
+$alto-pestaña_top: 23px; // 10.7%;
+$alto-pestañas: 24px; //1.5%;
+$alto-caja_contenedora_buscar: 99px; // 6.0%;
+$alto-caja-contenedor-busqueda-blanco: 48px; // 2.9%;
+$alto-caja_hoy-sugerimos:32px; // 1.9%;
+$alto-logo: 64px; //3.9%;
+$alto-boton_crearguifos: 36px; //2.2%
+$alto-caja-gifs-sugeridos: 313px;
+$alto-caja-gifs-resultados: 304px;// 18.4%;
+$ancho-pestaña_principal: 100%; //1438px;
+$ancho-pestaña-caja-buscar: 99.5%; //1200px;
+$ancho-pestañas_caja-gifs-sugeridos: 97%;// 280px; 
+$ancho-caja_contenedora_buscar: 82.9%; //1200px;
+$ancho-caja-contenedor-busqueda-blanco: 88%;
+$ancho-caja_titulo: 82.9%; //1200px;
+$ancho-contenedorGifs: 82.9%; //1200px;
+$ancho-logo: 7.13%; //102.6px;
+$ancho-boton_grande: 12.1%; //144px;
+$ancho-boton_mediano: 11%; //131px;
+$ancho-boton_pequeño: 3.1%; //36px;
+$ancho-boton_buscar: 102px; //;
+$ancho-boton_ver-mas: 81px; //;
+$alto-boton_ver-mas: 34px;
+$ancho-caja-gifs-sugeridos:25%; //288px;
+$ancho-caja-gifs-resultados:24.4%;// 294px
+$ancho-imagenGif: 19.4%;// 280px;
+
+/*fuentes*/
+$font-family_principal: 'Chakra Petch', sans-serif;
+$font-family_titulos: 'Chakra Petch', sans-serif;
+$font-size_grande: 16px;
+$font-size_mediana: 14px;
+$font-size_pequeña: 12px;
+
+/*Line-height*/
+$line-height_grande: 16px*2;
+$line-height_mediana: 14px*2;
+$line-height_pequena: 12px*2;
+
+
+/*Bordes*/
+$border-caja_titulo:1px solid #E6BBE2;
