@@ -46,7 +46,6 @@
     font-family: $font-family_principal;
     text-decoration: none;
     letter-spacing: 0;
-    
 }
 
 .boton-texto__day {color: $color-texto_botones-oscuro;}
@@ -115,6 +114,9 @@
 .pestaña--caja-buscar__margin {margin: 3px 0px 0px 0px;}
 .pestaña--gif-sugeridos {width: $ancho-pestañas_caja-gifs-sugeridos}
 .pestaña--gif-sugeridos__margin {margin:2px 0px 0px 0px;}
+.pestaña-crear-guifos-chequeo {
+    width: $pestaña-crear-guifos-chequeo;
+}
 
 
 
@@ -191,4 +193,25 @@
     height: $alto-caja-botones-crear-guifos-inicio;
 }
 
+.caja-crear-guifos-chequeo {
+    width: $ancho-caja-crear-guifos-chequeo;
+    height: $alto-caja-crear-guifos-chequeo;
+    background: $color-background_cajas_clara;
+    box-shadow: $box-shadow_claro;
+}
+
+.caja-crear-guifos-chequeo___margin {
+    margin: 5% 0px 0px 0px;
+}
+
+.caja-contenedor-grabacion {
+    width: $ancho-caja-contenedor-grabacion;
+    height: $alto-caja-contenedor-grabacion;
+    border: $border-caja-blanca-grabacion;
+    box-shadow: $box-shadow-grabacion;
+}
+
+.caja-contenedor-grabacion__margin {
+    margin: 5% 0px 0px 0px;
+}
 

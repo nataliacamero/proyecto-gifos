@@ -20,6 +20,7 @@ $box-shadow_caja_titulo:inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
 $box-shadow-caja-contenedor-busqueda-blanco:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
 $box-shadow_boton_ver-mas: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
 $box-shadow-boton-buscar: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow-grabacion:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
 
 
 
@@ -36,6 +37,8 @@ $alto-caja-gifs-resultados: 304px;// 18.4%;
 $ancho-pestaña_principal: 100%; //1438px;
 $ancho-pestaña-caja-buscar: 99.5%; //1200px;
 $ancho-pestañas_caja-gifs-sugeridos: 97%;// 280px; 
+$pestaña-crear-guifos-chequeo: 100%;
+
 $ancho-caja_contenedora_buscar: 82.9%; //1200px;
 $ancho-caja-contenedor-busqueda-blanco: 88%;
 $ancho-caja_titulo: 82.9%; //1200px;
@@ -52,11 +55,18 @@ $alto-boton_buscar: 36px; // 2.2%
 
 $ancho-caja-crear-gifos-1:  47.5%;//684px;
 $alto-caja-crear-gifos-1: 386px;
+
 $ancho-caja-crear-guifos-inicio-texto:  75.73%;//518px;
 $alto-caja-crear-guifos-inicio-texto: 190px;
 
 $ancho-caja-botones-crear-guifos-inicio:  100%;//518px;
 $alto-caja-botones-crear-guifos-inicio: 79px;
+
+$ancho-caja-crear-guifos-chequeo: 59.8%;
+$alto-caja-crear-guifos-chequeo: 548px;
+
+$ancho-caja-contenedor-grabacion: 97.4%; // 838px;
+$alto-caja-contenedor-grabacion: 440px;
 
 
 $ancho-boton_ver-mas: 81px; //;
@@ -81,3 +91,4 @@ $line-height_pequena: 12px*2;
 /*Bordes*/
 $border-caja_titulo:1px solid #E6BBE2;
 $border-caja-gris-claro: 1px solid #808080;
+$border-caja-blanca-grabacion: 1px solid #979797;

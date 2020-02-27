@@ -77,6 +77,17 @@ body {
         justify-content: flex-end;   
     }
 
+.div-pestaña-crear-guifos-2 {
+    display: flex;
+    flex-flow: row-reverse;
+    position: relative;
+    width: 100%;
+}
+.caja-crear-guifos-chequeo {
+    width: 860px;
+}
+
+
 .section-mis-guifos--crear-guifo--html {
     margin-top: 64px;
     width: 100%;
