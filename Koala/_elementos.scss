@@ -116,11 +116,8 @@
 .pestaña--gif-sugeridos__margin {margin:2px 0px 0px 0px;}
 .pestaña-crear-guifos-chequeo {
     width: $pestaña-crear-guifos-chequeo;
+    margin: 3px 5px 0px 0px;
 }
-
-
-
-
 
 .pestaña-texto {
     font-family: $font-family_principal;
@@ -209,9 +206,10 @@
     height: $alto-caja-contenedor-grabacion;
     border: $border-caja-blanca-grabacion;
     box-shadow: $box-shadow-grabacion;
+    background: $color-background_cajas_blanca;
 }
 
 .caja-contenedor-grabacion__margin {
-    margin: 5% 0px 0px 0px;
+    margin: 1% 0px 0px 0px;
 }
 

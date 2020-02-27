@@ -41,7 +41,7 @@
   width: 11%; }
 
 .boton--pequeno {
-  width: 3.1%; }
+  width: 4.1%; }
 
 .boton-texto {
   font-family: "Chakra Petch", sans-serif;
@@ -125,7 +125,8 @@
   margin: 2px 0px 0px 0px; }
 
 .pestaña-crear-guifos-chequeo {
-  width: 100%; }
+  width: 98.8%;
+  margin: 3px 5px 0px 0px; }
 
 .pestaña-texto {
   font-family: "Chakra Petch", sans-serif;
@@ -212,10 +213,11 @@
   width: 97.4%;
   height: 440px;
   border: 1px solid #979797;
-  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000; }
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  background: #FFFFFF; }
 
 .caja-contenedor-grabacion__margin {
-  margin: 5% 0px 0px 0px; }
+  margin: 1% 0px 0px 0px; }
 
 /*Comportamiento*/
 body {
@@ -276,6 +278,10 @@ body {
     width: 100%; }
   body .caja-crear-guifos-chequeo {
     width: 860px; }
+  body .controles-grabacion {
+    width: 100%;
+    justify-content: flex-end;
+    height: 67px; }
   body .section-mis-guifos--crear-guifo--html {
     margin-top: 64px;
     width: 100%; }
