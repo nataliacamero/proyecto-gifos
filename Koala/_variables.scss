@@ -2,6 +2,11 @@
 $color-backgroud_light: #fef4fd;
 $color-pestaña_ligth: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
 $color-boton_ligth: #F7C9F3;
+$color-boton_rosado: #F7C9F3;
+$color-boton_blanco: #FFFFFF;
+$color-boton_rojo: #FF6161;
+$color-boton-gris-claro: #F0E5EE;
+
 $color-caja_busqueda: #FFFFFF;
 $color-background_caja_titulo: #FFFFFF;
 $color-background_caja-contenedor-busqueda-blanco: #FFFFFF;
@@ -20,9 +25,10 @@ $box-shadow_oscuro: 0 1px 0 0 #110038;
 $box-shadow_claro: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 $box-shadow_caja_titulo:inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
 $box-shadow-caja-contenedor-busqueda-blanco:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow_boton-general:inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 $box-shadow_boton_ver-mas: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
 $box-shadow-boton-buscar: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-$box-shadow-grabacion:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow-grabacion: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
 
 
 
@@ -34,6 +40,7 @@ $alto-caja-contenedor-busqueda-blanco: 48px; // 2.9%;
 $alto-caja_hoy-sugerimos:32px; // 1.9%;
 $alto-logo: 64px; //3.9%;
 $alto-boton_crearguifos: 36px; //2.2%
+$alto-botones-general: 36px;
 $alto-caja-gifs-sugeridos: 313px;
 $alto-caja-gifs-resultados: 304px;// 18.4%;
 $ancho-pestaña_principal: 100%; //1438px;
@@ -47,9 +54,10 @@ $ancho-caja_titulo: 82.9%; //1200px;
 $ancho-contenedorGifs: 82.9%; //1200px;
 $ancho-logo: 102.6px; //102.6px;
 $alto-logo: 64px;
-$ancho-boton_grande: 12.1%; //144px;
-$ancho-boton_mediano: 11%; //131px;
-$ancho-boton_pequeño: 4.1%; //36px;
+
+$ancho-boton_grande: 144px; 
+$ancho-boton_mediano: 131px;
+$ancho-boton_pequeño: 36px; 
 
 $ancho-boton_buscar:  8.5%;//102px;
 $alto-boton_buscar: 36px; // 2.2%
@@ -94,3 +102,4 @@ $line-height_pequena: 12px*2;
 $border-caja_titulo:1px solid #E6BBE2;
 $border-caja-gris-claro: 1px solid #808080;
 $border-caja-blanca-grabacion: 1px solid #979797;
+$border-boton-general: 1px solid #110038;
