@@ -87,11 +87,18 @@ body {
     width: 860px;
 }
 
+.div-contenedor-camara {
+    position: relative;
+    height: 440px;
+}
+
 .controles-grabacion {
     width: 100%;
     justify-content: flex-end;
     height: 67px;
 }
+
+
 
 .section-mis-guifos--crear-guifo--html {
     margin-top: 64px;
@@ -143,7 +150,7 @@ body {
 
     
 }
-/*------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------INDEX.HTML-----------------------------------------------------------*/
     .seccion-barra-navegacion {
         width: 100%;
     }

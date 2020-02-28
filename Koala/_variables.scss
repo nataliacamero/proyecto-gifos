@@ -33,36 +33,44 @@ $box-shadow-grabacion: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
 
 
 /*medidas*/
+
+/*------------------Pestañas-------------------*/
 $alto-pestaña_top: 23px; // 10.7%;
 $alto-pestañas: 24px; //1.5%;
-$alto-caja_contenedora_buscar: 99px; // 6.0%;
-$alto-caja-contenedor-busqueda-blanco: 48px; // 2.9%;
-$alto-caja_hoy-sugerimos:32px; // 1.9%;
-$alto-logo: 64px; //3.9%;
-$alto-boton_crearguifos: 36px; //2.2%
-$alto-botones-general: 36px;
-$alto-caja-gifs-sugeridos: 313px;
-$alto-caja-gifs-resultados: 304px;// 18.4%;
+
 $ancho-pestaña_principal: 100%; //1438px;
 $ancho-pestaña-caja-buscar: 99.5%; //1200px;
 $ancho-pestañas_caja-gifs-sugeridos: 97%;// 280px; 
 $pestaña-crear-guifos-chequeo: 98.8%;
 
-$ancho-caja_contenedora_buscar: 82.9%; //1200px;
-$ancho-caja-contenedor-busqueda-blanco: 88%;
-$ancho-caja_titulo: 82.9%; //1200px;
-$ancho-contenedorGifs: 82.9%; //1200px;
+
+/*-----------------Cajas-------------------------------------*/
+$alto-caja_contenedora_buscar: 99px; // 6.0%;
+$alto-caja-contenedor-busqueda-blanco: 48px; // 2.9%;
+$alto-caja_hoy-sugerimos:32px; // 1.9%;
+$alto-caja-gifs-sugeridos: 313px;
+$alto-caja-gifs-resultados: 304px;// 18.4%;
+
+/*------------------------------------------------------------------*/
+
+$alto-logo: 64px; //3.9%;
 $ancho-logo: 102.6px; //102.6px;
-$alto-logo: 64px;
+
+$ancho-imagenGif: 19.4%;// 280px;
+
+/*-----------------------Botones--------------------*/
+$alto-boton_crearguifos: 36px; //2.2%
+$alto-botones-general: 36px;
+$alto-boton_buscar: 36px; // 2.2%
 
 $ancho-boton_grande: 144px; 
 $ancho-boton_mediano: 131px;
 $ancho-boton_pequeño: 36px; 
-
 $ancho-boton_buscar:  8.5%;//102px;
-$alto-boton_buscar: 36px; // 2.2%
+$ancho-boton_ver-mas: 81px; //;
+$alto-boton_ver-mas: 34px;
 
-
+/*--------------------------Cajas-----------------------------------*/
 $ancho-caja-crear-gifos-1:  47.5%;//684px;
 $alto-caja-crear-gifos-1: 386px;
 
@@ -79,11 +87,14 @@ $ancho-caja-contenedor-grabacion: 97.4%; // 838px;
 $alto-caja-contenedor-grabacion: 440px;
 
 
-$ancho-boton_ver-mas: 81px; //;
-$alto-boton_ver-mas: 34px;
+$ancho-caja_contenedora_buscar: 82.9%; //1200px;
+$ancho-caja-contenedor-busqueda-blanco: 88%;
+$ancho-caja_titulo: 82.9%; //1200px;
+$ancho-contenedorGifs: 82.9%; //1200px;
 $ancho-caja-gifs-sugeridos:25%; //288px;
 $ancho-caja-gifs-resultados:24.4%;// 294px
-$ancho-imagenGif: 19.4%;// 280px;
+
+
 
 /*fuentes*/
 $font-family_principal: 'Chakra Petch', sans-serif;

@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /*colores*/
 /*medidas*/
+/*------------------Pestañas-------------------*/
+/*-----------------Cajas-------------------------------------*/
+/*------------------------------------------------------------------*/
+/*-----------------------Botones--------------------*/
+/*--------------------------Cajas-----------------------------------*/
 /*fuentes*/
 /*Line-height*/
 /*Bordes*/
@@ -244,6 +249,14 @@
 .caja-contenedor-grabacion__margin {
   margin: 1% 0px 0px 0px; }
 
+.caja-contador {
+  width: 124px;
+  height: 36px;
+  background: #FFFFFF;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  border: 1px solid #979797;
+  vertical-align: middle; }
+
 /*Comportamiento*/
 body {
   background-color: #fef4fd;
@@ -303,6 +316,9 @@ body {
     width: 100%; }
   body .caja-crear-guifos-chequeo {
     width: 860px; }
+  body .div-contenedor-camara {
+    position: relative;
+    height: 440px; }
   body .controles-grabacion {
     width: 100%;
     justify-content: flex-end;
@@ -340,7 +356,7 @@ body {
     margin-top: 7px;
     right: 8px; }
 
-/*------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------INDEX.HTML-----------------------------------------------------------*/
 .seccion-barra-navegacion {
   width: 100%; }
 
