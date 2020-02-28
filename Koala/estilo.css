@@ -254,8 +254,25 @@
   height: 36px;
   background: #FFFFFF;
   box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
-  border: 1px solid #979797;
-  vertical-align: middle; }
+  border: 1px solid #979797; }
+
+.caja-contenedora-cargando {
+  width: 328px;
+  height: 27px;
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000; }
+
+.rectangulo-inactivo {
+  width: 12px;
+  height: 20px;
+  background: #999999;
+  border: 1px solid #cecccc; }
+
+.rectangulo-activo {
+  width: 12px;
+  height: 20px;
+  background: #F7C9F3;
+  border: 1px solid #cecccc; }
 
 /*Comportamiento*/
 body {
