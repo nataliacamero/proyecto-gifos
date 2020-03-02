@@ -61,10 +61,13 @@
     margin-left: 16px;
 }
 
-
-
-
-
+.boton-buscar-largo-buscar-resultados {
+    width: $ancho-boton-largo-buscar-resultados;
+    margin-left: 1.1%;
+    box-shadow: $box-shadow_claro_inset-1;
+    border: $border-caja-gris-claro;
+    background: $color-backgroud_boton-buscar-resultados;
+}
 
 
 .imagen-boton {
@@ -108,11 +111,13 @@
 .boton-texto--mediano {font-size: $font-size_grande; line-height: $line-height_mediana;}
 .boton-texto--pequeno {font-size: $font-size_pequeña; line-height: $line-height_pequena;}
 
-.boton-texto--buscar {
-    font-size: $font-size_grande; 
-    line-height: $line-height_grande;
-    color:$color-texto_botones-tono-medio;
+
+.boton-texto-margin-left {
+    margin-left: 1.2%;
 }
+
+
+
 .boton-texto--ver-mas {
     font-size: $font-size_mediana; 
     line-height: $line-height_grande;  
@@ -333,7 +338,7 @@
     height: 196px;
     background: #FFFFFF;
     border: 1px solid #979797;
-    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    box-20pxshadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
     margin: 7% 0px 0px 5%;
 }
 
@@ -353,4 +358,11 @@
 
 .caja-contenedor-cambio-tema__margin {
     margin-left: 15px;
+}
+
+.caja-buscar-resultados {
+    box-shadow: $box-shadow_claro;
+    height: $alto-caja-contenedora-buscar-resultados;
+    width: $ancho-caja-contenedora-buscar-resultados;
+    background: $color-background_cajas_clara;
 }

@@ -13,6 +13,7 @@ $color-background_caja-contenedor-busqueda-blanco: #FFFFFF;
 $color-background_cajas_oscura: #808080;
 $color-background_cajas_clara: #E6E6E6;
 $color-background_cajas_blanca:#FFFFFF;
+$color-backgroud_boton-buscar-resultados:#F0F0F0; 
 
 $color-background_boton_ver-mas: #2E32FB;
 $color-caja-gifs-sugeridos: rgba(230, 230, 230, 0) ;
@@ -23,6 +24,7 @@ $color-texto_botones-tono-medio: #B4B4B4;
 $color-texto_pestañas: #FFFFFF;
 $box-shadow_oscuro: 0 1px 0 0 #110038;
 $box-shadow_claro: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow_claro_inset-1:  inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
 $box-shadow_caja_titulo:inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
 $box-shadow-caja-contenedor-busqueda-blanco:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
 $box-shadow_boton-general:inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
@@ -49,6 +51,13 @@ $pestaña-crear-guifos-chequeo: 98.8%;
 /*-----------------Cajas-------------------------------------*/
 $alto-caja_contenedora_buscar: 99px; // 6.0%;
 $alto-caja-contenedor-busqueda-blanco: 48px; // 2.9%;
+
+$alto-caja-contenedora-buscar-resultados: 160px;
+$ancho-caja-contenedora-buscar-resultados: 82.9%;
+
+
+
+
 $alto-caja_hoy-sugerimos:32px; // 1.9%;
 $alto-caja-gifs-sugeridos: 313px;
 $alto-caja-gifs-resultados: 304px;// 18.4%;
@@ -99,6 +108,8 @@ $ancho-boton_buscar:  8.5%;//102px;
 $ancho-boton_ver-mas: 81px; //;
 $alto-boton_ver-mas: 34px;
 
+$ancho-boton-largo-buscar-resultados: 88%;
+
 /*--------------------------Cajas-----------------------------------*/
 
 
@@ -124,3 +135,4 @@ $border-caja-blanca-grabacion: 1px solid #979797;
 $border-boton-general: 1px solid #110038;
 $border-boton-tema-claro: 1px solid #CCA6C9;
 $border-boton-tema-gris: 1px solid #808080;
+

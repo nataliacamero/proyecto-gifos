@@ -76,6 +76,13 @@
 .boton-tema-texto__margin {
   margin-left: 16px; }
 
+.boton-buscar-largo-buscar-resultados {
+  width: 88%;
+  margin-left: 1.1%;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  border: 1px solid #808080;
+  background: #F0F0F0; }
+
 .imagen-boton {
   vertical-align: middle; }
 
@@ -117,10 +124,8 @@
   font-size: 12px;
   line-height: 24px; }
 
-.boton-texto--buscar {
-  font-size: 16px;
-  line-height: 32px;
-  color: #B4B4B4; }
+.boton-texto-margin-left {
+  margin-left: 1.2%; }
 
 .boton-texto--ver-mas {
   font-size: 14px;
@@ -325,7 +330,7 @@
   height: 196px;
   background: #FFFFFF;
   border: 1px solid #979797;
-  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  box-20pxshadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   margin: 7% 0px 0px 5%; }
 
 .caja-botones-exito {
@@ -340,6 +345,12 @@
 
 .caja-contenedor-cambio-tema__margin {
   margin-left: 15px; }
+
+.caja-buscar-resultados {
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  height: 160px;
+  width: 82.9%;
+  background: #E6E6E6; }
 
 /*Comportamiento*/
 body {
@@ -367,6 +378,8 @@ body {
     justify-content: center; }
   body .justify-start {
     justify-content: flex-start; }
+  body .justify-evenly {
+    justify-content: space-evenly; }
   body .div-barra-navegacion--crear-guifo--html {
     position: relative;
     height: 193.6px;
