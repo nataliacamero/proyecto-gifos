@@ -29,6 +29,8 @@ $box-shadow_boton-general:inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF
 $box-shadow_boton_ver-mas: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
 $box-shadow-boton-buscar: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
 $box-shadow-grabacion: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow-boton-tema-claro:  inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow-boton-tema-gris: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
 
 
 
@@ -79,7 +81,7 @@ $ancho-caja-gifs-resultados:24.4%;// 294px
 
 /*------------------------------------------------------------------*/
 
-$alto-logo: 64px; //3.9%;
+$alto-logo: 114px; //3.9%;
 $ancho-logo: 102.6px; //102.6px;
 
 $ancho-imagenGif: 19.4%;// 280px;
@@ -120,3 +122,5 @@ $border-caja_titulo:1px solid #E6BBE2;
 $border-caja-gris-claro: 1px solid #808080;
 $border-caja-blanca-grabacion: 1px solid #979797;
 $border-boton-general: 1px solid #110038;
+$border-boton-tema-claro: 1px solid #CCA6C9;
+$border-boton-tema-gris: 1px solid #808080;

@@ -33,17 +33,21 @@ body {
     .justify-center {
         justify-content: center;
     }
+
+    .justify-start {
+        justify-content: flex-start;
+    }
 /*------------------------------------HTML CREAR-GUIFOS-------------------------------------*/
 .div-barra-navegacion--crear-guifo--html {
     position: relative;
-    height: 102.6px;
+    height: 193.6px;
     width: 82.9%;
     justify-content: start;
 }
 
 .flecha-atras{
     position: absolute;
-    top: 35px;
+    top: 51px;
     left: -40px;
     height: 24px;
     width: 24px;
@@ -167,7 +171,7 @@ body {
     }
 
         .div-barra-navegacion {
-            height: 102.6px;
+            height: 193.6px;
             width: 82.9%;
         }
 
@@ -181,14 +185,11 @@ body {
                 justify-content: flex-end;   
             }
                 
-                .boton-tema {
-                    margin-left: 15px;
-                }
                 
-                .texto-mis-gifos {
-                    margin: 0px 0px 0px 15px;
-                }
-
+            .texto-mis-gifos__margin-top {
+                margin-top: 8px;
+            }
+            
             .contenedor-busqueda-blanco {
                 width: 100%;
                 height: 72px;

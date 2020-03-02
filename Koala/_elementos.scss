@@ -25,6 +25,7 @@
 .boton-rojo {background: $color-boton_rojo;}
 .boton-gris-claro {background: $color-boton-gris-claro; }
 
+
 .boton-general_margin14px {
     margin-bottom: 14px;
 }
@@ -39,6 +40,30 @@
 .boton-general__margin15px {
     margin-right: 15px;
 }
+
+.boton-general__margin-top {
+    margin-top: 10px;
+}
+
+.boton-tema-claro {
+    box-shadow: $box-shadow-boton-tema-claro;
+    border: $border-boton-tema-claro;
+    width: 150px;
+}
+
+.boton-tema-gris {
+    box-shadow: $box-shadow-boton-tema-gris;
+    border: $border-boton-tema-gris;
+    width: 150px;
+}
+
+.boton-tema-texto__margin {
+    margin-left: 16px;
+}
+
+
+
+
 
 
 
@@ -116,6 +141,11 @@
     margin: 0px 0px 0px 0.5%;
 }
 
+.texto-mis-guifos-navegacion {
+    text-decoration: none;
+    margin: 0px 0px 0px 15px;
+}
+
 .texto--h2-caja-crear-guifos {
     font-weight: bold;
     margin-top: 35px;
@@ -133,7 +163,7 @@
     margin: 0px 0px 0px 0px;
 }
 
-.texto--parrafo-crear-guifo-p {
+.texto--parrafo-crear-guifo-p {// HTML CREAR GUIFOS
     font-size: $font-size_mediana;
     margin: 0px 0px 0px 0px;
 }
@@ -314,3 +344,13 @@
     height: 367px;
 }
 
+.caja-contenedor-cambio-tema {
+    width: 170px;
+    height: 102px;
+    background: $color-background_cajas_clara;
+    box-shadow: $box-shadow_claro;
+}
+
+.caja-contenedor-cambio-tema__margin {
+    margin-left: 15px;
+}
