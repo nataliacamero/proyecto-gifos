@@ -4,13 +4,18 @@
     display: inline-flex;
     background: $color-boton_ligth;
     height: $alto-boton_crearguifos;
-    border: 1px solid #110038;
+    //border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.marco-boton-dotted {
+    height: 29px;
+    width: 124px;
 }
 
 .boton-general {
     display: inline-flex;
-    border: $border-boton-general;
+   // border: $border-boton-general;
     box-shadow: $box-shadow_boton-general;
     height: $alto-botones-general;
     
@@ -51,11 +56,7 @@
     width: 150px;
 }
 
-.boton-tema-gris {
-    box-shadow: $box-shadow-boton-tema-gris;
-    border: $border-boton-tema-gris;
-    width: 150px;
-}
+
 
 .boton-tema-texto__margin {
     margin-left: 16px;
@@ -107,6 +108,7 @@
 
 .boton-texto-azul-oscuro {color: $color-texto_botones-oscuro;}
 .boton-texto-blanco {color: $color-texto_botones-claro;}
+.boton-texto--buscar { color:$color-texto_botones-tono-medio; }
 .boton-texto--grande {font-size: $font-size_grande; line-height: $line-height_mediana;}
 .boton-texto--mediano {font-size: $font-size_grande; line-height: $line-height_mediana;}
 .boton-texto--pequeno {font-size: $font-size_pequeña; line-height: $line-height_pequena;}
@@ -243,6 +245,15 @@
     box-shadow: $box-shadow_claro;
 }
 .cajas-gifs-resultados__margin {margin: 1% 0px 0px 0.6%}
+
+.cajas-gif-interior {
+    width: $ancho-caja-gifs-interior; 
+    height: $alto-caja-gifs-interior;
+}
+
+.cajas-gif-interior__margin {
+    margin: 2px 0px 0px 6px;
+}
 
 .caja-crear-guifos-inicio {
     width: $ancho-caja-crear-gifos-1;

@@ -15,12 +15,14 @@
   display: inline-flex;
   background: #F7C9F3;
   height: 36px;
-  border: 1px solid #110038;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+
+.marco-boton-dotted {
+  height: 29px;
+  width: 124px; }
 
 .boton-general {
   display: inline-flex;
-  border: 1px solid #110038;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   height: 36px; }
 
@@ -68,11 +70,6 @@
   border: 1px solid #CCA6C9;
   width: 150px; }
 
-.boton-tema-gris {
-  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-  border: 1px solid #808080;
-  width: 150px; }
-
 .boton-tema-texto__margin {
   margin-left: 16px; }
 
@@ -111,6 +108,9 @@
 
 .boton-texto-blanco {
   color: #FFFFFF; }
+
+.boton-texto--buscar {
+  color: #B4B4B4; }
 
 .boton-texto--grande {
   font-size: 16px;
@@ -252,6 +252,13 @@
 
 .cajas-gifs-resultados__margin {
   margin: 1% 0px 0px 0.6%; }
+
+.cajas-gif-interior {
+  width: 96.5%;
+  height: 279px; }
+
+.cajas-gif-interior__margin {
+  margin: 2px 0px 0px 6px; }
 
 .caja-crear-guifos-inicio {
   width: 47.5%;
@@ -491,7 +498,7 @@ body {
 .imagen-lupa {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 22px;
   width: 14px;
   height: 14px; }
 
@@ -512,5 +519,58 @@ body {
 .div-resultados-tendencias {
   margin-top: 17px;
   width: 83.4%; }
+
+/*Estados boton rosado*/
+a:active {
+  color: #110038; }
+
+.marco-boton-dotted:active {
+  border: 1px dotted #110038; }
+
+.boton:hover {
+  background: #E6BBE2; }
+
+.boton:active {
+  border: 1px solid #110038; }
+
+.boton-rosado:hover {
+  background: #E6BBE2; }
+
+.boton-rosado:active {
+  border: 1px solid #110038; }
+
+.boton-blanco:hover {
+  background: #F0E5EE; }
+
+.boton-blanco:active {
+  border: 1px solid #110038; }
+
+.boton-tema-claro:hover {
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  border: 1px solid #808080; }
+
+.boton--buscar:hover {
+  background: #F7C9F3; }
+
+.boton--buscar:active {
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+
+.boton-texto--buscar:hover {
+  color: #110038; }
+
+.boton-texto--buscar:active {
+  color: #110038; }
+
+.boton--ver-mas:hover {
+  background: #3A72DB; }
+
+.boton-texto--ver-mas:active {
+  color: #FFFFFF; }
+
+/*Cajas*/
+.cajas-gif-interior:hover {
+  border: 1px dotted #110038; }
 
 /*# sourceMappingURL=estilo.css.map */

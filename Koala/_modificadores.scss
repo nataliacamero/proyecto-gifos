@@ -1,0 +1,82 @@
+/*Estados boton rosado*/
+
+
+
+
+a:active{
+    color: $color-texto_botones-oscuro; 
+}
+//a:visited{
+//    color: $color-texto_botones-oscuro; 
+//}
+.marco-boton-dotted:active {
+    border: 1px dotted #110038; 
+}
+
+
+.boton:hover {
+    background: #E6BBE2;
+}
+
+.boton:active {
+    border: 1px solid #110038;
+}
+
+.boton-rosado:hover {
+    background: #E6BBE2; 
+}
+
+.boton-rosado:active{
+    border: 1px solid #110038;
+}
+
+.boton-blanco:hover {
+    background: #F0E5EE;
+}
+
+.boton-blanco:active {
+    border: 1px solid #110038;
+} 
+
+.boton-tema-claro:hover {
+    box-shadow: $box-shadow-boton-tema-gris;
+    border: $border-boton-tema-gris;
+    
+}
+
+
+.boton--buscar:hover {
+    background: $color-boton_rosado;
+    
+}
+
+.boton--buscar:active {
+    background: #E6BBE2; 
+    border: 1px solid #110038;  
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;;
+}
+
+.boton-texto--buscar:hover {
+    color: $color-texto_botones-oscuro;
+}
+
+.boton-texto--buscar:active {
+    color: $color-texto_botones-oscuro;
+}
+
+.boton--ver-mas:hover  {
+    background: #3A72DB;
+}
+
+.boton-texto--ver-mas:active {
+    color: $color-texto_botones-claro   
+} 
+
+
+/*Cajas*/
+
+.cajas-gif-interior:hover {
+    border: 1px dotted #110038;
+}
+
+
