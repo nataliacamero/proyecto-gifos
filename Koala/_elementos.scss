@@ -8,10 +8,7 @@
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.marco-boton-dotted {
-    height: 29px;
-    width: 124px;
-}
+
 
 .boton-general {
     display: inline-flex;
@@ -104,13 +101,16 @@
     font-family: $font-family_principal;
     text-decoration: none;
     letter-spacing: 0;
+    height: 29px;
 }
 
 .boton-texto-azul-oscuro {color: $color-texto_botones-oscuro;}
 .boton-texto-blanco {color: $color-texto_botones-claro;}
 .boton-texto--buscar { color:$color-texto_botones-tono-medio; }
-.boton-texto--grande {font-size: $font-size_grande; line-height: $line-height_mediana;}
-.boton-texto--mediano {font-size: $font-size_grande; line-height: $line-height_mediana;}
+.boton-texto--grande {font-size: $font-size_grande; line-height: $line-height_mediana; width: 137px;
+}
+
+.boton-texto--mediano {font-size: $font-size_grande; line-height: $line-height_mediana;width: 121px;}
 .boton-texto--pequeno {font-size: $font-size_pequeña; line-height: $line-height_pequena;}
 
 

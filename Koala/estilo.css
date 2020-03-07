@@ -17,10 +17,6 @@
   height: 36px;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
 
-.marco-boton-dotted {
-  height: 29px;
-  width: 124px; }
-
 .boton-general {
   display: inline-flex;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
@@ -101,7 +97,8 @@
 .boton-texto {
   font-family: "Chakra Petch", sans-serif;
   text-decoration: none;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  height: 29px; }
 
 .boton-texto-azul-oscuro {
   color: #110038; }
@@ -114,11 +111,13 @@
 
 .boton-texto--grande {
   font-size: 16px;
-  line-height: 28px; }
+  line-height: 28px;
+  width: 137px; }
 
 .boton-texto--mediano {
   font-size: 16px;
-  line-height: 28px; }
+  line-height: 28px;
+  width: 121px; }
 
 .boton-texto--pequeno {
   font-size: 12px;
@@ -568,6 +567,12 @@ a:active {
 
 .boton-texto--ver-mas:active {
   color: #FFFFFF; }
+
+.boton-texto--grande:active {
+  border: 1px dotted #110038; }
+
+.boton-texto--mediano:active {
+  border: 1px dotted #110038; }
 
 /*Cajas*/
 .cajas-gif-interior:hover {

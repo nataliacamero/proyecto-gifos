@@ -9,9 +9,12 @@ a:active{
 //a:visited{
 //    color: $color-texto_botones-oscuro; 
 //}
-.marco-boton-dotted:active {
+
+
+.marco-boton-dotted:active{
     border: 1px dotted #110038; 
 }
+
 
 
 .boton:hover {
@@ -71,6 +74,14 @@ a:active{
 .boton-texto--ver-mas:active {
     color: $color-texto_botones-claro   
 } 
+
+.boton-texto--grande:active {
+    border: 1px dotted #110038; 
+}
+
+.boton-texto--mediano:active {
+    border: 1px dotted #110038; 
+}
 
 
 /*Cajas*/
