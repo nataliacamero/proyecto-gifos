@@ -136,8 +136,16 @@
   font-size: 12px;
   line-height: 24px; }
 
+.boton-texto-largo-buscar-resultados {
+  width: 98.5%;
+  line-height: 27px; }
+
 .boton-texto-margin-left {
   margin-left: 1.4%; }
+
+.boton-texto-margenes {
+  padding-left: 1%;
+  margin-left: 2px; }
 
 .boton-texto--ver-mas {
   font-size: 14px;
