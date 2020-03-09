@@ -28,6 +28,13 @@
 .boton-gris-claro {background: $color-boton-gris-claro; }
 
 
+.boton-tema-claro {
+    box-shadow: $box-shadow-boton-tema-claro;
+    border: $border-boton-tema-claro;
+    width: 150px;
+}
+
+
 .boton-general_margin14px {
     margin-bottom: 14px;
 }
@@ -47,11 +54,6 @@
     margin-top: 10px;
 }
 
-.boton-tema-claro {
-    box-shadow: $box-shadow-boton-tema-claro;
-    border: $border-boton-tema-claro;
-    width: 150px;
-}
 
 
 
@@ -70,6 +72,12 @@
 
 .imagen-boton {
     vertical-align: middle;
+}
+
+.flecha-abajo {
+    width: 30px;
+    height: 30px;
+   
 }
 
 
@@ -107,17 +115,18 @@
 .boton-texto-azul-oscuro {color: $color-texto_botones-oscuro;}
 .boton-texto-blanco {color: $color-texto_botones-claro;}
 .boton-texto--buscar { color:$color-texto_botones-tono-medio; }
-.boton-texto--grande {font-size: $font-size_grande; line-height: $line-height_mediana; width: 137px;
+.boton-texto--grande {font-size: $font-size_grande; line-height: $line-height_mediana; width: 137px; padding-left: 34px
+}
+.boton-texto--saylor {font-size: $font-size_grande; line-height: $line-height_mediana; width: 144px; padding-left: 12px;
 }
 
-.boton-texto--mediano {font-size: $font-size_grande; line-height: $line-height_mediana;width: 121px;}
-.boton-texto--pequeno {font-size: $font-size_pequeña; line-height: $line-height_pequena;}
+.boton-texto--mediano {font-size: $font-size_grande; line-height: $line-height_mediana;width: 121px; padding-left: 34px}
+.boton-texto--pequeno {font-size: $font-size_pequeña; line-height: $line-height_pequena; }
 
 
 .boton-texto-margin-left {
-    margin-left: 1.2%;
+    margin-left: 1.4%;
 }
-
 
 
 .boton-texto--ver-mas {
@@ -361,7 +370,7 @@
 }
 
 .caja-contenedor-cambio-tema {
-    width: 170px;
+    width: 167px;
     height: 102px;
     background: $color-background_cajas_clara;
     box-shadow: $box-shadow_claro;
