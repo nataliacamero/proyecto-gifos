@@ -134,8 +134,12 @@
 
 .boton-texto--ver-mas {
     font-size: $font-size_mediana; 
-    line-height: $line-height_grande;  
+    line-height: 27px;  
     color: $color-texto_botones-claro;
+    width: 66px;
+    height: 28px;
+    margin-top: 3px;
+    padding-left: 9px;
 }
 
 

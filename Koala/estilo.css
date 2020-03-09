@@ -149,8 +149,12 @@
 
 .boton-texto--ver-mas {
   font-size: 14px;
-  line-height: 32px;
-  color: #FFFFFF; }
+  line-height: 27px;
+  color: #FFFFFF;
+  width: 66px;
+  height: 28px;
+  margin-top: 3px;
+  padding-left: 9px; }
 
 /*----------------------------texto pagina---------------------------------*/
 .texto {
