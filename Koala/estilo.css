@@ -140,10 +140,45 @@
   width: 98.5%;
   line-height: 27px; }
 
-.boton-texto-144px {
+.boton-texto-144px-line-heigth {
+  line-height: 27px; }
+
+.boton-crear-guifos-cancelar {
   width: 102px;
-  line-height: 27px;
-  padding-left: 35px; }
+  padding-left: 34px; }
+
+.boton-crear-guifos-comenzar {
+  width: 102px;
+  padding-left: 34px; }
+
+.boton-chequeo-capturar {
+  width: 93px;
+  padding-left: 34px; }
+
+.boton-chequeo-listo {
+  width: 86px;
+  padding-left: 41px; }
+
+.boton-chequeo-repetirCaptura {
+  width: 121px;
+  padding-left: 5px; }
+
+.boton-chequeo-subir-guifo {
+  width: 105px;
+  padding-left: 23px; }
+
+.boton-exito-copiar-guifo {
+  width: 195px;
+  padding-left: 53px; }
+
+.boton-exito-descargar-guifo {
+  width: 178px;
+  padding-left: 68px; }
+
+.boton-exito-listo {
+  width: 90px;
+  height: 28px;
+  padding-left: 46px; }
 
 .boton-texto-margin-left {
   margin-left: 1.4%; }
