@@ -8,7 +8,7 @@
         @import url('https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
     </style>
     
-    <link rel="stylesheet" href="Koala/estilo-nigth.css" type="text/css">
+    <link rel="stylesheet" href="Koala/estilo.css" type="text/css">
     
     <title>ProyectoGifOS</title>
 </head>
@@ -26,25 +26,23 @@
 
                 <div class="div-botones--barra-navegacion flex-row">
                     <div class="boton-crear boton boton--grande flex-column center">
-                        <a href="./crear-guifo.html" class="texto-boton-crear boton-texto boton-texto__day boton-texto--grande flex-row" >Crear Guifos</a>
+                        <a href="./crear-guifo.html" class="texto-boton-crear boton-texto  boton-texto-azul-oscuro  boton-texto__day boton-texto--grande flex-row" >Crear Guifos</a>
                     </div>
                     
-                    <div class="flex-column center caja-contenedor-cambio-tema__margin">
+                    <div class="dropdown  center caja-contenedor-cambio-tema__margin">
 
-                        <div class="flex-row">
+                        <div id="divTema" class="flex-row">
                             <div class="boton-tema boton boton--mediano flex-column center">
-                                <div class=" flex-column center ">
-                                    <a href="#" class="boton-elegir boton-texto boton-texto--mediano boton-texto__day" >Elegir Tema</a>
-                                </div>
+                                <a href="#" class="boton-elegir  boton-texto-azul-oscuro   boton-texto boton-texto--mediano boton-texto__day" >Elegir Tema</a>
                             </div>
                             
                             <div class="boton-flecha boton boton--pequeno flex-column center">
-                                <a href="#" class="flecha-abajo marco-boton-dotted flex-column justify-center" ><img  class="imagen-boton" src="./assets/dropdown.svg" alt="BotonFlechaAbajo"></a>
+                                <a href="#" class=" tema    flecha-abajo marco-boton-dotted flex-column justify-center" ><img  class="tema      imagen-boton" src="./assets/dropdown.svg" alt="BotonFlechaAbajo"></a>
                             </div>
                         </div>
-
-                        <div class="caja-contenedor-cambio-tema flex-column center">
-                            <div class="boton-general boton--grande boton-blanco boton-tema-claro align-center">
+            
+                        <div id="myDropdown" class="dropdown-contenedor    caja-contenedor-cambio-tema  center">
+                            <div class="boton-saylor-day boton-general boton--grande boton-blanco boton-tema-claro align-center">
                                 <a class="boton-texto boton-texto-azul-oscuro boton-texto--saylor boton-texto-margin-left  marco-boton-dotted" href="#">Sailor Day</a>
                             </div>
                             <div class="boton-general boton--grande boton-blanco boton-tema-claro boton-general__margin-top align-center">
@@ -191,6 +189,7 @@
         </div>
     </section>
 
+<script src="./js/elegir-tema.js"> </script>
     
 </body>
 </html>

@@ -187,8 +187,27 @@ body {
             .div-botones--barra-navegacion {
                 width: 92.9%;;
                 justify-content: flex-end;   
-            }
-                
+            } 
+            
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                    text-align: center;
+                }
+
+                    .dropdown-contenedor {
+                        display: none;
+                        position: absolute;
+                        overflow: auto;
+                        z-index: 1;
+                    }
+
+                    .mostrar {display: block;}
+                    
+
+                    .boton-saylor-day {
+                        margin-top: 8px;
+                    }
              
             .texto-mis-gifos__margin-top {
                 margin-top: 8px;
