@@ -4,37 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <style>
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-contenedor {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-contenedor a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {background-color: #ddd;}
+
+        .mostrar {display: block;}
+
+
+
+
+</style>
+
+
+
 </head>
 <body>
-    <div id="div-resultados" class="contenedor-busqueda-blanco flex-row align-center">
-        <div class="buscar caja-contenedor-busqueda-blanco caja-contenedor-busqueda-blanco__margin">
-            <input type="text" name="" class="results" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" id="">
-        </div>
-        
-        <div class="boton_buscar boton--buscar flex-row align-center">
-            <div>
-                <img class="imagen-lupa" src="./assets/Combined Shape.svg" alt="imagen-de-lupa-boton-buscar">
+ 
+        <div class="dropdown">
+
+            <div id="div-resultados" class="contenedor-busqueda-blanco flex-row align-center">
+                <div class="buscar caja-contenedor-busqueda-blanco caja-contenedor-busqueda-blanco__margin">
+                    <input type="text"  class="resultados" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                </div>
+                
+                <div class="boton_buscar boton--buscar flex-row align-center">
+                    <div>
+                        <img class="imagen-lupa" src="./assets/Combined Shape.svg" alt="imagen-de-lupa-boton-buscar">
+                    </div>
+                    <div class="div-contenedor-boton-buscar marco-boton-dotted">
+                        <a class="boton-texto boton-texto--buscar " href="#">Buscar</a>
+                    </div>
+                </div>
+
             </div>
-            <div class="div-contenedor-boton-buscar marco-boton-dotted">
-                <a class="boton-texto boton-texto--buscar " href="#">Buscar</a>
+                
+            
+
+            <div id="myDropdown"  class="dropdown-contenedor     caja-buscar-resultados flex-column justify-evenly">
+                <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
+                    <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Resultado de búsqueda sugerido</a>
+                </div>
+                <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
+                    <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Un resultado similar de búsqueda</a>
+                </div>
+                <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
+                    <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Y otro más</a>
+                </div>
+            
             </div>
         </div>
 
-    </div>
+<script>
+    document.getElementById("div-resultados").addEventListener("click", myFunction);
     
-</div>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("mostrar");
+    }
+    
 
-<div class="caja-buscar-resultados flex-column justify-evenly">
-    <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Resultado de búsqueda sugerido</a>
-    </div>
-    <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Un resultado similar de búsqueda</a>
-    </div>
-    <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Y otro más</a>
-    </div>
-  
-</div>
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.resultados')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contenedor");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('mostrar')) {
+            openDropdown.classList.remove('mostrar');
+        }
+        }
+    }
+    }
+
+
+</script>
+   
 </body>
 </html>

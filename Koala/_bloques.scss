@@ -167,6 +167,22 @@ body {
         right: 8px;
     }
 
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .dropdown-contenedor {
+        display: none;
+        position: absolute;
+        overflow: auto;
+        z-index: 1;
+    }
+
+    .mostrar {display: block;}
     
 }
 /*-------------------------------------------------INDEX.HTML-----------------------------------------------------------*/
@@ -189,20 +205,7 @@ body {
                 justify-content: flex-end;   
             } 
             
-                .dropdown {
-                    position: relative;
-                    display: inline-block;
-                    text-align: center;
-                }
 
-                    .dropdown-contenedor {
-                        display: none;
-                        position: absolute;
-                        overflow: auto;
-                        z-index: 1;
-                    }
-
-                    .mostrar {display: block;}
                     
 
                     .boton-saylor-day {
