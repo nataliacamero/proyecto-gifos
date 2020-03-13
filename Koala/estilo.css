@@ -423,6 +423,22 @@
   width: 82.9%;
   background: #E6E6E6; }
 
+.contenedor-input {
+  width: 98%;
+  height: 42px;
+  border: none;
+  box-shadow: none;
+  margin: 2.6px 0px 0px 12px;
+  font-size: 16px;
+  font-family: "Chakra Petch", sans-serif; }
+
+.contenedor-input:focus {
+  outline: none;
+  outline-width: 0;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
 /*Comportamiento*/
 body {
   background-color: #fef4fd;
@@ -440,6 +456,8 @@ body {
     flex-direction: row; }
   body .flex-wrap {
     flex-wrap: wrap; }
+  body .flex-nowrap {
+    flex-wrap: nowrap; }
   body .center {
     justify-content: center;
     align-items: center; }
@@ -543,8 +561,25 @@ body {
     position: absolute;
     overflow: auto;
     z-index: 1; }
+  body .dropdown-contenedor a {
+    display: flex; }
   body .mostrar {
-    display: block; }
+    display: flex; }
+  body .dropdown-resultados {
+    position: relative;
+    display: inline-block;
+    text-align: start;
+    width: 100%; }
+  body .dropdown-resultados-contenedor {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 20000;
+    width: 100%; }
+  body .dropdown-resultados-contenedor a {
+    display: flex; }
+  body .mostrar-resultados {
+    display: flex; }
 
 /*-------------------------------------------------INDEX.HTML-----------------------------------------------------------*/
 .seccion-barra-navegacion {

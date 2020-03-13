@@ -41,7 +41,7 @@
                             </div>
                         </div>
             
-                        <div id="myDropdown" class="dropdown-contenedor    caja-contenedor-cambio-tema  center">
+                        <div id="myDropdown" class="dropdown-contenedor  flex-column caja-contenedor-cambio-tema  center">
                             <div class="boton-saylor-day boton-general boton--grande boton-blanco boton-tema-claro align-center">
                                 <a class="boton-texto boton-texto-azul-oscuro boton-texto--saylor boton-texto-margin-left  marco-boton-dotted" href="#">Sailor Day</a>
                             </div>
@@ -59,39 +59,44 @@
         </nav>
     </header>
 
-    <section class="section-buscar flex-column center" >
+    <section class="   section-buscar flex-column center" >
         <div class="caja-busqueda caja-contenedora-buscar flex-column center">
             <div class="pestaña pestaña--caja-buscar pestaña--caja-buscar__margin">
                 <h1 class="pestaña-texto pestaña--texto__margin">Buscar</h1>
             </div>
-            <div class="contenedor-busqueda-blanco flex-row align-center">
-                <div class="buscar caja-contenedor-busqueda-blanco caja-contenedor-busqueda-blanco__margin"></div>
-                
-                <div class="boton_buscar boton--buscar flex-row align-center">
-                    <div>
-                        <img class="imagen-lupa" src="./assets/Combined Shape.svg" alt="imagen-de-lupa-boton-buscar">
-                    </div>
-                    <div class="div-contenedor-boton-buscar marco-boton-dotted">
-                        <a class="boton-texto boton-texto--buscar " href="#">Buscar</a>
-                    </div>
-                </div>
-
-            </div>
             
-        </div>
-
-        <div class="caja-buscar-resultados flex-column justify-evenly">
-            <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Resultado de búsqueda sugerido</a>
+            <div class="dropdown-resultados" >
+                <div id="div-resultados" class="contenedor-busqueda-blanco flex-row align-center">
+                    <div class="buscar caja-contenedor-busqueda-blanco caja-contenedor-busqueda-blanco__margin">
+                        <input type="text"  class="resultados contenedor-input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    </div>
+                    
+                    <div class="boton_buscar boton--buscar flex-row flex-nowrap align-center">
+                        <div>
+                            <img class="imagen-lupa" src="./assets/Combined Shape.svg" alt="imagen-de-lupa-boton-buscar">
+                        </div>
+                        <div class="div-contenedor-boton-buscar marco-boton-dotted">
+                            <a class="boton-texto boton-texto--buscar " href="#">Buscar</a>
+                        </div>
+                    </div>
+    
+                </div>
+                    
+                
+    
+                <div id="myDropdown-resultados"  class="dropdown-resultados-contenedor     caja-buscar-resultados flex-column justify-evenly">
+                    <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
+                        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Resultado de búsqueda sugerido</a>
+                    </div>
+                    <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
+                        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Un resultado similar de búsqueda</a>
+                    </div>
+                    <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
+                        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Y otro más</a>
+                    </div>
+                
+                </div>
             </div>
-            <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Un resultado similar de búsqueda</a>
-            </div>
-            <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Y otro más</a>
-            </div>
-          
-        </div>
     </section>
 
     <section class="section-sugerimos flex-column align-center">
@@ -190,6 +195,7 @@
     </section>
 
 <script src="./js/elegir-tema.js"> </script>
+<script src="./js/resultados-sugeridos.js"> </script>
 
 
     

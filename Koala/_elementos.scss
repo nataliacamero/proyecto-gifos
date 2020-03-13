@@ -404,3 +404,21 @@
     width: $ancho-caja-contenedora-buscar-resultados;
     background: $color-background_cajas_clara;
 }
+
+.contenedor-input {
+    width: 98%;
+    height: 42px;
+    border: none;
+    box-shadow: none;
+    margin: 2.6px 0px 0px 12px;
+    font-size: $font-size_grande;
+    font-family: $font-family_principal;
+}
+
+.contenedor-input:focus {
+    outline:none ;
+    outline-width: 0; 
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}

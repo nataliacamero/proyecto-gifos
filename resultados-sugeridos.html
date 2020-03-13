@@ -9,12 +9,12 @@
     <style>
 
 
-        .dropdown {
+        .dropdown-resultados {
             position: relative;
             display: inline-block;
         }
 
-        .dropdown-contenedor {
+        .dropdown-resultados-contenedor {
             display: none;
             position: absolute;
             background-color: #f1f1f1;
@@ -24,16 +24,16 @@
             z-index: 1;
         }
 
-        .dropdown-contenedor a {
+        .dropdown-resultados-contenedor a {
             color: black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
 
-        .dropdown a:hover {background-color: #ddd;}
+        .dropdown-resultados a:hover {background-color: #ddd;}
 
-        .mostrar {display: block;}
+        .mostrar-resultados {display: block;}
 
 
 
@@ -45,7 +45,7 @@
 </head>
 <body>
  
-        <div class="dropdown">
+        <div class="dropdown-resultados">
 
             <div id="div-resultados" class="contenedor-busqueda-blanco flex-row align-center">
                 <div class="buscar caja-contenedor-busqueda-blanco caja-contenedor-busqueda-blanco__margin">
@@ -65,7 +65,7 @@
                 
             
 
-            <div id="myDropdown"  class="dropdown-contenedor     caja-buscar-resultados flex-column justify-evenly">
+            <div id="myDropdown-resultados"  class="dropdown-resultados-contenedor     caja-buscar-resultados flex-column justify-evenly">
                 <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
                     <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Resultado de búsqueda sugerido</a>
                 </div>
@@ -83,19 +83,19 @@
     document.getElementById("div-resultados").addEventListener("click", myFunction);
     
     function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("mostrar");
+        document.getElementById("myDropdown-resultados").classList.toggle("mostrar-resultados");
     }
     
 
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
     if (!event.target.matches('.resultados')) {
-        var dropdowns = document.getElementsByClassName("dropdown-contenedor");
+        var dropdowns = document.getElementsByClassName("dropdown-resultados-contenedor");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('mostrar')) {
-            openDropdown.classList.remove('mostrar');
+        if (openDropdown.classList.contains('mostrar-resultados')) {
+            openDropdown.classList.remove('mostrar-resultados');
         }
         }
     }
