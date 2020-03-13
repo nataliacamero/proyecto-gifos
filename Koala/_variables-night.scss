@@ -1,0 +1,143 @@
+/*colores*/
+$color-backgroud_light: #141638;
+$color-pestaña_ligth:  linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+$color-boton_ligth: #EE3EFE ;
+$color-boton_rosado: #EE3EFE;
+$color-boton_blanco: #FFFFFF;
+$color-boton_rojo: #FF6161;
+$color-boton-gris-claro: #F0E5EE;
+
+$color-caja_busqueda: #FFFFFF;
+$color-background_caja_titulo: #FFFFFF;
+$color-background_caja-contenedor-busqueda-blanco: #FFFFFF;
+$color-background_cajas_oscura: #808080;
+$color-background_cajas_clara: #B4B4B4 ;
+$color-background_cajas_blanca:#FFFFFF;
+$color-backgroud_boton-buscar-resultados:#CCCCCC; 
+
+$color-background_boton_ver-mas: #2E32FB;
+$color-caja-gifs-sugeridos: rgba(230, 230, 230, 0) ;
+$color-texto-day:#110038;
+$color-texto_botones-oscuro: #FFFFFF;
+$color-texto_botones-claro: #110038;
+$color-texto_botones-tono-medio: #8F8F8F;
+$color-texto_pestañas: #FFFFFF;
+$box-shadow_oscuro: 0 1px 0 0 #110038;
+$box-shadow_claro: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow_claro_inset-1:  inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow_caja_titulo:inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+$box-shadow-caja-contenedor-busqueda-blanco:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow_boton-general:inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow_boton_ver-mas: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow-boton-buscar: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow-grabacion: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow-boton-tema-claro:  inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow-boton-tema-gris: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+
+
+
+/*medidas*/
+
+/*------------------Pestañas-------------------*/
+$alto-pestaña_top: 23px; // 10.7%;
+$alto-pestañas: 24px; //1.5%;
+
+$ancho-pestaña_principal: 100%; //1438px;
+$ancho-pestaña-caja-buscar: 99.5%; //1200px;
+$ancho-pestañas_caja-gifs-sugeridos: 97%;// 280px; 
+$pestaña-crear-guifos-chequeo: 98.8%;
+
+
+/*-----------------Cajas-------------------------------------*/
+$alto-caja_contenedora_buscar: 99px; // 6.0%;
+$alto-caja-contenedor-busqueda-blanco: 48px; // 2.9%;
+
+$alto-caja-contenedora-buscar-resultados: 160px;
+$ancho-caja-contenedora-buscar-resultados: 82.9%;
+
+
+
+
+$alto-caja_hoy-sugerimos:32px; // 1.9%;
+$alto-caja-gifs-sugeridos: 313px;
+
+$ancho-caja-gifs-resultados:24.4%;// 294px
+$alto-caja-gifs-resultados: 304px;// 18.4%;
+
+$ancho-caja-gifs-interior:96.5%;// 294px
+$alto-caja-gifs-interior: 279px;// 18.4%;
+
+$ancho-caja-crear-gifos-1:  47.5%;//684px;
+$alto-caja-crear-gifos-1: 386px;
+
+$ancho-caja-crear-guifos-inicio-texto:  75.73%;//518px;
+$alto-caja-crear-guifos-inicio-texto: 190px;
+
+$ancho-caja-botones-crear-guifos-inicio:  100%;//518px;
+$alto-caja-botones-crear-guifos-inicio: 79px;
+
+$ancho-caja-crear-guifos-chequeo: 59.8%;
+$alto-caja-crear-guifos-chequeo: 548px;
+
+$ancho-caja-contenedor-grabacion: 97.4%; // 838px;
+$alto-caja-contenedor-grabacion: 440px;
+
+$ancho-caja-exito: 721px;
+$alto-caja-exito: 391px;
+
+
+$ancho-caja_contenedora_buscar: 82.9%; //1200px;
+$ancho-caja-contenedor-busqueda-blanco: 88%;
+$ancho-caja_titulo: 82.9%; //1200px;
+$ancho-contenedorGifs: 82.9%; //1200px;
+$ancho-caja-gifs-sugeridos:25%; //288px;
+
+
+/*------------------------------------------------------------------*/
+
+$alto-logo: 114px; //3.9%;
+$ancho-logo: 102.6px; //102.6px;
+
+$ancho-imagenGif: 19.4%;// 280px;
+
+/*-----------------------Botones--------------------*/
+$alto-boton_crearguifos: 36px; //2.2%
+$alto-botones-general: 36px;
+$alto-boton_buscar: 36px; // 2.2%
+
+$ancho-boton_extra-large:256px;
+$ancho-boton_grande: 144px; 
+$ancho-boton_mediano: 131px;
+$ancho-boton_pequeño: 36px; 
+$ancho-boton_buscar:  8.5%;//102px;
+$ancho-boton_ver-mas: 81px; //;
+$alto-boton_ver-mas: 34px;
+
+$ancho-boton-largo-buscar-resultados: 88%;
+
+/*--------------------------Cajas-----------------------------------*/
+
+
+
+
+/*fuentes*/
+$font-family_principal: 'Chakra Petch', sans-serif;
+$font-family_titulos: 'Chakra Petch', sans-serif;
+$font-size_grande: 16px;
+$font-size_mediana: 14px;
+$font-size_pequeña: 12px;
+
+/*Line-height*/
+$line-height_grande: 16px*2;
+$line-height_mediana: 14px*2;
+$line-height_pequena: 12px*2;
+
+
+/*Bordes*/
+$border-caja_titulo:1px solid #E6BBE2;
+$border-caja-gris-claro: 1px solid #808080;
+$border-caja-blanca-grabacion: 1px solid #979797;
+$border-boton-general: 1px solid #110038;
+$border-boton-tema-claro: 1px solid #CCA6C9;
+$border-boton-tema-gris: 1px solid #808080;
+

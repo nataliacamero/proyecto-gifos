@@ -4,7 +4,7 @@
 
 
 a:active{
-    color: $color-texto_botones-oscuro; 
+    color: $color-texto_botones-claro; 
 }
 //a:visited{
 //    color: $color-texto_botones-oscuro; 
@@ -26,16 +26,16 @@ a:active{
 }
 
 .boton-rosado:hover {
-    background: #E6BBE2; 
+    background: #CE36DB; 
 }
 
 .boton-rosado:active{
     border: 1px solid #110038;
 }
 
-.boton-blanco:hover {
+/*.boton-blanco:hover {
     background: #F0E5EE;
-}
+}*/
 
 .boton-blanco:active {
     border: 1px solid #110038;
@@ -54,9 +54,9 @@ a:active{
 }
 
 .boton--buscar:active {
-    background: #E6BBE2; 
+    background: #CE36DB ; 
     border: 1px solid #110038;  
-    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .boton-texto--buscar:hover {
@@ -68,7 +68,7 @@ a:active{
 }
 
 .boton--ver-mas:hover  {
-    background: #3A72DB;
+    background: #2629CC ;
 }
 
 .boton-texto--ver-mas:active {
@@ -82,6 +82,16 @@ a:active{
 .boton-texto--mediano:active {
     border: 1px dotted #110038; 
 }
+
+.texto-mis-guifos:hover {
+    border: 1px dotted #110038; 
+    line-height: 33px;
+}
+
+.texto-mis-guifos:active {
+    color: #dbccdf;
+}
+
 
 
 /*Cajas*/

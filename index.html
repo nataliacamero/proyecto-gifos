@@ -37,23 +37,25 @@
                             </div>
                             
                             <div class="boton-flecha boton boton--pequeno flex-column center">
-                                <a href="#" class=" tema    flecha-abajo marco-boton-dotted flex-column justify-center" ><img  class="tema      imagen-boton" src="./assets/dropdown.svg" alt="BotonFlechaAbajo"></a>
+                                <a href="#" class="tema flecha-abajo marco-boton-dotted flex-column justify-center" >
+                                    <img  class="tema imagen-boton" src="./assets/dropdown.svg" alt="BotonFlechaAbajo">
+                                </a>
                             </div>
                         </div>
             
                         <div id="myDropdown" class="dropdown-contenedor  flex-column caja-contenedor-cambio-tema  center">
                             <div class="boton-saylor-day boton-general boton--grande boton-blanco boton-tema-claro align-center">
-                                <a class="boton-texto boton-texto-azul-oscuro boton-texto--saylor boton-texto-margin-left  marco-boton-dotted" href="#">Sailor Day</a>
+                                <a class="boton-texto boton-texto-blanco boton-texto--saylor boton-texto-margin-left  marco-boton-dotted" href="#">Sailor Day</a>
                             </div>
                             <div class="boton-general boton--grande boton-blanco boton-tema-claro boton-general__margin-top align-center">
-                                <a class="boton-texto boton-texto-azul-oscuro boton-texto--saylor boton-texto-margin-left  marco-boton-dotted" href="#">Sailor Night</a>
+                                <a class="boton-texto boton-texto-blanco boton-texto--saylor boton-texto-margin-left  marco-boton-dotted" href="#">Sailor Night</a>
                             </div>
                         </div>
                     </div>
 
                    
 
-                    <a class="texto texto-mis-guifos-navegacion flex-row" href="./crear-guifo.html"><p class="texto-mis-gifos__margin-top">Mis Guifos</p></a>
+                    <a class="texto texto-mis-guifos-navegacion flex-row" href="./crear-guifo.html"><p class="texto-mis-guifos">Mis Guifos</p></a>
                 </div>
             </div>
         </nav>
@@ -67,7 +69,7 @@
             
             <div class="dropdown-resultados" >
                 <div id="div-resultados" class="contenedor-busqueda-blanco flex-row align-center">
-                    <div class="buscar caja-contenedor-busqueda-blanco caja-contenedor-busqueda-blanco__margin">
+                    <div class="resultados buscar caja-contenedor-busqueda-blanco caja-contenedor-busqueda-blanco__margin">
                         <input type="text"  class="resultados contenedor-input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
                     </div>
                     
@@ -85,14 +87,14 @@
                 
     
                 <div id="myDropdown-resultados"  class="dropdown-resultados-contenedor     caja-buscar-resultados flex-column justify-evenly">
-                    <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Resultado de búsqueda sugerido</a>
+                    <div class=" boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
+                        <a class=" boton-texto boton-texto-blanco boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Resultado de búsqueda sugerido</a>
                     </div>
                     <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Un resultado similar de búsqueda</a>
+                        <a class="boton-texto boton-texto-blanco boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Un resultado similar de búsqueda</a>
                     </div>
                     <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                        <a class="boton-texto boton-texto-azul-oscuro boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Y otro más</a>
+                        <a class="boton-texto boton-texto-blanco boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Y otro más</a>
                     </div>
                 
                 </div>
@@ -194,10 +196,34 @@
         </div>
     </section>
 
-<script src="./js/elegir-tema.js"> </script>
-<script src="./js/resultados-sugeridos.js"> </script>
+
+<script src="./js/funcionalidad-dropDown.js"> </script>
+<script>
+
+    let anclaDay = document.getElementsByTagName("a")[4].onclick = function() {cambiarTemaDay()};
+    console.log(anclaDay);
+
+    let anclaNight = document.getElementsByTagName("a")[5].onclick = function() {cambiarTemaNight()};
+    console.log(anclaNight);
+
+
+    function cambiarTemaDay(){
+        let link = document.getElementsByTagName("link")[0].setAttribute("href", "Koala/sailor-day.css");
+    }
+
+    function cambiarTemaNight(){
+        let link = document.getElementsByTagName("link")[0].setAttribute("href", "Koala/sailor-night.css");
+    }
+
+
+  
+</script>
 
 
     
+
+
+get
+
 </body>
 </html>

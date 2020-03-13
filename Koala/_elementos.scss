@@ -5,7 +5,7 @@
     background: $color-boton_ligth;
     height: $alto-boton_crearguifos;
     //border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
 
@@ -146,7 +146,7 @@
 .boton-texto--ver-mas {
     font-size: $font-size_mediana; 
     line-height: 27px;  
-    color: $color-texto_botones-claro;
+    color: $color-texto_botones-oscuro;
     width: 66px;
     height: 28px;
     margin-top: 3px;
@@ -164,6 +164,20 @@
     
 }
 
+
+.texto-mis-guifos {
+    width: 95px;
+    height: 32px;
+    margin: 0px;
+    line-height: 36px;
+    
+}
+
+.texto-mis-guifos::first-letter{
+
+    text-decoration: underline;
+}
+
 .texto-bold {
     font-weight: 600;
 }
@@ -178,6 +192,7 @@
 .texto-mis-guifos-navegacion {
     text-decoration: none;
     margin: 0px 0px 0px 15px;
+    width: 97px;
 }
 
 .texto--h2-caja-crear-guifos {
