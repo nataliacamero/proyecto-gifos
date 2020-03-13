@@ -6,9 +6,11 @@ console.log(anclaNight);
 
 
 function cambiarTemaDay(){
-    let link = document.getElementsByTagName("link")[0].setAttribute("href", "Koala/estilo-day.css");
+    let link = document.getElementsByTagName("link")[0].setAttribute("href", "estilos/sailor-day.css");
+    return sailor-day;
 }
 
 function cambiarTemaNight(){
-    let link = document.getElementsByTagName("link")[0].setAttribute("href", "Koala/estilo-night.css");
+    let link = document.getElementsByTagName("link")[0].setAttribute("href", "estilos/sailor-night.css");
+    return sailor-night;
 }
