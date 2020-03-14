@@ -22,8 +22,10 @@ function cambiarTema(theme){
 function setTema() {
     if (!sessionStorage.getItem("tema")) {
         sessionStorage.setItem("tema", "estilos/sailor-day.css");
+       
     }
     document.getElementsByTagName("link")[0].setAttribute("href", sessionStorage.getItem("tema"));
+    
 }
 setTema();
 
