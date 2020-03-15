@@ -55,7 +55,9 @@
 }
 
 
-
+.boton-subir-guifo__marginleft {
+    margin-left: 3%;
+}
 
 .boton-tema-texto__margin {
     margin-left: 16px;
@@ -74,10 +76,20 @@
     vertical-align: middle;
 }
 
-.flecha-abajo {
+.flecha {
     width: 30px;
     height: 30px;
    
+}
+
+.flecha-foward {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #110038;
+}
+
+.flecha-foward__margin-right {
+    margin-right: 5px;
 }
 
 
@@ -216,8 +228,14 @@
     font-size: $font-size_mediana;
     margin: 0px 0px 0px 0px;
 }
-
-
+.texto-p-tiempo-restante{
+    font-family: $font-family_principal;
+    font-size:$font-size_pequeña;
+    color: #11003869;
+}
+.span-años {
+    text-decoration: line-through ;
+}
 
 .pestaña {
     background: $color-pestaña_ligth;
@@ -244,7 +262,7 @@
 }
 .pestaña-texto--top {font-size: $font-size_pequeña;}
 .pestaña-texto__day {color:$color-texto-day;}
-.pestaña--texto__margin {margin: 2px 0px 0px 4px}
+.pestaña--texto__margin {margin: 0px 0px 0px 4px}
 
     
 
@@ -322,7 +340,7 @@
 }
 
 .caja-crear-guifos-chequeo___margin {
-    margin: 5% 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .caja-contenedor-grabacion {
@@ -343,13 +361,20 @@
     background: $color-background_cajas_blanca;
     box-shadow: $box-shadow-grabacion;
     border: $border-caja-blanca-grabacion;
+    margin-right: 6%;
     
 }
 .caja-contenedora-cargando {
-    width: 328px;
+    width: 228px;
     height: 27px;
     background: #B4B4B4;
     box-shadow:  inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+
+}
+
+.caja-contenedora-cargando-cancelar {
+    width: 324px;
+    height: 27px;
 
 }
 
@@ -359,14 +384,20 @@
     height: 20px;
     background: #999999;
     border: 1px solid #cecccc;
+    border-bottom: none;
+    border-top: none;
 }
+
 
 .rectangulo-activo {
     width: 12px;
     height: 20px;
     background: #F7C9F3;
     border: 1px solid #cecccc;
+    border-bottom: none;
+    border-top: none;
 }
+
 
 
 .caja-exito {

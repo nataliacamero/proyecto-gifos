@@ -42,6 +42,10 @@ body {
         justify-content: flex-start;
     }
 
+    .justify-end {
+        justify-content: flex-end;
+    }
+
     .justify-evenly {
         justify-content: space-evenly;
     }
@@ -105,10 +109,21 @@ body {
 }
 
 .controles-grabacion {
-    width: 100%;
+    width: 100%-2.55%;
     justify-content: flex-end;
     height: 67px;
-}
+    
+}   
+
+    .div-izquierdo-controles {
+        width: 50% ;
+        height: 67px;
+    }
+
+    .div-derecho-controles {
+        width: 50% ;
+        height: 67px;
+    }
 
 .div-titulo-exito {
     width: 88%;

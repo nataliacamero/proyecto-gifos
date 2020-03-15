@@ -66,6 +66,9 @@
 .boton-general__margin-top {
   margin-top: 10px; }
 
+.boton-subir-guifo__marginleft {
+  margin-left: 3%; }
+
 .boton-tema-texto__margin {
   margin-left: 16px; }
 
@@ -79,9 +82,17 @@
 .imagen-boton {
   vertical-align: middle; }
 
-.flecha-abajo {
+.flecha {
   width: 30px;
   height: 30px; }
+
+.flecha-foward {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #110038; }
+
+.flecha-foward__margin-right {
+  margin-right: 5px; }
 
 .boton--ver-mas {
   width: 81px;
@@ -244,6 +255,14 @@
   font-size: 14px;
   margin: 0px 0px 0px 0px; }
 
+.texto-p-tiempo-restante {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 12px;
+  color: #11003869; }
+
+.span-años {
+  text-decoration: line-through; }
+
 .pestaña {
   background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
   height: 24px; }
@@ -284,7 +303,7 @@
   color: #110038; }
 
 .pestaña--texto__margin {
-  margin: 2px 0px 0px 4px; }
+  margin: 0px 0px 0px 4px; }
 
 .caja-contenedora-buscar {
   width: 82.9%;
@@ -355,10 +374,10 @@
   box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
 
 .caja-crear-guifos-chequeo___margin {
-  margin: 5% 0px 0px 0px; }
+  margin: 0px 0px 0px 0px; }
 
 .caja-contenedor-grabacion {
-  width: 97.4%;
+  width: 97%;
   height: 440px;
   border: 1px solid #979797;
   box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
@@ -372,25 +391,34 @@
   height: 36px;
   background: #FFFFFF;
   box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
-  border: 1px solid #979797; }
+  border: 1px solid #979797;
+  margin-right: 6%; }
 
 .caja-contenedora-cargando {
-  width: 328px;
+  width: 228px;
   height: 27px;
   background: #B4B4B4;
   box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000; }
+
+.caja-contenedora-cargando-cancelar {
+  width: 324px;
+  height: 27px; }
 
 .rectangulo-inactivo {
   width: 12px;
   height: 20px;
   background: #999999;
-  border: 1px solid #cecccc; }
+  border: 1px solid #cecccc;
+  border-bottom: none;
+  border-top: none; }
 
 .rectangulo-activo {
   width: 12px;
   height: 20px;
   background: #F7C9F3;
-  border: 1px solid #cecccc; }
+  border: 1px solid #cecccc;
+  border-bottom: none;
+  border-top: none; }
 
 .caja-exito {
   width: 721px;
@@ -477,6 +505,8 @@ body {
     justify-content: center; }
   body .justify-start {
     justify-content: flex-start; }
+  body .justify-end {
+    justify-content: flex-end; }
   body .justify-evenly {
     justify-content: space-evenly; }
   body .div-barra-navegacion--crear-guifo--html {
@@ -518,8 +548,14 @@ body {
     position: relative;
     height: 440px; }
   body .controles-grabacion {
-    width: 100%;
+    width: 97.45%;
     justify-content: flex-end;
+    height: 67px; }
+  body .div-izquierdo-controles {
+    width: 50%;
+    height: 67px; }
+  body .div-derecho-controles {
+    width: 50%;
     height: 67px; }
   body .div-titulo-exito {
     width: 88%;
