@@ -224,7 +224,7 @@
   text-decoration: underline; }
 
 .texto-bold {
-  font-weight: 600; }
+  font-weight: bold; }
 
 .texto--caja-titulo {
   font-size: 14px;
