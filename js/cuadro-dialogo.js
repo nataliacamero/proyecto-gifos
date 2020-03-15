@@ -1,11 +1,12 @@
-document.getElementsByTagName("a")[1].onclick = function() {cuadroDialogo("comenzar")};
-console.log();
-console.log();
+console.log(document.getElementsByTagName("a"));
+document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("comenzar")};
+
 
 function cuadroDialogo(boton) {
     console.log(boton);
     if (boton === "comenzar") {
         console.log("Aqui entro en comenzar");
+        
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
             <div class="caja-crear-guifos-chequeo caja-crear-guifos-chequeo___margin  flex-column align-center">
                 <div class="div-pestaña-crear-guifos-2">
@@ -29,7 +30,9 @@ function cuadroDialogo(boton) {
                     </div>
                 </div>
             </div>  `;
-        document.getElementsByTagName("a")[1].onclick = function() {cuadroDialogo("capturar")};
+        console.log("Estas son las a, en btn comenzar");
+        console.log(document.getElementsByTagName("a"));
+        document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("capturar")};
    
     } else if (boton === "capturar") {
         console.log("Aqui entro en capturar"+ document.getElementsByTagName("a"));
@@ -64,7 +67,9 @@ function cuadroDialogo(boton) {
                     </div>
                 </div>
             </div>`;
-        document.getElementsByTagName("a")[1].onclick = function() {cuadroDialogo("listo")};
+        console.log("Estas son las a, en btn capturar");
+        console.log(document.getElementsByTagName("a"));
+        document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("listo")};
 
     } else if (boton === "listo"){
         console.log("click en boton listo");
@@ -124,7 +129,9 @@ function cuadroDialogo(boton) {
                     </div>
                 </div>
             </div>`;
-        document.getElementsByTagName("a")[2].onclick = function() {cuadroDialogo("subir")};
+        console.log("Estas son las a, en btn listo");
+        console.log(document.getElementsByTagName("a"));
+        document.getElementsByTagName("a")[4].onclick = function() {cuadroDialogo("subir")};
         console.log("estoy en final Subirguifos");
     } else if (boton === "subir") {
         console.log(boton);
@@ -170,7 +177,7 @@ function cuadroDialogo(boton) {
                 </div>
 
                 <div class="controles-grabacion flex-row align-center">
-                    <div class="boton-general boton--grande boton-blanco center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-chequeo-cancelar marco-boton-dotted" href="./cuadro-dialogo.html">Cancelar</a></div> 
+                    <div class="boton-general boton--grande boton-blanco center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-chequeo-cancelar marco-boton-dotted" href="./crear-guifo.html">Cancelar</a></div> 
                 </div>
             </div>`;
     }  
