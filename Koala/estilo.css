@@ -338,13 +338,40 @@
   margin-left: 0.8%; }
 
 .caja-gifs-resultados {
-  width: 24.4%;
-  height: 304px;
+  width: 24.33%;
+  height: 304px; }
+
+.caja-gifs-resultados:hover {
   background: rgba(230, 230, 230, 0);
   box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
 
 .cajas-gifs-resultados__margin {
   margin: 1% 0px 0px 0.6%; }
+
+.imagen-resutados {
+  width: 97.7%;
+  height: 298px;
+  margin: 2px; }
+
+.marco-imagen {
+  width: 97%;
+  height: 296px;
+  margin: 2px; }
+
+.marco-imagen:hover {
+  border: 1px dotted #110038; }
+
+#etiqueta {
+  display: none;
+  width: 97%;
+  height: 24px;
+  background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  opacity: 84%;
+  margin: 2px 2px 2px 2.5px;
+  top: 273px; }
+
+.caja-gifs-resultados:hover #etiqueta {
+  display: block; }
 
 .cajas-gif-interior {
   width: 96.5%;
@@ -479,7 +506,7 @@
 
 /*Comportamiento*/
 body {
-  background-color: #fef4fd;
+  background-color: #cfbfcf;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -686,6 +713,22 @@ body {
 .div-resultados-tendencias {
   margin-top: 17px;
   width: 83.4%; }
+
+.divtendencias {
+  position: relative;
+  z-index: 1; }
+
+.imagen-resutados {
+  position: absolute;
+  z-index: 2; }
+
+.marco-imagen {
+  position: absolute;
+  z-index: 3; }
+
+.etiqueta-imagen {
+  position: absolute;
+  z-index: 5; }
 
 /*Estados boton rosado*/
 a:active {

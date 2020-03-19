@@ -36,7 +36,9 @@
             return repuesta.json();
         }).then(function(json){
             console.log(json);
-        });
+        }).catch(function (error) {
+            console.error(error.message);
+        })
     
 
     </script>

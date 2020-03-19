@@ -301,10 +301,49 @@
 .caja-gifs-resultados {
     width: $ancho-caja-gifs-resultados; 
     height: $alto-caja-gifs-resultados;
+
+}
+
+.caja-gifs-resultados:hover {
     background: $color-caja-gifs-sugeridos;
     box-shadow: $box-shadow_claro;
 }
+
+
 .cajas-gifs-resultados__margin {margin: 1% 0px 0px 0.6%}
+
+.imagen-resutados {
+    width: 97.7%; 
+    height: 298px;
+    margin: 2px;
+}
+
+.marco-imagen {
+    width: 97%; 
+    height: 296px;
+    margin: 2px;
+}
+
+.marco-imagen:hover {
+    border: 1px dotted #110038;
+}
+
+#etiqueta {
+    display: none;
+    width: 97%; 
+    height: 24px;
+    background: $color-pestaña_ligth;
+    opacity: 84%;
+    margin: 2px 2px 2px 2.5px;
+    top: 273px;
+   
+}
+
+
+.caja-gifs-resultados:hover #etiqueta {
+    display: block;
+}
+
 
 .cajas-gif-interior {
     width: $ancho-caja-gifs-interior; 

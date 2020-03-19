@@ -20,24 +20,6 @@
 </head>
 
 <body>
-
-    <!--         <div class="container">
-            <header>
-
-                <form action="">
-                    <input type="text" placeholder="search">
-                    <button type="submit">search</button>
-                </form>
-
-            </header>
-
-
-            <div class="resultados results">
-                gif images here
-            </div>
-
-        </div> -->
-
     <header>
         <nav class="seccion-barra-navegacion flex-column center">
             <div class="pestaña pestaña--top">
@@ -109,7 +91,7 @@
                     <div
                         class="resultados buscar caja-contenedor-busqueda-blanco caja-contenedor-busqueda-blanco__margin">
                         <input type="text" class="resultados contenedor-input"
-                            placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                            placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" value="feel pacefull">
                     </div>
 
                     <div class="boton_buscar boton--buscar flex-row flex-nowrap align-center">
@@ -243,68 +225,7 @@
     <script src="./js/dropDown-index.js"> </script>
 
 
-    <script>
 
-
-        const btnBuscar = document.getElementsByTagName("a")[7];
-        console.log(btnBuscar);
-        const input = document.getElementsByTagName("input")[0];
-        const divResultados = document.getElementsByTagName("div")[47];
-
-
-
-        btnBuscar.addEventListener('click', event => {
-            event.preventDefault();
-            const q = input.value;
-            search(q);
-
-
-        })
-
-        function search(q) {
-
-            const apikey = 'dsuYjjUPEjD2uXAjeNzlsGO0OFmUrqQ5';
-            const ruta = `https://api.giphy.com/v1/gifs/search?api_key=${apikey}&q=${q}`;
-
-
-            fetch(ruta).then(respuesta => {
-                return respuesta.json();
-            })
-                .then(json => {
-                    console.log(json.data[0].images.fixed_width.url);
-
-                    let resultadosHTML = '';
-
-
-                    json.data.forEach(objeto => {
-                        console.log(objeto);
-
-                        const url = objeto.images.fixed_width.url;
-                        /*                         const width = objeto.images.fixed_width.width;
-                                                const height = objeto.images.fixed_width.height; */
-                        const title = objeto.title
-                        resultadosHTML += `
-                        <div class="divtendencias caja-gifs-resultados cajas-gifs-resultados__margin">
-                            <img
-                                src="${url}" 
-                                alt="${title}"
-                            >
-                        </div>
-              
-              
-                    `;
-
-                    });
-
-                    divResultados.innerHTML = resultadosHTML;
-
-
-                }).catch(error => {
-                    console.error(error.message);
-                });
-        }
-
-    </script>
 </body>
 
 </html>

@@ -313,3 +313,23 @@ body {
             margin-top: 17px;
             width: 83.4%;
         }
+
+        .divtendencias {
+            position: relative;
+            z-index: 1;
+        }
+
+        .imagen-resutados {
+            position: absolute;
+            z-index: 2;
+        }
+
+        .marco-imagen {
+            position: absolute;
+            z-index: 3;
+        }
+
+        .etiqueta-imagen {
+            position: absolute;
+            z-index: 5;
+        }
