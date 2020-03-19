@@ -30,11 +30,11 @@ function search(q) {
     .then(json => { 
         console.log(json.data[0].images.fixed_width.url);
         
-        let resultadosHTML = ''; 
-        
+        // let resultadosHTML = ''; 
+/*         
         
         json.data.forEach(objeto => {
-            console.log(objeto);
+            // console.log(objeto);
 
             const url = objeto.images.fixed_width.url;
             const width = objeto.images.fixed_width.width;
@@ -50,7 +50,7 @@ function search(q) {
                 
         });
 
-        divResultados.innerHTML = resultadosHTML;
+        divResultados.innerHTML = resultadosHTML; */
 
 
     }).catch(error => {

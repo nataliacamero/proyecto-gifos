@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="Koala/estilo.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <section class="section-tendencias flex-column center">
+        <div class="caja-tendencias caja-titulo">
+            <h1 class="texto texto--caja-titulo texto--caja-titulo__margin">Tendencias</h1>
+        </div>
+
+
+
+        <div class="div-resultados-tendencias flex-row flex-wrap justify-center ">
+
+        </div>
+    </section>
+
+
+    <script>
+
+        const q = 'cats'
+        const apikey = 'dsuYjjUPEjD2uXAjeNzlsGO0OFmUrqQ5';
+        const ruta = `https://api.giphy.com/v1/gifs/search?api_key=${apikey}&q=${q}`;
+
+        fetch(ruta).then(function (repuesta) {
+            return repuesta.json();
+        }).then(function(json){
+            console.log(json);
+        });
+    
+
+    </script>
+</body>
+</html>
