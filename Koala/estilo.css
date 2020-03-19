@@ -337,6 +337,10 @@
 .cajas-gifs-sugeridos__margin {
   margin-left: 0.8%; }
 
+.imagen-sugeridos {
+  width: 100%;
+  height: 279.5px; }
+
 .caja-gifs-resultados {
   width: 24.33%;
   height: 304px; }
@@ -374,11 +378,11 @@
   display: block; }
 
 .cajas-gif-interior {
-  width: 96.5%;
-  height: 279px; }
+  width: 97%;
+  height: 280px; }
 
 .cajas-gif-interior__margin {
-  margin: 2px 0px 0px 6px; }
+  margin: 2px 0px 0px 4px; }
 
 .caja-crear-guifos-inicio {
   width: 47.5%;

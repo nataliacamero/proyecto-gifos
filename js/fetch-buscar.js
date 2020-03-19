@@ -24,15 +24,15 @@ function search(q) {
         return respuesta.json();
     })
         .then(json => {
-            console.log(json.data[0].images.fixed_width.url);
+            // console.log(json.data[0].images.downsized_medium.url);
 
             let resultadosHTML = '';
 
 
             json.data.forEach(objeto => {
-                console.log(objeto);
+                // console.log(objeto);
 
-                const url = objeto.images.fixed_width.url;
+                const url = objeto.images.downsized_medium.url;
                 const title = objeto.title;
                 resultadosHTML += `
                 <div class="divtendencias caja-gifs-resultados cajas-gifs-resultados__margin">
