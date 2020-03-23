@@ -1,6 +1,5 @@
 function autocompletar(arreglo){
     const inputMascota = document.querySelector('#tipo-mascota');    
-    const divList = document.getElementById("myDropdown-resultados");
     let indexFocus = -1;
 
     inputMascota.addEventListener('input', function(){
@@ -9,16 +8,10 @@ function autocompletar(arreglo){
         cerrarLista();
 
         //crear la lista de sugerencias
-        // const divList = document.createElement('div');
-        
-        // divList.setAttribute('id', this.id + '-lista-autocompletar');
-        // divList.setAttribute('class', 'lista-autocompletar-items');
-        // this.parentNode.appendChild(divList);
-       
-        // console.log(divList);
-        // console.log(divList1);
-        
-
+        const divList = document.createElement('div');
+        divList.setAttribute('id', this.id + '-lista-autocompletar');
+        divList.setAttribute('class', 'lista-autocompletar-items');
+        this.parentNode.appendChild(divList);
 
         
         //validar arreglo vs input
