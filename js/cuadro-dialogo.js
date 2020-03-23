@@ -1,11 +1,79 @@
 console.log(document.getElementsByTagName("a"));
 document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("comenzar")};
 
+let recorder;
+
+async function streamVideo() {
+    
+    let video = document.querySelector('video');
+    
+    let stream = await navigator.mediaDevices.getUserMedia({
+        video: true, 
+        audio: false
+    });
+
+    if ("srcObject" in video) {
+        video.srcObject = stream;
+    } else {
+        
+        video.src = window.URL.createObjectURL(stream);
+    }
+    video.onloadedmetadata = function(e) {
+        video.play();
+    };
+
+};
+
+async function grabarStream() {
+    let video = document.querySelector('video');
+    let stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});
+    video.srcObject = stream;
+    recorder = new RecordRTCPromisesHandler(stream, {
+        type: 'video'
+    });
+
+    await recorder.startRecording();
+    
+
+    recorder.stream = stream;
+}
+
+function createObjectURL ( file ) {
+    if ( window.webkitURL ) {
+        return window.webkitURL.createObjectURL( file );
+    } else if ( window.URL && window.URL.createObjectURL ) {
+        return window.URL.createObjectURL( file );
+    } else {
+        return null;
+    }
+}
+
+async function stopRecordingCallback() {
+    await recorder.stopRecording();
+    let video = document.querySelector('video');
+    video.srcObject = null;
+    let blob = await recorder.getBlob();
+    video.src = createObjectURL(blob);
+    recorder.stream.getTracks()[0].stop();
+
+    // reset recorder's state
+    await recorder.reset();
+
+    // clear the memory
+    await recorder.destroy();
+
+    // so that we can record again
+    recorder = null;
+
+    
+}
+
+
 
 function cuadroDialogo(boton) {
-    console.log(boton);
+    
     if (boton === "comenzar") {
-        console.log("Aqui entro en comenzar");
+       
         
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
             <div class="caja-crear-guifos-chequeo caja-crear-guifos-chequeo___margin  flex-column align-center">
@@ -17,7 +85,9 @@ function cuadroDialogo(boton) {
                 </div>
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column align-center">
-                    
+                    <video height="440">
+                    Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 <div class="controles-grabacion flex-row align-center">
@@ -30,13 +100,17 @@ function cuadroDialogo(boton) {
                     </div>
                 </div>
             </div>  `;
-        console.log("Estas son las a, en btn comenzar");
-        console.log(document.getElementsByTagName("a"));
-        document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("capturar")};
+        streamVideo()
+
+        document.getElementsByTagName("a")[3].onclick = function() {
+            
+            cuadroDialogo("capturar");
+            
+        };
    
     } else if (boton === "capturar") {
-        console.log("Aqui entro en capturar"+ document.getElementsByTagName("a"));
-        console.log("click en boton capturar");
+  
+        
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
             <div class="caja-crear-guifos-chequeo caja-crear-guifos-chequeo___margin  flex-column align-center">
                 <div class="div-pestaña-crear-guifos-2">
@@ -47,7 +121,9 @@ function cuadroDialogo(boton) {
                 </div>
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column align-center">
-                    
+                    <video height="440">
+                    Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 <div class="controles-grabacion flex-row align-center justify-evenly ">
@@ -67,12 +143,17 @@ function cuadroDialogo(boton) {
                     </div>
                 </div>
             </div>`;
-        console.log("Estas son las a, en btn capturar");
-        console.log(document.getElementsByTagName("a"));
-        document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("listo")};
+        streamVideo()
+        grabarStream();
+        document.getElementsByTagName("a")[3].onclick = function() {
+            cuadroDialogo("listo")
+            stopRecordingCallback();
+            
+           
+        };
 
     } else if (boton === "listo"){
-        console.log("click en boton listo");
+        
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
             <div class="caja-crear-guifos-chequeo caja-crear-guifos-chequeo___margin  flex-column align-center">
                 <div class="div-pestaña-crear-guifos-2">
@@ -83,6 +164,9 @@ function cuadroDialogo(boton) {
                 </div>
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column align-center">
+                    <video height="440" controls>
+                    Your browser does not support the video tag.
+                    </video>
                     
                 </div>
 
@@ -129,10 +213,10 @@ function cuadroDialogo(boton) {
                     </div>
                 </div>
             </div>`;
-        console.log("Estas son las a, en btn listo");
-        console.log(document.getElementsByTagName("a"));
+    
         document.getElementsByTagName("a")[4].onclick = function() {cuadroDialogo("subir")};
-        console.log("estoy en final Subirguifos");
+        document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("comenzar")};
+ 
     } else if (boton === "subir") {
         console.log(boton);
         console.log("click en boton subir");
