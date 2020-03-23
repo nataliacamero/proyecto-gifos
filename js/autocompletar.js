@@ -38,11 +38,7 @@ campoInput.addEventListener('input', function(){
             </div>
             `;
             
-                elementoLista  
-                inp.value = document.getElementsByTagName("input")[0].value;
-            
-
-
+               
             contador--;
             console.log(contador);
             if (contador <= 0) {return false};
