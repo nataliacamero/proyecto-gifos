@@ -1,24 +1,25 @@
 console.log(document.getElementsByTagName("a"));
-document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("comenzar")};
+document.getElementsByTagName("a")[3].onclick = function () { cuadroDialogo("comenzar") };
+const apikeyTen = 'dsuYjjUPEjD2uXAjeNzlsGO0OFmUrqQ5';
 
 let recorder;
-
+let blob;
 async function streamVideo() {
-    
+
     let video = document.querySelector('video');
-    
+
     let stream = await navigator.mediaDevices.getUserMedia({
-        video: true, 
+        video: true,
         audio: false
     });
 
     if ("srcObject" in video) {
         video.srcObject = stream;
     } else {
-        
+
         video.src = window.URL.createObjectURL(stream);
     }
-    video.onloadedmetadata = function(e) {
+    video.onloadedmetadata = function (e) {
         video.play();
     };
 
@@ -26,23 +27,30 @@ async function streamVideo() {
 
 async function grabarStream() {
     let video = document.querySelector('video');
-    let stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});
+    let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
     video.srcObject = stream;
     recorder = new RecordRTCPromisesHandler(stream, {
-        type: 'video'
+        type: 'gif',
+        frameRate: 1,
+        quality: 10,
+        width: 360,
+        hidden: 240,
+        onGifRecordingStarted: function () {
+            console.log('started')
+        },
     });
 
     await recorder.startRecording();
-    
+
 
     recorder.stream = stream;
 }
 
-function createObjectURL ( file ) {
-    if ( window.webkitURL ) {
-        return window.webkitURL.createObjectURL( file );
-    } else if ( window.URL && window.URL.createObjectURL ) {
-        return window.URL.createObjectURL( file );
+function createObjectURL(file) {
+    if (window.webkitURL) {
+        return window.webkitURL.createObjectURL(file);
+    } else if (window.URL && window.URL.createObjectURL) {
+        return window.URL.createObjectURL(file);
     } else {
         return null;
     }
@@ -50,10 +58,9 @@ function createObjectURL ( file ) {
 
 async function stopRecordingCallback() {
     await recorder.stopRecording();
-    let video = document.querySelector('video');
-    video.srcObject = null;
-    let blob = await recorder.getBlob();
-    video.src = createObjectURL(blob);
+    let imagen = document.querySelector('.gif-generado');
+    blob = await recorder.getBlob();
+    imagen.src = createObjectURL(blob);
     recorder.stream.getTracks()[0].stop();
 
     // reset recorder's state
@@ -65,16 +72,81 @@ async function stopRecordingCallback() {
     // so that we can record again
     recorder = null;
 
-    
+
 }
 
 
+function subirVideo() {
+    const url = `https://upload.giphy.com/v1/gifs`;
+
+    let form = new FormData();
+    form.append('api_key', apikeyTen);
+    form.append('tags', '');
+    form.append('file', blob, 'myGif.gif');
+    console.log(form.get('file'))
+
+    var request = new XMLHttpRequest();
+    request.open("POST", url);
+    request.onload = function (e) {
+        if (this.status == 200) {
+            console.log(JSON.parse(this.response)); // JSON response  
+            localStorage.setItem('gif' + JSON.parse(this.response)["data"]["id"], this.response);
+        }
+    };
+    request.send(form);
+
+}
+function htmlToElements(html) {
+    var template = document.createElement('template');
+    html = html.trim(); // Never return a text node of whitespace as the result
+    template.innerHTML = html;
+    return template.content.firstChild;
+}
+function getMisGuifos() {
+    
+    
+    for (var i = 0; i < localStorage.length; i++) {
+        miguifo = JSON.parse(localStorage.getItem(localStorage.key(i)));
+        fetch(`https://api.giphy.com/v1/gifs/${miguifo["data"]["id"]}?api_key=${apikeyTen}`).then(respuesta => {
+            return respuesta.json();
+        }).then(json => {
+            let misguifos = document.querySelector('.div-resultados-mis-guifos--crear-guifo--html')
+            console.log(json.data);
+            htmlresult = htmlToElements(`
+                <div class="div-mis-guifos caja-gifs-resultados cajas-gifs-resultados__margin">
+                    <img style="width: 23%"
+                        class="imagen-resutados"
+                        src="${json.data.images.downsized_medium.url}" 
+                        alt="${json.data.title}"
+                    />
+                
+                </div>
+  
+  
+            `);
+            console.log(htmlresult)
+            misguifos.appendChild(htmlresult);
+
+        
+
+        });
+
+    
+
+    }
+    
+ 
+
+}
+
+getMisGuifos();
+
 
 function cuadroDialogo(boton) {
-    
+
     if (boton === "comenzar") {
-       
-        
+
+
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
             <div class="caja-crear-guifos-chequeo caja-crear-guifos-chequeo___margin  flex-column align-center">
                 <div class="div-pestaña-crear-guifos-2">
@@ -86,7 +158,7 @@ function cuadroDialogo(boton) {
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column align-center">
                     <video height="440">
-                    Your browser does not support the video tag.
+                        Your browser does not support the video tag.
                     </video>
                 </div>
 
@@ -102,15 +174,15 @@ function cuadroDialogo(boton) {
             </div>  `;
         streamVideo()
 
-        document.getElementsByTagName("a")[3].onclick = function() {
-            
+        document.getElementsByTagName("a")[3].onclick = function () {
+
             cuadroDialogo("capturar");
-            
+
         };
-   
+
     } else if (boton === "capturar") {
-  
-        
+
+
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
             <div class="caja-crear-guifos-chequeo caja-crear-guifos-chequeo___margin  flex-column align-center">
                 <div class="div-pestaña-crear-guifos-2">
@@ -145,15 +217,15 @@ function cuadroDialogo(boton) {
             </div>`;
         streamVideo()
         grabarStream();
-        document.getElementsByTagName("a")[3].onclick = function() {
+        document.getElementsByTagName("a")[3].onclick = function () {
             cuadroDialogo("listo")
             stopRecordingCallback();
-            
-           
+
+
         };
 
-    } else if (boton === "listo"){
-        
+    } else if (boton === "listo") {
+
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
             <div class="caja-crear-guifos-chequeo caja-crear-guifos-chequeo___margin  flex-column align-center">
                 <div class="div-pestaña-crear-guifos-2">
@@ -164,9 +236,7 @@ function cuadroDialogo(boton) {
                 </div>
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column align-center">
-                    <video height="440" controls>
-                    Your browser does not support the video tag.
-                    </video>
+                    <img src="#" style="width: 100%" class="gif-generado" />
                     
                 </div>
 
@@ -213,10 +283,13 @@ function cuadroDialogo(boton) {
                     </div>
                 </div>
             </div>`;
-    
-        document.getElementsByTagName("a")[4].onclick = function() {cuadroDialogo("subir")};
-        document.getElementsByTagName("a")[3].onclick = function() {cuadroDialogo("comenzar")};
- 
+
+        document.getElementsByTagName("a")[4].onclick = function () {
+            cuadroDialogo("subir");
+            subirVideo();
+        };
+        document.getElementsByTagName("a")[3].onclick = function () { cuadroDialogo("comenzar") };
+
     } else if (boton === "subir") {
         console.log(boton);
         console.log("click en boton subir");
@@ -264,7 +337,7 @@ function cuadroDialogo(boton) {
                     <div class="boton-general boton--grande boton-blanco center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-chequeo-cancelar marco-boton-dotted" href="./crear-guifo.html">Cancelar</a></div> 
                 </div>
             </div>`;
-    }  
+    }
 };
 
 

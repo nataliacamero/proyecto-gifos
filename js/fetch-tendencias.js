@@ -8,7 +8,7 @@ const rutatendencias = `https://api.giphy.com/v1/gifs/trending?api_key=${apikeyT
 fetch(rutatendencias).then(respuesta => {
     return respuesta.json();
 }).then(json => {
-        // console.log(json.data[0].images.downsized_medium.url);
+        console.log(json.data[0].images.downsized_medium.url);
         
         let resultsHtml = '';
 
