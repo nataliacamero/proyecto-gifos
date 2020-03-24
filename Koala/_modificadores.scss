@@ -10,8 +10,11 @@ a:active{
 //    color: $color-texto_botones-oscuro; 
 //}
 
+.marco-boton-dotted:hover {
+    border: 1px dotted #110038; 
+}
 
-.marco-boton-dotted:active{
+ .marco-boton-dotted:active{
     border: 1px dotted #110038; 
 }
 
@@ -19,6 +22,7 @@ a:active{
 
 .boton:hover {
     background: #E6BBE2;
+  
 }
 
 .boton:active {
@@ -50,6 +54,7 @@ a:active{
 
 .boton--buscar:hover {
     background: $color-boton_rosado;
+   
     
 }
 

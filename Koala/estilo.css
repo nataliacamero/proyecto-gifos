@@ -15,12 +15,14 @@
   display: inline-flex;
   background: #F7C9F3;
   height: 36px;
-  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  border: 1px solid #110038; }
 
 .boton-general {
   display: inline-flex;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-  height: 36px; }
+  height: 36px;
+  border: 1px solid #110038; }
 
 .boton--extra-large {
   width: 256px; }
@@ -99,7 +101,8 @@
   height: 34px;
   background: #2E32FB;
   border: 1px solid #4C2F99;
-  box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF; }
+  box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+  cursor: pointer; }
 
 .boton--buscar {
   width: 8.5%;
@@ -123,7 +126,7 @@
 
 .boton-texto--buscar {
   color: #B4B4B4;
-  width: 102px; }
+  width: 60%; }
 
 .boton-texto--grande {
   font-size: 16px;
@@ -519,6 +522,9 @@
   -webkit-box-shadow: none; }
 
 /*Comportamiento*/
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #cfbfcf;
   margin: 0px;
@@ -552,17 +558,18 @@ body {
     justify-content: space-evenly; }
   body .div-barra-navegacion--crear-guifo--html {
     position: relative;
-    height: 193.6px;
+    height: 118px;
     width: 82.9%;
     justify-content: start; }
   body .flecha-atras {
     position: absolute;
-    top: 51px;
-    left: -40px;
+    top: 47px;
+    left: -35px;
     height: 24px;
     width: 24px; }
   body .div-pestaña-crear-guifos-1 {
-    width: 99.1%; }
+    width: 99.1%;
+    margin-top: 2px; }
   body .caja-crear-guifos-inicio-texto {
     justify-content: space-between; }
   body .div-contenedor-texto-crear {
@@ -638,7 +645,8 @@ body {
     height: 14px;
     z-index: 10000;
     margin-top: 7px;
-    right: 8px; }
+    right: 8px;
+    cursor: pointer; }
   body .dropdown {
     position: relative;
     display: inline-block;
@@ -673,17 +681,21 @@ body {
   width: 100%; }
 
 .div-barra-navegacion {
-  height: 193.6px;
+  height: 118px;
   width: 82.9%; }
 
 .logo {
+  display: flex;
+  flex-direction: row;
   width: 102.6px;
-  height: 114px; }
+  height: 114px;
+  align-items: center; }
 
 .div-botones--barra-navegacion {
   width: 92.9%;
   height: 114px;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  align-items: center; }
 
 /* .boton-saylor-day {
      margin-top: 8px;
@@ -697,16 +709,19 @@ body {
   justify-content: space-evenly; }
 
 .div-contenedor-boton-buscar {
-  width: 70px;
+  position: relative;
+  width: 95%;
   height: 30px;
-  margin-right: 2px;
-  padding-left: 41px;
+  margin-left: 1.2px;
+  /*   padding-left: 41px; */
   line-height: 30px; }
 
+.lupa {
+  width: 20%;
+  height: 30px;
+  margin-left: 10px; }
+
 .imagen-lupa {
-  position: absolute;
-  top: 10px;
-  left: 22px;
   width: 14px;
   height: 14px; }
 
@@ -747,6 +762,9 @@ body {
 /*Estados boton rosado*/
 a:active {
   color: #FFFFFF; }
+
+.marco-boton-dotted:hover {
+  border: 1px dotted #110038; }
 
 .marco-boton-dotted:active {
   border: 1px dotted #110038; }

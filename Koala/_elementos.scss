@@ -6,6 +6,7 @@
     height: $alto-boton_crearguifos;
     //border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    border: 1px solid #110038;
 }
 
 
@@ -15,6 +16,7 @@
    // border: $border-boton-general;
     box-shadow: $box-shadow_boton-general;
     height: $alto-botones-general;
+    border: 1px solid #110038;
     
 }
 .boton--extra-large {width: $ancho-boton_extra-large; }
@@ -101,6 +103,7 @@
     background: $color-background_boton_ver-mas; 
     border: 1px solid #4C2F99;  
     box-shadow: $box-shadow_boton_ver-mas ;
+    cursor: pointer;
 }
 
 .boton--buscar  {    
@@ -109,7 +112,10 @@
     background: $color-background_cajas_clara; 
     border: $border-caja-gris-claro;  
     box-shadow: $box-shadow-boton-buscar;
+    
 }
+
+
 
 //no tocar estos arriba
 
@@ -126,7 +132,7 @@
 
 .boton-texto-azul-oscuro {color: $color-texto_botones-oscuro;}
 .boton-texto-blanco {color: $color-texto_botones-claro;}
-.boton-texto--buscar { color:$color-texto_botones-tono-medio; width: 102px; }
+.boton-texto--buscar { color:$color-texto_botones-tono-medio; width: 60%; }
 .boton-texto--grande {font-size: $font-size_grande; line-height: $line-height_mediana; width: 117px; padding-left: 20px}
 .boton-texto--saylor {font-size: $font-size_grande; line-height: $line-height_mediana; width: 131px; padding-left: 12px; text-align: start;}
 .boton-texto--mediano {font-size: $font-size_grande; line-height: $line-height_mediana;width: 122px; }
@@ -290,6 +296,7 @@
     border: 1px solid #E6BBE2;
 }
 
+
 .caja-gifs-sugeridos {
     width: $ancho-caja-gifs-sugeridos; 
     height: $alto-caja-gifs-sugeridos;
@@ -350,6 +357,8 @@
 }
 
 
+
+
 .cajas-gif-interior {
     width: $ancho-caja-gifs-interior; 
     height: $alto-caja-gifs-interior;
@@ -374,6 +383,7 @@
 .caja-botones-crear-guifos-inicio {
     width: $ancho-caja-botones-crear-guifos-inicio;
     height: $alto-caja-botones-crear-guifos-inicio;
+    
 }
 
 .caja-crear-guifos-chequeo {

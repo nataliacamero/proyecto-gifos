@@ -68,9 +68,7 @@ async function stopRecordingCallback() {
 
     // clear the memory
     await recorder.destroy();
-
-    // so that we can record again
-    recorder = null;
+    jonathan
 
 
 }

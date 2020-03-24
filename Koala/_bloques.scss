@@ -1,5 +1,7 @@
 /*Comportamiento*/
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: $color-backgroud_light;
     margin: 0px;
@@ -52,21 +54,22 @@ body {
 /*------------------------------------HTML CREAR-GUIFOS-------------------------------------*/
 .div-barra-navegacion--crear-guifo--html {
     position: relative;
-    height: 193.6px;
+    height: 118px;
     width: 82.9%;
     justify-content: start;
 }
 
 .flecha-atras{
     position: absolute;
-    top: 51px;
-    left: -40px;
+    top: 47px;
+    left: -35px;
     height: 24px;
     width: 24px;
 }
 
 .div-pestaña-crear-guifos-1{
     width: 99.1%;
+    margin-top: 2px;
 }
 .caja-crear-guifos-inicio-texto{
     justify-content: space-between;
@@ -184,6 +187,7 @@ body {
         z-index: 10000;
         margin-top: 7px;
         right: 8px;
+        cursor: pointer;
     }
 
 
@@ -237,19 +241,23 @@ body {
     }
 
         .div-barra-navegacion {
-            height: 193.6px;
+            height: 118px;
             width: 82.9%;
         }
 
             .logo {
+                display: flex;
+                flex-direction: row;
                 width: $ancho-logo;               
                 height: $alto-logo;
+                align-items: center; 
             }
 
             .div-botones--barra-navegacion {
                 width: 92.9%;
                 height: 114px;
-                justify-content: flex-end;   
+                justify-content: flex-end;  
+                align-items: center; 
             } 
             
 
@@ -271,23 +279,28 @@ body {
                 justify-content: space-evenly;
             }
 
+           
+
             .div-contenedor-boton-buscar {
-                width: 70px;
+                position: relative;
+                width: 95%;
                 height: 30px;
-                margin-right: 2px;
-                padding-left: 41px;
+                margin-left: 1.2px;
+              /*   padding-left: 41px; */
                 line-height: 30px;
             }
-            
+                .lupa {
+                    width: 20%;
+                    height: 30px;
+                    margin-left: 10px;
+                }
 
                 .imagen-lupa {
-                    position: absolute;
-                    top: 10px;
-                    left: 22px;
                     width: 14px;
-                    height: 14px;
-                    
+                    height: 14px;   
                 }
+
+              
 
     .section-sugerimos {
         margin-top: 64px;
