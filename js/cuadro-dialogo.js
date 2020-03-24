@@ -112,14 +112,20 @@ function getMisGuifos() {
         }).then(json => {
             let misguifos = document.querySelector('.div-resultados-mis-guifos--crear-guifo--html')
             console.log(json.data);
+            let titulo = "#probando #natural #nofake";
             htmlresult = htmlToElements(`
-                <div class="div-mis-guifos caja-gifs-resultados cajas-gifs-resultados__margin">
-                    <img style="width: 23%"
-                        class="imagen-resutados"
-                        src="${json.data.images.downsized_medium.url}" 
-                        alt="${json.data.title}"
-                    />
-                
+                <div class="divtendencias caja-gifs-resultados cajas-gifs-resultados__margin">
+                    <div class="marco-imagen ">
+                    </div>
+                        <img
+                            
+                            class="imagen-resutados"
+                            src="${json.data.images.downsized_medium.url}" 
+                            alt="${titulo}"
+                        />
+                    <div id="etiqueta" class="etiqueta-imagen">
+                        <p class="pestaña-texto pestaña--texto__margin">${titulo}</p>
+                    </div>
                 </div>
   
   
@@ -157,7 +163,7 @@ function cuadroDialogo(boton) {
                 </div>
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column align-center">
-                    <video height="440">
+                    <video class="video">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -193,7 +199,7 @@ function cuadroDialogo(boton) {
                 </div>
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column align-center">
-                    <video height="440">
+                    <video class="video">
                     Your browser does not support the video tag.
                     </video>
                 </div>
@@ -236,7 +242,7 @@ function cuadroDialogo(boton) {
                 </div>
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column align-center">
-                    <img src="#" style="width: 100%" class="gif-generado" />
+                    <img src="#" class="imagen-video gif-generado" />
                     
                 </div>
 

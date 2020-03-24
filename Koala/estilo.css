@@ -410,19 +410,29 @@
 .caja-contenedor-grabacion {
   width: 97%;
   height: 440px;
-  border: 1px solid #979797;
+  border: 1.5px solid #979797;
   box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   background: #FFFFFF; }
 
 .caja-contenedor-grabacion__margin {
   margin: 1% 0px 0px 0px; }
 
+.video {
+  width: 99.4%;
+  height: 435px;
+  margin: 2.5px 0px 0px 1px; }
+
+.imagen-video {
+  width: 99.4%;
+  height: 435px;
+  margin: 2.5px 0px 0px 0.8px; }
+
 .caja-contador {
   width: 124px;
   height: 36px;
   background: #FFFFFF;
   box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
-  border: 1px solid #979797;
+  border: 1.5px solid #979797;
   margin-right: 6%; }
 
 .caja-contenedora-cargando {
@@ -470,7 +480,7 @@
   height: 196px;
   background: #FFFFFF;
   border: 1px solid #979797;
-  box-20pxshadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   margin: 7% 0px 0px 5%; }
 
 .caja-botones-exito {
