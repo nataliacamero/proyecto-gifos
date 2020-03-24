@@ -110,7 +110,10 @@ function getMisGuifos() {
         }).then(json => {
             let misguifos = document.querySelector('.div-resultados-mis-guifos--crear-guifo--html')
             console.log(json.data);
-            let titulo = "#probando #natural #nofake";
+            let titulo = "pruebas mas pruebas y mas pruebas";
+            const stringMisGuifos = titulo.replace(/ /g, " #")
+            const stringNumeralMisGuifos = "#" + stringMisGuifos.slice(0, stringMisGuifos.lenght);
+            const stringFinalMisGuifos = stringNumeralMisGuifos.slice(0,30);
             htmlresult = htmlToElements(`
                 <div class="divtendencias caja-gifs-resultados cajas-gifs-resultados__margin">
                     <div class="marco-imagen ">
@@ -122,7 +125,7 @@ function getMisGuifos() {
                             alt="${titulo}"
                         />
                     <div id="etiqueta" class="etiqueta-imagen">
-                        <p class="pestaña-texto pestaña--texto__margin">${titulo}</p>
+                        <p class="pestaña-texto pestaña--texto__margin">${stringFinalMisGuifos}</p>
                     </div>
                 </div>
   

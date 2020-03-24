@@ -123,6 +123,9 @@ function search(q) {
 
                 const url = objeto.images.downsized_medium.url;
                 const title = objeto.title;
+                const stringBuscar = title.replace(/ /g, " #")
+                const stringNumeralBuscar = "#" + stringBuscar.slice(0, stringBuscar.lenght);
+                const stringFinalBuscar = stringNumeralBuscar.slice(0,30);
                 resultadosHTML += `
                 <div class="divtendencias caja-gifs-resultados cajas-gifs-resultados__margin">
                     <div class="marco-imagen ">
@@ -133,7 +136,7 @@ function search(q) {
                             alt="${title}"
                         >
                     <div id="etiqueta" class="etiqueta-imagen">
-                        <p class="pestaña-texto pestaña--texto__margin">${title}</p>
+                        <p class="pestaña-texto pestaña--texto__margin">${stringFinalBuscar}</p>
                     </div>
                     
                 </div>

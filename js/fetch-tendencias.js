@@ -17,23 +17,25 @@ fetch(rutatendencias).then(respuesta => {
 
             const urlImagen = objeto.images.downsized_medium.url;
             const titleImagen = objeto.title;
-            resultsHtml += `
-            <div class="divtendencias caja-gifs-resultados cajas-gifs-resultados__margin">
-                <div class="marco-imagen ">
-                </div>
-                    <img
-                        class="imagen-resutados"
-                        src="${urlImagen}" 
-                        alt="${titleImagen}"
-                    >
-                <div id="etiqueta" class="etiqueta-imagen">
-                    <p class="pestaña-texto pestaña--texto__margin">${titleImagen}</p>
-                </div>
-                
-            </div>
-  
-  
-        `;
+            const string = titleImagen.replace(/ /g, " #")
+            const stringNumeral = "#" + string.slice(0, string.lenght);
+            const stringFinal = stringNumeral.slice(0,30);
+            
+                resultsHtml += `
+                <div class="divtendencias caja-gifs-resultados cajas-gifs-resultados__margin">
+                    <div class="marco-imagen ">
+                    </div>
+                        <img
+                            class="imagen-resutados"
+                            src="${urlImagen}" 
+                            alt="${titleImagen}"
+                        >
+                    <div id="etiqueta" class="etiqueta-imagen">
+                        <p class="pestaña-texto pestaña--texto__margin">${stringFinal}</p>
+                    </div>
+                    
+                </div>`;
+            
     });
 
     divInsertar.innerHTML = resultsHtml;
