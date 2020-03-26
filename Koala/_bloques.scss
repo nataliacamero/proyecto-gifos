@@ -304,6 +304,12 @@ body {
 
     .section-sugerimos {
         margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ocultar-section-sugerimos {
+        display: none;
     }
 
         .div-resultado-sugerimos {

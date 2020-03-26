@@ -68,13 +68,16 @@ async function stopRecordingCallback() {
 
     // clear the memory
     await recorder.destroy();
-    jonathan
+    
 
 
 }
 
 
+
+
 function subirVideo() {
+    console.log("hola");
     const url = `https://upload.giphy.com/v1/gifs`;
 
     let form = new FormData();
@@ -83,17 +86,65 @@ function subirVideo() {
     form.append('file', blob, 'myGif.gif');
     console.log(form.get('file'))
 
+   
+
     var request = new XMLHttpRequest();
     request.open("POST", url);
     request.onload = function (e) {
         if (this.status == 200) {
+          
+                
+          
             console.log(JSON.parse(this.response)); // JSON response  
             localStorage.setItem('gif' + JSON.parse(this.response)["data"]["id"], this.response);
-        }
+
+            let divSection = document.getElementsByTagName("section")[0].innerHTML = `
+            
+            <div class="caja-exito flex-column align-center ">
+
+                <div class="div-pestaña-crear-guifos-2">
+                    <img class="x-close" src="./assets/close.svg" alt="imagen-close">
+                    <div class="pestaña pestaña-crear-guifos-chequeo" >
+                        <h1 class="pestaña-texto pestaña--texto__margin" >Guifo Subido Con Éxito</h1>
+                    </div>
+                </div>
+
+                <div  class="div-contenedor-exito flex-row center">
+
+                    <div class="caja-img-gifo-exito">
+                        <div class="guifo-exito">
+                            <img src="" class"gif-exito"  ></>
+                        </div>
+                
+                    </div>
+
+                    <div class="caja-botones-exito flex-column align-center ">
+
+                        <div class="div-titulo-exito flex-row">
+                            <h2 class="texto texto-bold ">Guifo creado con éxito</h2>
+                        </div>
+
+                        <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px boton-general_margin14px center"><a class="boton-texto   boton-texto-azul-oscuro  boton-texto-144px-line-heigth   boton-exito-copiar-guifo  marco-boton-dotted" href="#">Copiar Enlace Guifo</a></div>
+                        <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro   boton-texto-144px-line-heigth  boton-exito-descargar-guifo   marco-boton-dotted " href="#">Descargar Guifo</a></div>
+                        
+                        <div class="div-contenedor-boton-listo flex-column">
+                            <div class="boton-general boton--grande  boton-rosado boton-general__margin46px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-exito-listo   marco-boton-dotted" href="#">Listo</a></div>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+
+            </div>`;
+        }     
     };
     request.send(form);
 
 }
+
+
+
 function htmlToElements(html) {
     var template = document.createElement('template');
     html = html.trim(); // Never return a text node of whitespace as the result

@@ -4,7 +4,7 @@ const input = document.getElementsByTagName("input")[0];
 const divResultados = document.getElementsByTagName("div")[47];
 
     function cerrarX() {
-        console.log(document.getElementsByTagName("img")[3]);
+       
         let btnCerrarJonathan = document.getElementsByTagName("img")[3].onclick = function () {resetBusquedaSugeridos()};
         let btnCerrarSailor = document.getElementsByTagName("img")[4].onclick = function () {resetBusquedaSugeridos()};
         let btnCerrarFab = document.getElementsByTagName("img")[5].onclick = function () {resetBusquedaSugeridos()};

@@ -726,7 +726,12 @@ body {
   height: 14px; }
 
 .section-sugerimos {
-  margin-top: 64px; }
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column; }
+
+.ocultar-section-sugerimos {
+  display: none; }
 
 .div-resultado-sugerimos {
   margin-top: 15px;
