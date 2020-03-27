@@ -108,6 +108,7 @@ function subirVideo() {
                 console.log(json.data.id);
                 let urlImagen = json.data.images.downsized_medium.url;
                 let idExito = json.data.id;
+                let tituloGIf = json.data.title;
 
                 let divSection = document.getElementsByTagName("section")[0].innerHTML = `
             
@@ -124,7 +125,7 @@ function subirVideo() {
 
                             <div class="caja-img-gifo-exito">
                                 <div class="guifo-exito">
-                                    <img src="${urlImagen}" class="gif-exito"/>
+                                    <img id="${idExito}" src="${urlImagen}" alt="${tituloGIf}" class="gif-exito"/>
                                 </div>
                         
                             </div>
@@ -136,7 +137,7 @@ function subirVideo() {
                                 </div>
 
                                 <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px boton-general_margin14px center"><a class="boton-texto   boton-texto-azul-oscuro  boton-texto-144px-line-heigth   boton-exito-copiar-guifo  marco-boton-dotted" href="#">Copiar Enlace Guifo</a></div>
-                                <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro   boton-texto-144px-line-heigth  boton-exito-descargar-guifo   marco-boton-dotted " href="#">Descargar Guifo</a></div>
+                                <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro   boton-texto-144px-line-heigth  boton-exito-descargar-guifo   marco-boton-dotted " href="${urlImagen}" download>Descargar Guifo</a></div>
                                 
                                 <div class="div-contenedor-boton-listo flex-column">
                                     <div class="boton-general boton--grande  boton-rosado boton-general__margin46px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-exito-listo   marco-boton-dotted" href="#">Listo</a></div>
@@ -149,15 +150,27 @@ function subirVideo() {
 
                     </div>`;
 
-                        let codigoACopiar = document.getElementById('"'+idExito+'"');
-                        console.log(codigoACopiar);
-/*                         var seleccion = document.createRange();
-                        seleccion.selectNodeContents(codigoACopiar);
-                        window.getSelection().removeAllRanges();
-                        window.getSelection().addRange(seleccion);
-                        var res = document.execCommand('copy');
-                        window.getSelection().removeRange(seleccion);*/
-             }); 
+
+                    console.log(document.getElementsByTagName("a")[2]);
+      
+
+                    let btnCopiar = document.getElementsByTagName("a")[2].onclick = function () {copiarEnlace()};
+               
+
+                    function copiarEnlace() {
+                        var aux = document.createElement("input");
+                        aux.setAttribute("value",`${urlImagen}`);
+                        console.log(aux.value);
+                        document.body.appendChild(aux);
+                        aux.select();
+                        console.log(document.execCommand("copy"));
+                        document.body.removeChild(aux);
+                    }
+                   
+
+
+
+            }); 
             
             
             
@@ -166,6 +179,8 @@ function subirVideo() {
     request.send(form);
 
 }
+
+
 
 
 
