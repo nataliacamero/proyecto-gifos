@@ -223,7 +223,65 @@
 
 
     <script src="./js/dropDown-index.js"> </script>
+    <script>
+    
+    let q = "bob Esponja";
 
+
+    function search(q) {
+
+        const apikey = 'dsuYjjUPEjD2uXAjeNzlsGO0OFmUrqQ5';
+        const ruta = `https://api.giphy.com/v1/gifs/search?api_key=${apikey}&q=${q}`;
+        
+
+
+        fetch(ruta).then(respuesta => {
+            return respuesta.json();
+        })
+            .then(json => {
+                // console.log(json.data[0].images.downsized_medium.url);
+
+                let resultadosHTML = '';
+
+
+                json.data.forEach(objeto => {
+                    // console.log(objeto);
+
+                    const url = objeto.images.downsized_medium.url;
+                    const title = objeto.title;
+                    const stringBuscar = title.replace(/ /g, " #")
+                    const stringNumeralBuscar = "#" + stringBuscar.slice(0, stringBuscar.lenght);
+                    const stringFinalBuscar = stringNumeralBuscar.slice(0,30);
+                    resultadosHTML += `
+                    <div class="divtendencias caja-gifs-resultados cajas-gifs-resultados__margin">
+                        <div class="marco-imagen ">
+                        </div>
+                            <img
+                                class="imagen-resutados"
+                                src="${url}" 
+                                alt="${title}"
+                            >
+                        <div id="etiqueta" class="etiqueta-imagen">
+                            <p class="pestaña-texto pestaña--texto__margin">${stringFinalBuscar}</p>
+                        </div>
+                        
+                    </div>
+        
+        
+                `;
+
+                });
+
+                divResultados.innerHTML = resultadosHTML;
+
+
+            }).catch(error => {
+                console.error(error.message);
+            });
+    }
+
+
+    </script>
 
 
 </body>

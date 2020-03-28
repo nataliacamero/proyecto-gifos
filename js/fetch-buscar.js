@@ -100,6 +100,7 @@ btnBuscar.addEventListener('click', event => {
     search(q);
     let tendencias = document.getElementsByTagName("h1")[3].innerText = q;
     console.log(tendencias);
+    window.scrollTo(0, 700);
 })
 
 function search(q) {
@@ -113,7 +114,8 @@ function search(q) {
         return respuesta.json();
     })
         .then(json => {
-            // console.log(json.data[0].images.downsized_medium.url);
+            //console.log(json.data[0].images.downsized_medium.url);
+            console.log(json.data[0].images.downsized_medium.url);
 
             let resultadosHTML = '';
 
