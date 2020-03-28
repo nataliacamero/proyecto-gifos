@@ -1,4 +1,4 @@
-let arreglo = ['perro','gato','pez','paloma','conejo','caballo','culebra','cangrejo','colibri'];
+let arreglo = ['perro bonito','perro durmiendo','perro bailando','gato enojado','gato feliz','gato dueño','pez dorado','pez nadando','pez nemo','paloma blanca','paloma volando','paloma ','conejo blanco','conejo y tortuga','conejo alicia','caballo','caballo salvaje','caballo corriendo','culebra cobra','culebra desierto','culebra piedra','cangrejo rojo','cangrejo arcoiris','cangrejo bob','cangrejo mar','Jonathan vanness dancing','Jonathan vanness singing','Jonathan vanness sleep'];
     // console.log(arreglo);
 
 
