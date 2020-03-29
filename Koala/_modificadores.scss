@@ -54,6 +54,10 @@ a:active{
 
 .boton--buscar:hover {
     background: $color-boton_rosado;
+    background-image: url(../assets/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: left 5px top 10px;
+    background-origin: content-box;
    
     
 }
@@ -62,6 +66,8 @@ a:active{
     background: #CE36DB ; 
     border: 1px solid #110038;  
     box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    
+    
 }
 
 .boton-texto--buscar:hover {

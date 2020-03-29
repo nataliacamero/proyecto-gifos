@@ -67,7 +67,8 @@
         </nav>
     </header>
 
-    <section class="section-buscar flex-column center" >
+    <section  id="buscar" class="section-buscar flex-column center" >
+
         <div class="caja-busqueda caja-contenedora-buscar flex-column center">
             <div class="pestaña pestaña--caja-buscar pestaña--caja-buscar__margin">
                 <h1 class="pestaña-texto pestaña--texto__margin">Buscar</h1>
@@ -83,7 +84,7 @@
                         
                         <div class="div-contenedor-boton-buscar marco-boton-dotted flex-row flex-nowrap">
                             <div class="lupa">
-                                <img class="imagen-lupa" src="./assets/Combined Shape.svg" alt="imagen-de-lupa-boton-buscar">
+                                <img>
                                 
                             </div>
                             <a class="boton-texto boton-texto--buscar " href="#tendencias">Buscar</a>
@@ -96,18 +97,22 @@
     
                 <div id="myDropdown-resultados"  class="dropdown-resultados-contenedor     caja-buscar-resultados flex-column justify-evenly">
                     <div class=" boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                        <a class=" boton-texto boton-texto-blanco boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Resultado de búsqueda sugerido</a>
+                        <a class=" boton-texto boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes boton-texto-azul-oscuro">Kittens</a>
                     </div>
                     <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                        <a class="boton-texto boton-texto-blanco boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Un resultado similar de búsqueda</a>
+                        <a class="boton-texto  boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes boton-texto-azul-oscuro">Puppet</a>
                     </div>
                     <div class="boton-general boton--grande boton-blanco boton-buscar-largo-buscar-resultados align-center">
-                        <a class="boton-texto boton-texto-blanco boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes" href="#">Y otro más</a> -->
+                        <a class="boton-texto  boton-texto-largo-buscar-resultados marco-boton-dotted boton-texto-margenes boton-texto-azul-oscuro">Little Dog</a>
                     </div>
                 
                 </div>
             </div>
+            
     </section>
+    <span id="historial" class="flex-row center">
+        <ul class="boton-historial"></ul>
+    </span> 
 
     <section id="sugeridos" class="section-sugerimos  align-center">
         <div class="caja-sugerimos caja-titulo">
@@ -202,6 +207,18 @@
         </div>
     </section>
 
+    <section class="section-mis-guifos--crear-guifo--html flex-column center">
+        <div class="caja-tendencias caja-titulo">
+            <h1 class="texto texto--caja-titulo texto--caja-titulo__margin">Mis guifos</h1>
+        </div>
+        <div class="div-resultados-mis-guifos--crear-guifo--html flex-row flex-wrap justify-center ">
+
+            <!-- <div class="div-mis-guifos caja-gifs-resultados cajas-gifs-resultados__margin"></div> -->
+            
+
+        </div>
+    </section>
+
 
 <script src="./js/dropDown-index.js"> </script>
 <!-- <script src="./js/cambiar_tema-index.js"></script> -->
@@ -211,7 +228,7 @@
 
 <script src="./js/fetch-tendencias.js"></script>
 <script src="./js/cuadro-dialogo.js"></script>
-<script src="./js/vista-misguifos.js"></script>
+<script src="./js/vistas-home.js"></script>
 
 <script>
 

@@ -112,7 +112,21 @@
     background: $color-background_cajas_clara; 
     border: $border-caja-gris-claro;  
     box-shadow: $box-shadow-boton-buscar;
+    background-image: url(../assets/CombinedShape.svg);
+    background-repeat: no-repeat;
+    background-position: left 5px top 10px;
+    background-origin: content-box;
+
     
+}
+
+.boton-historial {
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    color: #FFFFFF;
+    padding: 8px;
+    list-style: none;
 }
 
 

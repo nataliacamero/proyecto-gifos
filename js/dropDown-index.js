@@ -10,6 +10,7 @@ document.getElementById("div-resultados").addEventListener("click", myFunction2)
     
 function myFunction2() {
     document.getElementById("myDropdown-resultados").classList.toggle("mostrar-resultados");
+
 }
 
 
@@ -18,6 +19,13 @@ function myFunction2() {
 
 // Cierra el dropdown si el usuario hace click afuera de el
 window.onclick = function(event) {
+            //Traer los div de la busqeda por default.
+            console.log(document.getElementsByTagName("a"));
+            console.log(document.getElementsByTagName("div")[23]);
+    document.getElementsByTagName("div")[21].onclick = function () {textoAInput(this.innerText)};
+    document.getElementsByTagName("div")[22].onclick = function () {textoAInput(this.innerText)};
+    document.getElementsByTagName("div")[23].onclick = function () {textoAInput(this.innerText)};
+
 
     if (!event.target.matches('.resultados')) {
         var dropdowns = document.getElementsByClassName("dropdown-resultados-contenedor");

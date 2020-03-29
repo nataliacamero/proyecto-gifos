@@ -58,7 +58,7 @@
 
                 <div class="caja-botones-crear-guifos-inicio flex-row align-center ">
                     <div class="boton-general boton--grande boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth boton-crear-guifos-cancelar marco-boton-dotted" href="/">Cancelar</a></div>
-                    <div class="boton-general boton--grande boton-rosado boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth boton-crear-guifos-comenzar marco-boton-dotted" href="#">Comenzar</a></div>
+                    <div id="comenzar" class="boton-general boton--grande boton-rosado boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth boton-crear-guifos-comenzar marco-boton-dotted" href="#">Comenzar</a></div>
                     
                 </div>
                 
@@ -69,43 +69,6 @@
 
     </section>
 
-<!-- 
-
-    <div class="caja-exito flex-column align-center ">
-
-        <div class="div-pestaña-crear-guifos-2">
-            <img class="x-close" src="./assets/close.svg" alt="imagen-close">
-            <div class="pestaña pestaña-crear-guifos-chequeo" >
-                <h1 class="pestaña-texto pestaña--texto__margin" >Guifo Subido Con Éxito</h1>
-            </div>
-        </div>
-
-        <div  class="div-contenedor-exito flex-row center">
-
-            <div class="caja-img-gifo-exito">
-                <div class="guifo-exito"></div>
-        
-            </div>
-
-            <div class="caja-botones-exito flex-column align-center ">
-
-                <div class="div-titulo-exito flex-row">
-                    <h2 class="texto texto-bold ">Guifo creado con éxito</h2>
-                </div>
-
-                <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px boton-general_margin14px center"><a class="boton-texto   boton-texto-azul-oscuro  boton-texto-144px-line-heigth   boton-exito-copiar-guifo  marco-boton-dotted" href="#">Copiar Enlace Guifo</a></div>
-                <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro   boton-texto-144px-line-heigth  boton-exito-descargar-guifo   marco-boton-dotted " href="#">Descargar Guifo</a></div>
-                
-                <div class="div-contenedor-boton-listo flex-column">
-                    <div class="boton-general boton--grande  boton-rosado boton-general__margin46px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-exito-listo   marco-boton-dotted" href="#">Listo</a></div>
-                </div>
-
-
-            </div>
-            
-        </div>
-
-    </div> -->
 
     <section class="section-mis-guifos--crear-guifo--html flex-column center">
         <div class="caja-tendencias caja-titulo">
@@ -119,123 +82,13 @@
         </div>
     </section>
 
-
+   
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <!-- <script src="./js/fetch-tendencias.js"></script> -->
     <script src="./js/cuadro-dialogo.js"></script>
+  
     <!-- <script src="./js/cambiar_tema-index.js"></script> -->
 
-    <script>
-/*         const recorder = RecordRTC(stream, {
-         // audio, video, canvas, gif
-        type: 'video',
     
-        // audio/webm
-        // video/webm;codecs=vp9
-        // video/webm;codecs=vp8
-        // video/webm;codecs=h264
-        // video/x-matroska;codecs=avc1
-        // video/mpeg -- NOT supported by any browser, yet
-        // video/mp4  -- NOT supported by any browser, yet
-        // audio/wav
-        // audio/ogg  -- ONLY Firefox
-        // demo: simple-demos/isTypeSupported.html
-        mimeType: 'video/webm',
-    
-        // MediaStreamRecorder, StereoAudioRecorder, WebAssemblyRecorder
-        // CanvasRecorder, GifRecorder, WhammyRecorder
-        recorderType: MediaStreamRecorder,
-    
-        // disable logs
-        disableLogs: true,
-    
-        // get intervals based blobs
-        // value in milliseconds
-        timeSlice: 1000,
-    
-        // requires timeSlice above
-        // returns blob via callback function
-        ondataavailable: function(blob) {},
-    
-        // auto stop recording if camera stops
-        checkForInactiveTracks: false,
-    
-        // requires timeSlice above
-        onTimeStamp: function(timestamp) {},
-    
-        // both for audio and video tracks
-        bitsPerSecond: 128000,
-    
-        // only for audio track
-        audioBitsPerSecond: 128000,
-    
-        // only for video track
-        videoBitsPerSecond: 128000,
-    
-        // used by CanvasRecorder and WhammyRecorder
-        // it is kind of a "frameRate"
-        frameInterval: 90,
-    
-        // if you are recording multiple streams into single file
-        // this helps you see what is being recorded
-        previewStream: function(stream) {},
-    
-        // used by CanvasRecorder and WhammyRecorder
-        // you can pass {width:640, height: 480} as well
-        video: HTMLVideoElement,
-    
-        // used by CanvasRecorder and WhammyRecorder
-        canvas: {
-            width: 640,
-            height: 480
-        },
-    
-        // used by StereoAudioRecorder
-        // the range 22050 to 96000.
-        sampleRate: 96000,
-    
-        // used by StereoAudioRecorder
-        // the range 22050 to 96000.
-        // let us force 16khz recording:
-        desiredSampRate: 16000,
-    
-        // used by StereoAudioRecorder
-        // Legal values are (256, 512, 1024, 2048, 4096, 8192, 16384).
-        bufferSize: 16384,
-    
-        // used by StereoAudioRecorder
-        // 1 or 2
-        numberOfAudioChannels: 2,
-    
-        // used by WebAssemblyRecorder
-        frameRate: 30,
-    
-        // used by WebAssemblyRecorder
-        bitrate: 128000,
-    
-        // used by MultiStreamRecorder - to access HTMLCanvasElement
-        elementClass: 'multi-streams-mixer'
-    }); */
-    
-/*     function getStreamAndRecord () {
-        navigator.mediaDevices.getUserMedia({
-            audio: false,
-            video: { 
-                height: { max: 480 } 
-            }
-        }).then(function(stream) {
-            video.srcObject = stream;
-            video.play()
-        });
-    };
-    
-    getStreamAndRecord(); */
-
-
-
-
-    
-    </script>
-
-
 </body>
 </html>

@@ -1,6 +1,6 @@
-console.log(document.getElementsByTagName("a"));
-document.getElementsByTagName("a")[3].onclick = function () { cuadroDialogo("comenzar") };
-const apikeyTen = 'dsuYjjUPEjD2uXAjeNzlsGO0OFmUrqQ5';
+
+
+
 
 let recorder;
 let blob;
@@ -71,33 +71,47 @@ async function stopRecordingCallback() {
     
 
 
-}
+};
 
+
+function descargarGuifo(){
+    invokeSaveAsDialog(blob)
+};
+
+function inicio() {
+    location.reload();
+};
+
+
+function copiarEnlace(urlImagen) {
+    var aux = document.createElement("input");
+    aux.setAttribute("value",`${urlImagen}`);
+    console.log(aux.value);
+    document.body.appendChild(aux);
+    aux.select();
+    console.log(document.execCommand("copy"));
+    document.body.removeChild(aux);
+};
 
 
 
 function subirVideo() {
-    console.log("hola");
+    const apikeyTen = 'dsuYjjUPEjD2uXAjeNzlsGO0OFmUrqQ5';
     const url = `https://upload.giphy.com/v1/gifs`;
 
     let form = new FormData();
     form.append('api_key', apikeyTen);
     form.append('tags', '');
     form.append('file', blob, 'myGif.gif');
-    console.log(form.get('file'))
-
     
-
-   
     var request = new XMLHttpRequest();
     request.open("POST", url);
+
+        
     request.onload = function (e) {
 
         if (this.status == 200) {
-          
-                
-          
-            console.log(JSON.parse(this.response)); // JSON response  
+        
             localStorage.setItem('gif' + JSON.parse(this.response)["data"]["id"], this.response);
             
             let url = `https://api.giphy.com/v1/gifs/${JSON.parse(this.response)["data"]["id"]}?api_key=${apikeyTen}`;
@@ -110,7 +124,7 @@ function subirVideo() {
                 let idExito = json.data.id;
                 let tituloGIf = json.data.title;
 
-                let divSection = document.getElementsByTagName("section")[0].innerHTML = `
+                document.getElementsByTagName("section")[0].innerHTML = `
             
                     <div class="caja-exito flex-column align-center ">
 
@@ -137,10 +151,10 @@ function subirVideo() {
                                 </div>
 
                                 <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px boton-general_margin14px center"><a class="boton-texto   boton-texto-azul-oscuro  boton-texto-144px-line-heigth   boton-exito-copiar-guifo  marco-boton-dotted" href="#">Copiar Enlace Guifo</a></div>
-                                <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro   boton-texto-144px-line-heigth  boton-exito-descargar-guifo   marco-boton-dotted " href="${urlImagen}" download>Descargar Guifo</a></div>
+                                <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro   boton-texto-144px-line-heigth  boton-exito-descargar-guifo   marco-boton-dotted " href="#" download>Descargar Guifo</a></div>
                                 
                                 <div class="div-contenedor-boton-listo flex-column">
-                                    <div class="boton-general boton--grande  boton-rosado boton-general__margin46px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-exito-listo   marco-boton-dotted" href="#">Listo</a></div>
+                                    <div class="boton-general boton--grande  boton-rosado boton-general__margin46px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-exito-listo   marco-boton-dotted" >Listo</a></div>
                                 </div>
 
 
@@ -151,32 +165,33 @@ function subirVideo() {
                     </div>`;
 
 
-                    console.log(document.getElementsByTagName("a")[2]);
-      
+                    console.log(document.getElementsByTagName("a"));
 
-                    let btnCopiar = document.getElementsByTagName("a")[2].onclick = function () {copiarEnlace()};
-               
 
-                    function copiarEnlace() {
-                        var aux = document.createElement("input");
-                        aux.setAttribute("value",`${urlImagen}`);
-                        console.log(aux.value);
-                        document.body.appendChild(aux);
-                        aux.select();
-                        console.log(document.execCommand("copy"));
-                        document.body.removeChild(aux);
-                    }
-                   
+                    document.getElementsByTagName("a")[2].onclick = function () {copiarEnlace(urlImagen)};
+                    document.getElementsByTagName("a")[3].onclick = function () {descargarGuifo()};
+
+                    document.getElementsByTagName("a")[4].onclick = function () {inicio()};
+
+            
+
+                    
+                
 
 
 
             }); 
-            
-            
-            
-        }     
-    };
+                    
+                    
+                    
+                
+        };
+        
+    }
+
+
     request.send(form);
+    
 
 }
 
@@ -191,10 +206,14 @@ function htmlToElements(html) {
     return template.content.firstChild;
 }
 function getMisGuifos() {
-    
+    const apikeyTen = 'dsuYjjUPEjD2uXAjeNzlsGO0OFmUrqQ5';
     
     for (var i = 0; i < localStorage.length; i++) {
+        
         miguifo = JSON.parse(localStorage.getItem(localStorage.key(i)));
+        if(!localStorage.key(i).startsWith("gif")){
+            continue;
+        }
         fetch(`https://api.giphy.com/v1/gifs/${miguifo["data"]["id"]}?api_key=${apikeyTen}`).then(respuesta => {
             return respuesta.json();
         }).then(json => {
@@ -241,8 +260,11 @@ function getMisGuifos() {
 getMisGuifos();
 
 
-function cuadroDialogo(boton) {
 
+document.getElementById("comenzar").onclick = function () { cuadroDialogo("comenzar") };
+
+function cuadroDialogo(boton) {
+    
     if (boton === "comenzar") {
 
 
@@ -403,6 +425,7 @@ function cuadroDialogo(boton) {
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column center">
                     <img src="./assets/globe_img.png" alt="imagen-de mapa-mundi">
+                    <progress id="progress" value="0"></progress>
                     <p class"texto texto-bold " >Estamos subiendo tu guifo…</p>
                     <div class=" caja-contenedora-cargando  caja-contenedora-cargando-cancelar flex-row center">
                         <div class="rectangulo-activo"></div>
