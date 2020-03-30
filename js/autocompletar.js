@@ -1,15 +1,148 @@
 let data = {
     terminos: [
         {
-            term: "perro", 
-            rel: "mascota",
-            otro: "perro bonito"
+            term: "amor", 
+            rel: "amor enamorado",
+            otro: "pareja"
         },
-
         {
-            term: "gato", 
-            rel:  "mascota",
-            otro: "felino"
+            term: "belleza", 
+            rel: "beautiful",
+            otro: "blackandwhite"
+        },        
+        {
+            term: "cute", 
+            rel: "tierno",
+            otro: "mascota"
+        },        
+        {
+            term: "divertido", 
+            rel: "divertido dibujo",
+            otro: "diseño"
+        },
+        {
+            term: "estilo", 
+            rel: "estilo de vida",
+            otro: "fancy gourmet"
+        },
+        {
+            term: "family", 
+            rel: "family time",
+            otro: "vacations"
+        },
+        {
+            term: "girl", 
+            rel: "girl angel",
+            otro: "nature girl"
+        },
+        {
+            term: "hermoso", 
+            rel: "hermoso cielo",
+            otro: "save nature"
+        },
+        {
+            term: "inspiracion", 
+            rel: "inspiracion conmovedora",
+            otro: "dreams"
+        },
+        {
+            term: "journal", 
+            rel: "journal confirm",
+            otro: "news"
+        },
+        {
+            term: "keep", 
+            rel: "keep yourself",
+            otro: "save all of us"
+        },
+        {
+            term: "love", 
+            rel:  "love live ",
+            otro: "love you"
+
+        },
+        {
+            term: "mindfulness", 
+            rel:  "mindfulness meditation",
+            otro: "inner peace"
+
+        },
+        {
+            term: "nature", 
+            rel:  "nature world",
+            otro: "medio ambiente"
+
+        },
+        {
+            term: "old", 
+            rel:  "old fashion",
+            otro: "antiguo puente"
+
+        },
+        {
+            term: "photooftheday", 
+            rel:  "photooftheday ours",
+            otro: "galeria"
+
+        },
+        {
+            term: "queen", 
+            rel:  "queen elizabeth ",
+            otro: "dinastia real"
+
+        },
+        {
+            term: "rosado", 
+            rel:  "rosado unicornio",
+            otro: "pink love"
+
+        },
+        {
+            term: "saludable", 
+            rel:  "saludable",
+            otro: "healthy food"
+
+        },
+        {
+            term: "tbt", 
+            rel:  "tbt image",
+            otro: "recuerdos colegio"
+
+        },
+        {
+            term: "unicornio", 
+            rel:  "unicornio azul",
+            otro: "pony comic"
+
+        },
+        {
+            term: "verano", 
+            rel:  "verano helado",
+            otro: "cambio climatico"
+
+        },
+        {
+            term: "walk", 
+            rel:  "walk forest",
+            otro: "caminata"
+
+        },
+        {
+            term: "xilofono", 
+            rel:  "xilofono dulce",
+            otro: "music instrumental"
+
+        },
+        {
+            term: "yes", 
+            rel:  "yes i do",
+            otro: "marriage"
+
+        },
+        {
+            term: "zebra", 
+            rel:  "zebra pink",
+            otro: "zoo"
 
         }
     ]
@@ -23,28 +156,6 @@ let divLista = document.getElementById("myDropdown-resultados");
     // console.log(divLista);
 
 let elementoLista = '';
-
-
-
-function historialBusqueda(){
-    if (campoInput.value) {
-        //insertar en arreglo
-        //Insertar en localStorage
-        //Pintarlo en home:
-            //Como?
-            //cree un div padre
-            //cree div hijo con su estilo
-            // por medio de un for rrecorra el arreglo
-            // por cada item del arreglo pinte la caja y agreguela al padre
-            //maximo hasta 10 botones
-            // haga cola://crear
-                         //Encolar push
-                         //Desencolar pop
-                         // Frente
-
-        
-    }
-}
 
 
 // ponemos el innerText del resultado de busqueda en el input.
