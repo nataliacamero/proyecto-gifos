@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Bordes*/
 /*colores*/
 /*medidas*/
 /*------------------Pestañas-------------------*/
@@ -8,13 +9,13 @@
 /*--------------------------Cajas-----------------------------------*/
 /*fuentes*/
 /*Line-height*/
-/*Bordes*/
 /*Elementos o clases genericas*/
 /*------------------botones--------------------------*/
 .boton {
   display: inline-flex;
   background: #F7C9F3;
   height: 36px;
+  border: 1px solid #110038;
   box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   border: 1px solid #110038;
   cursor: pointer; }
@@ -50,6 +51,7 @@
   background: #F0E5EE; }
 
 .boton-tema-claro {
+  background: #FFF4FD;
   box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
   border: 1px solid #CCA6C9;
   width: 150px; }
@@ -84,6 +86,10 @@
 
 .imagen-boton {
   vertical-align: middle; }
+
+.a-imagen-boton {
+  width: 30px;
+  height: 30px; }
 
 .flecha {
   width: 30px;
@@ -127,7 +133,8 @@
   cursor: pointer;
   height: 34px;
   margin-right: 10px;
-  font-family: "Chakra Petch", sans-serif; }
+  font-family: "Chakra Petch", sans-serif;
+  hyphens: auto; }
 
 /*------------------------Texto botones---------------------*/
 .boton-texto {
@@ -184,12 +191,12 @@
   padding-left: 34px; }
 
 .boton-chequeo-capturar {
-  width: 93px;
+  width: 101px;
   padding-left: 34px; }
 
 .boton-chequeo-listo {
-  width: 86px;
-  padding-left: 41px; }
+  width: 94px;
+  padding-left: 42spx; }
 
 .boton-chequeo-repetirCaptura {
   width: 121px;
@@ -549,11 +556,10 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #cfbfcf;
+  background-color: #fff4fd;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: ChakraPetch-Regular;
   /*------------------Clases principales de flex y centrado------------------------*/
   /*------------------------------------HTML CREAR-GUIFOS-------------------------------------*/
   /*-------------------------------------------------------------------------*/ }
@@ -721,9 +727,6 @@ body {
   justify-content: flex-end;
   align-items: center; }
 
-/* .boton-saylor-day {
-     margin-top: 8px;
- }*/
 .texto-mis-gifos__margin-top {
   margin-top: 8px; }
 
@@ -797,9 +800,11 @@ body {
   position: absolute;
   z-index: 5; }
 
-/*Estados boton rosado*/
 a:active {
-  color: #FFFFFF; }
+  color: #110038; }
+
+a:visited {
+  color: #110038; }
 
 .marco-boton-dotted:hover {
   border: 1px dotted #110038; }
@@ -813,15 +818,31 @@ a:active {
 .boton:active {
   border: 1px solid #110038; }
 
+.div-botones-tema:hover #flecha-tema {
+  border: 1px dotted #110038;
+  background: #E6BBE2; }
+
+.div-botones-tema:hover #texto-tema {
+  border: 1px dotted #110038;
+  background: #E6BBE2; }
+
+.controles-grabacion:hover #boton-camara {
+  border: 1px dotted #110038;
+  background: #E6BBE2; }
+
+.controles-grabacion:hover #boton-capturar {
+  border: 1px dotted #110038;
+  background: #E6BBE2; }
+
 .boton-rosado:hover {
-  background: #CE36DB; }
+  background: #E6BBE2; }
 
 .boton-rosado:active {
   border: 1px solid #110038; }
 
-/*.boton-blanco:hover {
-    background: #F0E5EE;
-}*/
+.boton-blanco:hover {
+  background: #F0E5EE; }
+
 .boton-blanco:active {
   border: 1px solid #110038; }
 
@@ -837,8 +858,11 @@ a:active {
   background-origin: content-box; }
 
 .boton--buscar:active {
-  background: #CE36DB;
+  background: #E6BBE2;
   border: 1px solid #110038;
+  background-image: url(../assets/lupa.svg);
+  background-repeat: no-repeat;
+  background-position: left 5px top 10px;
   box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
 
 .boton-texto--buscar:hover {
@@ -847,6 +871,9 @@ a:active {
 .boton-texto--buscar:active {
   color: #110038; }
 
+.boton-buscar-largo-buscar-resultados:hover {
+  background: #dbdbdb; }
+
 .boton--ver-mas:hover {
   background: #2629CC; }
 
@@ -854,6 +881,9 @@ a:active {
   color: #FFFFFF; }
 
 .boton-texto--grande:active {
+  border: 1px dotted #110038; }
+
+.boton-texto--grande:hover {
   border: 1px dotted #110038; }
 
 .boton-texto--mediano:active {

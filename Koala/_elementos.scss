@@ -1,10 +1,10 @@
 /*Elementos o clases genericas*/
 /*------------------botones--------------------------*/
-.boton { //Cambia el ancho
+.boton { 
     display: inline-flex;
     background: $color-boton_ligth;
     height: $alto-boton_crearguifos;
-    //border: 1px solid #110038;
+    border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
     border: 1px solid #110038;
     cursor: pointer;
@@ -32,6 +32,7 @@
 
 
 .boton-tema-claro {
+    background: $color-boton-sailor;
     box-shadow: $box-shadow-boton-tema-claro;
     border: $border-boton-tema-claro;
     width: 150px;
@@ -77,6 +78,11 @@
 
 .imagen-boton {
     vertical-align: middle;
+}
+
+.a-imagen-boton {
+    width: 30px;
+    height: 30px;
 }
 
 .flecha {
@@ -133,6 +139,8 @@
     height: 34px;
     margin-right: 10px;
     font-family: $font-family_principal;
+    hyphens: auto;
+    
     
 }
 
@@ -162,8 +170,8 @@
 .boton-texto-144px-line-heigth { line-height: 27px;}
 .boton-crear-guifos-cancelar { width: 102px;  padding-left: 34px;}
 .boton-crear-guifos-comenzar {width: 102px;  padding-left: 34px; }
-.boton-chequeo-capturar {width: 93px;  padding-left: 34px; }
-.boton-chequeo-listo {width: 86px;  padding-left: 41px; }
+.boton-chequeo-capturar {width: 101px;  padding-left: 34px; }
+.boton-chequeo-listo {width: 94px;  padding-left: 42spx; }
 .boton-chequeo-repetirCaptura {width: 121px;  padding-left: 5px; }
 .boton-chequeo-subir-guifo {width: 105px;  padding-left: 23px; }
 .boton-exito-copiar-guifo {width: 195px;  padding-left: 53px; }

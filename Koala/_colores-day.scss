@@ -1,0 +1,48 @@
+$color-backgroud_light: #fff4fd;//ok
+$color-pestaña_ligth: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);//ok
+
+//------Botones----------
+$color-boton_ligth: #F7C9F3;
+$color-boton_rosado: #F7C9F3;
+$color-boton_blanco: #FFFFFF;
+$color-boton_rojo: #FF6161;
+$color-boton-gris-claro: #F0E5EE;
+$color-boton-sailor: #FFF4FD;
+
+$color-caja_busqueda: #FFFFFF;
+$color-background_caja_titulo: #FFFFFF;
+$color-background_caja-contenedor-busqueda-blanco: #FFFFFF;
+$color-background_cajas_oscura: #808080;
+$color-background_cajas_clara: #E6E6E6;
+$color-background_cajas_blanca:#FFFFFF;
+$color-backgroud_boton-buscar-resultados:#F0F0F0; 
+
+$color-background_boton_ver-mas: #2E32FB;
+$color-caja-gifs-sugeridos: rgba(230, 230, 230, 0) ;
+$color-texto-day:#110038;
+$color-texto_botones-oscuro: #110038;
+$color-texto_botones-claro: #FFFFFF;
+$color-texto_botones-tono-medio: #B4B4B4;
+$color-texto_pestañas: #FFFFFF;
+
+
+
+$box-shadow_oscuro: 0 1px 0 0 #110038;//ok
+$box-shadow_claro: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow_claro_inset-1:  inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow_caja_titulo:inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+$box-shadow-caja-contenedor-busqueda-blanco:inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow_boton-general:inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow_boton_ver-mas: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow-boton-buscar: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow-grabacion: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow-boton-tema-claro:  inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+$box-shadow-boton-tema-gris: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+
+/*Bordes*/
+$border-caja_titulo:1px solid #E6BBE2;
+$border-caja-gris-claro: 1px solid #808080;
+$border-caja-blanca-grabacion: 1.5px solid #979797;
+$border-boton-general: 1px solid #110038;
+$border-boton-tema-claro: 1px solid #CCA6C9;
+$border-boton-tema-gris: 1px solid #808080;

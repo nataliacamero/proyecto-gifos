@@ -285,11 +285,11 @@ function cuadroDialogo(boton) {
 
                 <div class="controles-grabacion flex-row align-center">
 
-                    <div class="boton boton--pequeno center" >
-                        <a class="" href="#"><img class="imagen-boton" src="./assets/camera.svg" alt="imagen-camara-boton-grabar"></a>
+                    <div class="boton boton--pequeno flex-row center" >
+                        <a id="boton-camara" class="a-imagen-boton flex-row center" href="#"><img class="imagen-boton" src="./assets/camera.svg" alt="imagen-camara-boton-grabar"></a>
                     </div>
                     <div class="boton-general boton--grande  boton-rosado  center">
-                        <a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth boton-chequeo-capturar marco-boton-dotted" href="#">Capturar</a>
+                        <a id="boton-capturar"class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth boton-chequeo-capturar marco-boton-dotted" href="#">Capturar</a>
                     </div>
                 </div>
             </div>  `;

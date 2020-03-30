@@ -1,23 +1,26 @@
-/*Estados boton rosado*/
 
 
 
 
+//El color de los textos de los botones, cuando se ponen en active
 a:active{
-    color: $color-texto_botones-claro; 
+    color: $color-texto_botones-oscuro; 
 }
-//a:visited{
-//    color: $color-texto_botones-oscuro; 
-//}
+a:visited{
+   color: $color-texto_botones-oscuro; 
+}
 
+//Marco de todos lo botones, o de casi todos
 .marco-boton-dotted:hover {
     border: 1px dotted #110038; 
 }
 
- .marco-boton-dotted:active{
+.marco-boton-dotted:active{
     border: 1px dotted #110038; 
 }
 
+
+//Botones de navbar
 .boton:hover {
     background: #E6BBE2;
   
@@ -27,17 +30,42 @@ a:active{
     border: 1px solid #110038;
 }
 
+//Se activa el hover de los dos botones
+.div-botones-tema:hover #flecha-tema {
+    border: 1px dotted #110038;
+    background: #E6BBE2 ;  
+}
+
+.div-botones-tema:hover #texto-tema {
+    border: 1px dotted #110038;
+    background: #E6BBE2 ;  
+}
+
+//Se activa el hover de los dos botones camara y capturar en crear guifos
+.controles-grabacion:hover #boton-camara {
+    border: 1px dotted #110038;
+    background: #E6BBE2 ;  
+}
+
+.controles-grabacion:hover #boton-capturar {
+    border: 1px dotted #110038;
+    background: #E6BBE2 ;  
+}
+
+
+
+
 .boton-rosado:hover {
-    background: #CE36DB; 
+    background: #E6BBE2 ; 
 }
 
 .boton-rosado:active{
     border: 1px solid #110038;
 }
 
-/*.boton-blanco:hover {
+.boton-blanco:hover {
     background: #F0E5EE;
-}*/
+}
 
 .boton-blanco:active {
     border: 1px solid #110038;
@@ -56,13 +84,14 @@ a:active{
     background-repeat: no-repeat;
     background-position: left 5px top 10px;
     background-origin: content-box;
-   
-    
 }
 
 .boton--buscar:active {
-    background: #CE36DB ; 
-    border: 1px solid #110038;  
+    background: #E6BBE2 ; 
+    border: 1px solid #110038; 
+    background-image: url(../assets/lupa.svg); 
+    background-repeat: no-repeat;
+    background-position: left 5px top 10px;
     box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
     
     
@@ -76,6 +105,11 @@ a:active{
     color: $color-texto_botones-oscuro;
 }
 
+
+.boton-buscar-largo-buscar-resultados:hover {
+    background: #dbdbdb;
+}
+
 .boton--ver-mas:hover  {
     background: #2629CC ;
 }
@@ -85,6 +119,10 @@ a:active{
 } 
 
 .boton-texto--grande:active {
+    border: 1px dotted #110038; 
+}
+
+.boton-texto--grande:hover {
     border: 1px dotted #110038; 
 }
 

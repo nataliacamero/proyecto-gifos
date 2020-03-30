@@ -167,7 +167,7 @@ function agregarHistorial(q) {
 
 
 
-    if (historial.length > 10) {
+    if (historial.length > 9) {
         historial.pop();
     }
 

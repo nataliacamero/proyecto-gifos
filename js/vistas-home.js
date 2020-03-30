@@ -4,6 +4,8 @@
     let buscar = document.getElementsByTagName("section")[0];
     let sugeridos = document.getElementsByTagName("section")[1];
     let tendencias = document.getElementsByTagName("section")[2];
+    let article = document.getElementsByTagName("article")[0];
+    
     
 
     
@@ -15,6 +17,7 @@
         sugeridos.style.display = "none";
         tendencias.style.display = "none";
         buscar.style.display = "none";
+        article.style.display = "none";
         misGuifos.style.display = "flex";
         misGuifos.style.margin = "0px";
         htmlToElements(html)

@@ -171,6 +171,7 @@ function textoAInput(e){
 campoInput.addEventListener('input', function(){
     let value = input.value;
     // console.log(value); 
+    
 
 
 
