@@ -131,21 +131,18 @@ function refrescarHistorial() {
 
     historial.forEach(function (item) {
         let node = document.createElement("LI");
-        let textnode = document.createTextNode(item);
-        let buttonnode = document.createElement("button");
-        let textbutton = document.createTextNode("X")
+        let textnode = document.createTextNode("#" + item);
+        let clas = document.createAttribute("class")
+        clas.value = "boton-historial";
+        node.setAttributeNode(clas);
         node.appendChild(textnode);
-        buttonnode.appendChild(textbutton);
-        buttonnode.addEventListener("click", function (e) {
-            targetElement = e.target || e.srcElement;
-            borrarHistorial(targetElement.parentNode.innerText.slice(0, -1));
-        });
+  
         node.addEventListener("click", function (e) {
             targetElement = e.target || e.srcElement;
-            textoAInput(targetElement.innerText.slice(0, -1));
+            textoAInput(targetElement.innerText.slice(1));
 
         });
-        node.appendChild(buttonnode);
+      
         lista.appendChild(node);
     });
 

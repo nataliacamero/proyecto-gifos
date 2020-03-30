@@ -16,7 +16,8 @@
   background: #F7C9F3;
   height: 36px;
   box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-  border: 1px solid #110038; }
+  border: 1px solid #110038;
+  cursor: pointer; }
 
 .boton-general {
   display: inline-flex;
@@ -114,6 +115,19 @@
   background-repeat: no-repeat;
   background-position: left 5px top 10px;
   background-origin: content-box; }
+
+.boton-historial {
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  color: #FFFFFF;
+  padding: 0px 10px 0px 10px;
+  line-height: 34px;
+  list-style: none;
+  cursor: pointer;
+  height: 34px;
+  margin-right: 10px;
+  font-family: "Chakra Petch", sans-serif; }
 
 /*------------------------Texto botones---------------------*/
 .boton-texto {
@@ -539,6 +553,7 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: ChakraPetch-Regular;
   /*------------------Clases principales de flex y centrado------------------------*/
   /*------------------------------------HTML CREAR-GUIFOS-------------------------------------*/
   /*-------------------------------------------------------------------------*/ }
@@ -728,14 +743,23 @@ body {
 .lupa {
   width: 20%;
   height: 30px;
-  margin-left: 10px; }
+  margin-left: 8px; }
 
 .imagen-lupa {
   width: 14px;
   height: 14px; }
 
+.article {
+  width: 100%; }
+
+.ul-lista {
+  width: 82.9%;
+  height: 40px;
+  padding: 0px;
+  margin: 1% 0px 0px 0px; }
+
 .section-sugerimos {
-  margin-top: 64px;
+  margin-top: 47px;
   display: flex;
   flex-direction: column; }
 
@@ -841,6 +865,9 @@ a:active {
 
 .texto-mis-guifos:active {
   color: #dbccdf; }
+
+.boton-historial:hover {
+  background: #4476d3; }
 
 /*Cajas*/
 .cajas-gif-interior:hover {

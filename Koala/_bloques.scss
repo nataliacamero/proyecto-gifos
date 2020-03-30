@@ -7,6 +7,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: ChakraPetch-Regular;
 /*------------------Clases principales de flex y centrado------------------------*/
 
     .flex-column {
@@ -273,54 +274,64 @@ body {
 
 
             
-            .contenedor-busqueda-blanco {
-                width: 100%;
-                height: 72px;
-                justify-content: space-evenly;
+    .contenedor-busqueda-blanco {
+        width: 100%;
+        height: 72px;
+        justify-content: space-evenly;
+    }
+
+
+
+    .div-contenedor-boton-buscar {
+        position: relative;
+        width: 95%;
+        height: 30px;
+        margin-left: 1.2px;
+        /*   padding-left: 41px; */
+        line-height: 30px;
+    }
+        .lupa {
+            width: 20%;
+            height: 30px;
+            margin-left: 8px;
+        }
+
+            .imagen-lupa {
+                width: 14px;
+                height: 14px;   
             }
+  
 
-           
-
-            .div-contenedor-boton-buscar {
-                position: relative;
-                width: 95%;
-                height: 30px;
-                margin-left: 1.2px;
-              /*   padding-left: 41px; */
-                line-height: 30px;
-            }
-                .lupa {
-                    width: 20%;
-                    height: 30px;
-                    margin-left: 10px;
-                }
-
-                .imagen-lupa {
-                    width: 14px;
-                    height: 14px;   
-                }
-
+    .article{
+        width: 100%;
+        
+    }
+        .ul-lista {
+            width: 82.9%;
+            height: 40px;
+            padding: 0px;
+            margin: 1% 0px 0px 0px;
+        }
               
 
-    .section-sugerimos {
-        margin-top: 64px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ocultar-section-sugerimos {
-        display: none;
-    }
-
-        .div-resultado-sugerimos {
-            margin-top: 15px;
-            width: 83.4%;
-        }
-        
-            .caja-gifs-sugeridos-1 {
-                position: relative;                
+        .section-sugerimos {
+                margin-top: 47px;
+                display: flex;
+                flex-direction: column;
             }
 
+            .ocultar-section-sugerimos {
+                display: none;
+            }
+
+                .div-resultado-sugerimos {
+                    margin-top: 15px;
+                    width: 83.4%;
+                }
+                
+                    .caja-gifs-sugeridos-1 {
+                        position: relative;                
+                    }
 
 
 

@@ -7,6 +7,7 @@
     //border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
     border: 1px solid #110038;
+    cursor: pointer;
 }
 
 
@@ -125,8 +126,14 @@
     border: 1px solid #4C2F99;
     box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
     color: #FFFFFF;
-    padding: 8px;
+    padding: 0px 10px 0px 10px;
+    line-height: 34px;
     list-style: none;
+    cursor: pointer;
+    height: 34px;
+    margin-right: 10px;
+    font-family: $font-family_principal;
+    
 }
 
 
