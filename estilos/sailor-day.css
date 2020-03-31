@@ -775,7 +775,8 @@ body {
   width: 82.9%;
   height: 40px;
   padding: 0px;
-  margin: 1% 0px 0px 0px; }
+  margin: 1% 0px 0px 0px;
+  font-weight: normal; }
 
 .section-sugerimos {
   margin-top: 47px;
