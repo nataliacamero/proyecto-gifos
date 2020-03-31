@@ -299,7 +299,9 @@
 
 .texto-p-saylor {
   margin: 0px;
-  width: 100%; }
+  width: 100%; 
+  color: #110038;
+}
 
 .span-años {
   text-decoration: line-through; }
