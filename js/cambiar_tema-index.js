@@ -1,15 +1,16 @@
-function toogleTema() {
-
-    let anclaDay = document.getElementsByTagName("a")[4].onclick = function() {cambiarTema("day")};
-
-    let anclaNight = document.getElementsByTagName("a")[5].onclick = function() {cambiarTema("night")};
 
 
-    let likCrerGuifo = document.getElementsByTagName("a")[1].onclick = function() {setTema()};
+    // let anclaDay = document.getElementsByTagName("a")[4].onclick = function() {cambiarTema("day")};
+
+        // let anclaNight = document.getElementsByTagName("a")[5].onclick = function() {cambiarTema("night")};
+
+
+        // let likCrerGuifo = document.getElementsByTagName("a")[1].onclick = function() {setTema()};
 
 
 
     function cambiarTema(theme){
+        console.log(!sessionStorage.getItem("tema"));
         if(!sessionStorage.getItem("tema") || theme === "day") {
             sessionStorage.setItem("tema","estilos/sailor-day.css");
             document.getElementsByTagName("img")[0].setAttribute("src", "./assets/gifOF_logo.png" );
@@ -22,8 +23,9 @@ function toogleTema() {
         
     }
 
-    console.log(document.getElementsByTagName("img")[0]);
+    
     function setTema() {
+        
         if (!sessionStorage.getItem("tema")) {
             sessionStorage.setItem("tema", "estilos/sailor-day.css");       
         }
@@ -37,6 +39,3 @@ function toogleTema() {
     }
     setTema();
 
-}
-
-toogleTema();

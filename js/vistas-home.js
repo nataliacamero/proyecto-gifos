@@ -1,3 +1,6 @@
+   
+   
+   
    //Elementos vista mis guifos
     let misGuifos = document.getElementsByTagName("section")[3];
     misGuifos.style.display = "none";           
@@ -26,6 +29,5 @@
 
         htmlToElements(html)
         getMisGuifos()
-        
     }
  

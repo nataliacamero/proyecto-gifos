@@ -1,6 +1,9 @@
 let recorder;
 let blob;
 let contadorCaptura;
+//-----------------------------------------------1-----------------------------------------------------------
+    //CONFIGURAMOS EL STREAM
+
 async function streamVideo() {
 
     let video = document.querySelector('video');
@@ -22,6 +25,9 @@ async function streamVideo() {
 
 };
 
+
+    //CONFIGURAMOS GRABAR
+
 async function grabarStream() {
     let video = document.querySelector('video');
     let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
@@ -38,6 +44,8 @@ async function grabarStream() {
     });
 
     await recorder.startRecording();
+
+    //Creamos el timer del cuadro de dialogo
     let segundos = 0;
     let minutos = 0;
     contadorCaptura = setInterval(() => {
@@ -58,7 +66,7 @@ async function grabarStream() {
 
     recorder.stream = stream;
 }
-
+//Creamos nuesro blob
 function createObjectURL(file) {
     if (window.webkitURL) {
         return window.webkitURL.createObjectURL(file);
@@ -106,7 +114,7 @@ function copiarEnlace(urlImagen) {
     document.body.removeChild(aux);
 };
 
-
+//Subimos el video y generamos la salida de la caja exito
 
 function subirVideo() {
     const apikeyTen = 'dsuYjjUPEjD2uXAjeNzlsGO0OFmUrqQ5';
@@ -132,7 +140,6 @@ function subirVideo() {
             fetch(url).then(respuesta => {
                 return respuesta.json();
             }).then(json => {
-                console.log(json.data.id);
                 let urlImagen = json.data.images.downsized_medium.url;
                 let idExito = json.data.id;
                 let tituloGIf = json.data.title;
@@ -176,41 +183,21 @@ function subirVideo() {
                         </div>
 
                     </div>`;
-
-
-                    console.log(document.getElementsByTagName("a"));
-
-
+                    // Funcionalidad de los botones caja exito
                     document.getElementsByTagName("a")[2].onclick = function () {copiarEnlace(urlImagen)};
                     document.getElementsByTagName("a")[3].onclick = function () {descargarGuifo()};
-
                     document.getElementsByTagName("a")[4].onclick = function () {inicio()};
-
-            
-
-                    
-                
-
-
-
             }); 
-                    
-                    
-                    
-                
         };
         
     }
 
-
     request.send(form);
-    
-
 }
 
 
 
-
+//Generamos vista mis gifos
 
 function htmlToElements(html) {
     var template = document.createElement('template');
@@ -255,24 +242,16 @@ function getMisGuifos() {
   
   
             `);
-            // console.log(htmlresult)
             misguifos.appendChild(htmlresult);
-
-        
-
         });
-
-    
 
     }
     
- 
-
 }
 
 getMisGuifos();
 
-
+//Aqui esta el paso a paso del cuadro de dialogo, para GRABAR EL VIDEO, vista del usuario.
 
 document.getElementById("comenzar").onclick = function () { cuadroDialogo("comenzar") };
 
@@ -355,8 +334,6 @@ function cuadroDialogo(boton) {
             </div>`;
         streamVideo()
         grabarStream();
-        console.log(document.getElementsByTagName("p")[0].innerHTML)
-                
 
         document.getElementsByTagName("a")[3].onclick = function () {
             cuadroDialogo("listo")
@@ -482,6 +459,8 @@ function cuadroDialogo(boton) {
                     <div class="boton-general boton--grande boton-blanco center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-chequeo-cancelar marco-boton-dotted" href="./crear-guifo.html">Cancelar</a></div> 
                 </div>
             </div>`;
+
+            // Barra de progreso
             let contadorRectangulos = 0;
             let rectangulos = document.querySelectorAll(".rectangulo");
             console.log(rectangulos);
@@ -503,7 +482,19 @@ function cuadroDialogo(boton) {
 
     }
 };
+//------------------------------------------------FUNCIONLIDAD CAMBIO TEMA CREARGUIFOS
 
-
-
-
+function setTema() {
+        
+    if (!sessionStorage.getItem("tema")) {
+        sessionStorage.setItem("tema", "estilos/sailor-day.css");       
+    }
+    
+    if(sessionStorage.getItem("tema") === "estilos/sailor-day.css"){
+        document.getElementsByTagName("img")[0].setAttribute("src", "./assets/gifOF_logo.png" );
+    } else {
+        document.getElementsByTagName("img")[0].setAttribute("src", "./assets/gifOF_logo_dark.png" );
+    }  
+    document.getElementsByTagName("link")[0].setAttribute("href", sessionStorage.getItem("tema"));
+}
+setTema();
