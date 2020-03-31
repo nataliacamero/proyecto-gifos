@@ -297,6 +297,9 @@
   font-size: 12px;
   color: #11003869; }
 
+.texto-p-saylor {
+  margin: 0px; }
+
 .span-años {
   text-decoration: line-through; }
 
@@ -491,6 +494,9 @@
   border-bottom: none;
   border-top: none; }
 
+.margin-rectangulo {
+  margin-left: 2px; }
+
 .activo {
   background: #F7C9F3; }
 
@@ -654,7 +660,9 @@ body {
     width: 100%; }
   body .div-resultados-mis-guifos--crear-guifo--html {
     margin-top: 17px;
-    width: 83.4%; }
+    width: 83.4%;
+    height: 800px;
+    align-content: flex-start; }
   body .boton_buscar {
     position: relative;
     justify-content: space-around; }
@@ -859,6 +867,12 @@ a:visited {
 .boton-blanco:hover {
   background: #F0E5EE; }
 
+.texto-p-saylor:hover::first-letter {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #110038;
+  line-height: 10pt; }
+
 .boton-blanco:active {
   border: 1px solid #110038; }
 
@@ -880,6 +894,9 @@ a:visited {
   background-repeat: no-repeat;
   background-position: left 5px top 10px;
   box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+
+.boton-texto--buscar:visited {
+  color: #B4B4B4; }
 
 .boton-texto--buscar:hover {
   color: #110038; }
@@ -914,9 +931,6 @@ a:visited {
 
 .boton-historial:hover {
   background: #4476d3; }
-
-.boton-texto--saylor:hover::first-letter {
-  text-decoration: underline; }
 
 /*Cajas*/
 .cajas-gif-interior:hover {

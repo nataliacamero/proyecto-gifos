@@ -60,8 +60,6 @@ async function grabarStream() {
            
     },1000);
 
-
-
     recorder.stream = stream;
 }
 
@@ -401,23 +399,23 @@ function cuadroDialogo(boton) {
                             </a>
                         </div>
                         <div class=" caja-contenedora-cargando flex-row center">
-                            <div class="rectangulo-activo"></div>
-                            <div class="rectangulo-activo"></div>
-                            <div class="rectangulo-activo"></div>
-                            <div class="rectangulo-activo"></div>
-                            <div class="rectsangulo-activo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
-                            <div class="rectangulo-inactivo"></div>
+                            <div class="rectangulo activo margin-rectangulo"></div>
+                            <div class="rectangulo activo"></div>
+                            <div class="rectangulo activo"></div>
+                            <div class="rectangulo activo"></div>
+                            <div class="rectangulo activo"></div>
+                            <div class="rectangulo activo"></div>
+                            <div class="rectangulo activo"></div>
+                            <div class="rectangulo activo"></div>
+                            <div class="rectangulo activo"></div>
+                            <div class="rectangulo"></div>
+                            <div class="rectangulo"></div>
+                            <div class="rectangulo"></div>
+                            <div class="rectangulo"></div>
+                            <div class="rectangulo"></div>
+                            <div class="rectangulo"></div>
+                            <div class="rectangulo"></div>
+                            <div class="rectangulo"></div>
                             
                         </div>
 
@@ -505,7 +503,7 @@ function cuadroDialogo(boton) {
                 }
 
 
-            },200);
+            },180);
 
     }
 };

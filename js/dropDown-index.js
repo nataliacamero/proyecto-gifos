@@ -38,6 +38,8 @@ window.onclick = function(event) {
 
     if (!event.target.matches('.tema')) {
 
+        
+
         var dropdowns = document.getElementsByClassName("dropdown-contenedor");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
@@ -46,9 +48,13 @@ window.onclick = function(event) {
                 openDropdown.classList.remove('mostrar');
             }
         }
+        document.querySelectorAll(".boton_buscar")[0].style.background = "#F7C9F3";
+        document.querySelectorAll(".boton_buscar")[0].style.backgroundImage = "url(../assets/lupa.svg)";
+        document.querySelectorAll(".boton_buscar")[0].style.backgroundRepeat= "no-repeat";
+        document.querySelectorAll(".boton_buscar")[0].style.backgroundPosition = "left 5px top 10px";
+        document.querySelectorAll(".boton-texto--buscar")[0].style.color = "#110038";
 
-        let textoSailor = document.querySelectorAll(".boton-texto--saylor").innerText;
-        console.log(textoSailor);   
+
     }
 }
 
