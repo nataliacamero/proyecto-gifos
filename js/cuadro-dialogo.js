@@ -343,7 +343,7 @@ function cuadroDialogo(boton) {
                 <div class="controles-grabacion flex-row align-center justify-evenly ">
                     <div class="div-izquierdo-controles flex-row justify-start align-center">
                         <div class="caja-contador flex-column center">
-                            <p class="texto"></p>
+                            <p class="texto texto-timer-nigth"></p>
                         </div>
                     </div>
 
@@ -390,7 +390,7 @@ function cuadroDialogo(boton) {
                     <div class="div-izquierdo-controles flex-row justify-start align-center">
 
                         <div class="caja-contador flex-column center">
-                            <p class="texto">00:00:00:06</p>
+                            <p class="texto texto-timer-nigth">00:00:00:06</p>
                         </div>
 
                         <div class="boton-flecha flecha-foward flecha-foward__margin-right boton boton--pequeno flex-column center">
@@ -423,7 +423,7 @@ function cuadroDialogo(boton) {
 
                     <div class="div-izquierdo-controles flex-row justify-end align-center">
 
-                        <div class="boton-general boton--grande boton-blanco  center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-chequeo-repetirCaptura marco-boton-dotted" href="#">Repetir Captura</a></div>
+                        <div class="boton-general boton--grande boton-blanco  boton-secundario center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-chequeo-repetirCaptura marco-boton-dotted" href="#">Repetir Captura</a></div>
                         <div class="boton-general boton--grande  boton-rosado  boton-subir-guifo__marginleft center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth boton-chequeo-subir-guifo marco-boton-dotted" href="#">Subir Guifo</a></div>
 
                     </div>

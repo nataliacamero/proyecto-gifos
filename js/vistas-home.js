@@ -11,7 +11,7 @@
     
 
     
-    document.getElementsByTagName("p")[0].onclick = function() {ocultarSugerimos()};
+    document.getElementsByTagName("p")[2].onclick = function() {ocultarSugerimos()};
 
     
    //Ocultammos section sugeridos y section buscar, traemos la vista de mis guifos.

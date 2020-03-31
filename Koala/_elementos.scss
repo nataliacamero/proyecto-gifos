@@ -5,8 +5,7 @@
     background: $color-boton_ligth;
     height: $alto-boton_crearguifos;
     border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-    border: 1px solid #110038;
+    box-shadow: $box-shadow-boton-navbar;
     cursor: pointer;
 }
 
@@ -14,7 +13,6 @@
 
 .boton-general {
     display: inline-flex;
-   // border: $border-boton-general;
     box-shadow: $box-shadow_boton-general;
     height: $alto-botones-general;
     border: 1px solid #110038;
@@ -31,6 +29,11 @@
 .boton-rojo {background: $color-boton_rojo;}
 .boton-gris-claro {background: $color-boton-gris-claro; }
 
+.boton-secundario {
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
 
 .boton-tema-claro {
     background: $color-boton-sailor;
@@ -151,7 +154,6 @@
 
 
 
-//no tocar estos arriba
 
 
 /*------------------------Texto botones---------------------*/
@@ -165,7 +167,7 @@
 }
 
 .boton-texto-azul-oscuro {color: $color-texto_botones-oscuro;}
-.boton-texto-blanco {color: $color-texto_botones-claro;}
+.boton-texto-blanco {color: $color-texto_botones-oscuro;}
 .boton-texto--buscar { color:$color-texto_botones-tono-medio; width: 60%; }
 .boton-texto--grande {font-size: $font-size_grande; line-height: $line-height_mediana; width: 117px; padding-left: 20px}
 .boton-texto--saylor {font-size: $font-size_grande; line-height: $line-height_mediana; width: 131px; padding-left: 12px; text-align: start;}
@@ -177,12 +179,12 @@
 .boton-crear-guifos-comenzar {width: 102px;  padding-left: 34px; }
 .boton-chequeo-capturar {width: 101px;  padding-left: 34px; }
 .boton-chequeo-listo {width: 94px;  padding-left: 42px; }
-.boton-chequeo-repetirCaptura {width: 126px;  padding-left: 10px; }
+.boton-chequeo-repetirCaptura {width: 126px; padding-left: 10px;} 
 .boton-chequeo-subir-guifo {width: 110px;  padding-left: 27px; }
-.boton-chequeo-cancelar {width: 101px;  padding-left: 34px; }
+.boton-chequeo-cancelar {width: 101px;  padding-left: 34px; color: #110038; }
 .boton-exito-copiar-guifo {width: 195px;  padding-left: 53px; }
 .boton-exito-descargar-guifo {width: 178px;  padding-left: 68px; }
-.boton-exito-listo {width: 90px; height: 28px;  padding-left: 46px; }
+.boton-exito-listo {width: 90px; height: 28px;  padding-left: 46px; color: #FFFFFF }
 
 
 
@@ -228,15 +230,21 @@
 
 .texto-mis-guifos::first-letter{
 
-    text-decoration: underline;
+     
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: $color-texto_botones-claro;
+    line-height: 10pt;
 }
 
 .texto-bold {
     font-weight: bold;
+    color: #110038; 
 }
 .texto--caja-titulo {// Son todas las cajas blancas titulo de seccion
     font-size: $font-size_mediana;
     line-height: $line-height_grande;
+    color: $color-texto_botones-oscuro;
 }
 .texto--caja-titulo__margin {
     margin: 0px 0px 0px 0.5%;
@@ -251,23 +259,31 @@
 .texto--h2-caja-crear-guifos {
     font-weight: bold;
     margin-top: 35px;
+    color: #110038;
+}
+
+.texto-timer-nigth {
+    color: #110038;
 }
 
 .texto--p-numeros-lista { // Texto cuadro de Dialogo primera pantalla crear-guifo.html
     font-size: $font-size_mediana;
     font-weight: bold;
     margin: 0px 3px 0px 0px;
+    color: #110038;
     
 }
 
 .texto--p-lista { // Texto cuadro de Dialogo primera pantalla
     font-size: $font-size_mediana;
     margin: 0px 0px 0px 0px;
+    color: #110038;
 }
 
 .texto--parrafo-crear-guifo-p {// HTML CREAR GUIFOS
     font-size: $font-size_mediana;
     margin: 0px 0px 0px 0px;
+    color: #110038;
 }
 .texto-p-tiempo-restante{
     font-family: $font-family_principal;
@@ -334,7 +350,7 @@
     height: $alto-caja_hoy-sugerimos;
     background: $color-background_caja_titulo,;
     box-shadow: $box-shadow_caja_titulo;
-    border: 1px solid #E6BBE2;
+    border: 1px solid #2E32FB;
 }
 
 
@@ -500,10 +516,12 @@
 }
 
 .activo {
-    background: #F7C9F3;
+    background: #EE3EFE;
 }
 
-
+.boton-exito-copiar-guifo:visited {
+    color: #110038
+}
 
 .caja-exito {
     width: $ancho-caja-exito;
