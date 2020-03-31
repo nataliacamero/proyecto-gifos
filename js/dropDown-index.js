@@ -20,8 +20,6 @@ function myFunction2() {
 // Cierra el dropdown si el usuario hace click afuera de el
 window.onclick = function(event) {
             //Traer los div de la busqeda por default.
-            console.log(document.getElementsByTagName("a"));
-            console.log(document.getElementsByTagName("div")[23]);
     document.getElementsByTagName("div")[21].onclick = function () {textoAInput(this.innerText)};
     document.getElementsByTagName("div")[22].onclick = function () {textoAInput(this.innerText)};
     document.getElementsByTagName("div")[23].onclick = function () {textoAInput(this.innerText)};
@@ -39,6 +37,7 @@ window.onclick = function(event) {
     }
 
     if (!event.target.matches('.tema')) {
+
         var dropdowns = document.getElementsByClassName("dropdown-contenedor");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
@@ -47,6 +46,9 @@ window.onclick = function(event) {
                 openDropdown.classList.remove('mostrar');
             }
         }
+
+        let textoSailor = document.querySelectorAll(".boton-texto--saylor").innerText;
+        console.log(textoSailor);   
     }
 }
 

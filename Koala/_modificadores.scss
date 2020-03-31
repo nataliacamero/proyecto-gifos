@@ -9,6 +9,10 @@ a:active{
 a:visited{
    color: $color-texto_botones-oscuro; 
 }
+// color texto de boton ver mas ancla
+.boton-chequeo-listo:visited {
+    color: #FFFFFF;
+}
 
 //Marco de todos lo botones, o de casi todos
 .marco-boton-dotted:hover {
@@ -52,7 +56,16 @@ a:visited{
     background: #E6BBE2 ;  
 }
 
+//Se activa el hover de los dos botones listo en crear guifos
+.div-derecho-controles:hover #a-imagen-listo {
+    border: 1px dotted #FFFFFF;
+    background: rgba(255, 97, 97, 0.561) ;  
+}
 
+.div-derecho-controles:hover #a-boton-listo {
+    border: 1px dotted #FFFFFF;
+    background: rgba(255, 97, 97, 0.561)  ;  
+}
 
 
 .boton-rosado:hover {
@@ -65,6 +78,16 @@ a:visited{
 
 .boton-blanco:hover {
     background: #F0E5EE;
+}
+
+
+//Añade underline a el texto del dropdown tema
+.texto-p-saylor:hover::first-letter {
+    
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #110038;
+    line-height: 10pt;
 }
 
 .boton-blanco:active {
@@ -103,6 +126,7 @@ a:visited{
 
 .boton-texto--buscar:active {
     color: $color-texto_botones-oscuro;
+   
 }
 
 
@@ -142,6 +166,8 @@ a:visited{
 .boton-historial:hover {
     background: rgb(68, 118, 211);
 }
+
+
 
 
 

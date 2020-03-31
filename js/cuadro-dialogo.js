@@ -4,6 +4,7 @@
 
 let recorder;
 let blob;
+let contadorCaptura;
 async function streamVideo() {
 
     let video = document.querySelector('video');
@@ -41,6 +42,24 @@ async function grabarStream() {
     });
 
     await recorder.startRecording();
+    let segundos = 0;
+    let minutos = 0;
+    contadorCaptura = setInterval(() => {
+        
+        if (segundos < 60) {
+            if (segundos < 9){
+                 segundos = "0" + segundos;
+            }
+
+            document.getElementsByTagName("p")[0].innerHTML = `00:00:${minutos}:${segundos}`;
+            segundos++;
+        } else {
+            minutos++;  
+            segundos = 0;
+        }
+           
+    },1000);
+
 
 
     recorder.stream = stream;
@@ -68,8 +87,8 @@ async function stopRecordingCallback() {
 
     // clear the memory
     await recorder.destroy();
-    
-
+    //Limpiamos el timer
+    clearInterval(contadorCaptura);
 
 };
 
@@ -218,7 +237,7 @@ function getMisGuifos() {
             return respuesta.json();
         }).then(json => {
             let misguifos = document.querySelector('.div-resultados-mis-guifos--crear-guifo--html')
-            console.log(json.data);
+            // console.log(json.data);
             let id = json.data.id;
            
             let titulo = "pruebas mas pruebas y mas pruebas";
@@ -242,7 +261,7 @@ function getMisGuifos() {
   
   
             `);
-            console.log(htmlresult)
+            // console.log(htmlresult)
             misguifos.appendChild(htmlresult);
 
         
@@ -299,9 +318,13 @@ function cuadroDialogo(boton) {
 
             cuadroDialogo("capturar");
 
+
         };
 
+
+
     } else if (boton === "capturar") {
+
 
 
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
@@ -322,22 +345,25 @@ function cuadroDialogo(boton) {
                 <div class="controles-grabacion flex-row align-center justify-evenly ">
                     <div class="div-izquierdo-controles flex-row justify-start align-center">
                         <div class="caja-contador flex-column center">
-                            <p class="texto">00:00:03:06</p>
+                            <p class="texto"></p>
                         </div>
                     </div>
 
                     <div class="div-derecho-controles flex-row justify-end align-center">
-                        <div class="boton-general boton--pequeno boton-rojo center" >
-                            <a class="" href="#"><img class="imagen-boton" src="./assets/recording.svg" alt="imagen-circulo-boton-listo"></a>
+                        <div class="boton-general boton--pequeno boton-rojo flex-row center" >
+                            <a id="a-imagen-listo" class="a-imagen-listo flex-row center" href="#"><img class="imagen-boton" src="./assets/recording.svg" alt="imagen-circulo-boton-listo"></a>
                         </div>
                         <div class="boton-general boton--grande  boton-rojo center">
-                            <a class="boton-texto boton-texto-blanco boton-texto-144px-line-heigth boton-chequeo-listo marco-boton-dotted" href="#">Listo</a>
+                            <a id="a-boton-listo" class="boton-texto boton-texto-blanco boton-texto-144px-line-heigth boton-chequeo-listo marco-boton-dotted" href="#">Listo</a>
                         </div>
                     </div>
                 </div>
             </div>`;
         streamVideo()
         grabarStream();
+        console.log(document.getElementsByTagName("p")[0].innerHTML)
+                
+
         document.getElementsByTagName("a")[3].onclick = function () {
             cuadroDialogo("listo")
             stopRecordingCallback();
@@ -366,8 +392,9 @@ function cuadroDialogo(boton) {
                     <div class="div-izquierdo-controles flex-row justify-start align-center">
 
                         <div class="caja-contador flex-column center">
-                            <p class="texto">00:00:03:06</p>
+                            <p class="texto">00:00:00:06</p>
                         </div>
+
                         <div class="boton-flecha flecha-foward flecha-foward__margin-right boton boton--pequeno flex-column center">
                             <a href="#" class=" flecha-foward marco-boton-dotted flex-column justify-center" >
                                 <img  class="imagen-boton" src="./assets/forward.svg" alt="BotonFlechaa-a-la-derecha">
@@ -399,11 +426,13 @@ function cuadroDialogo(boton) {
                     <div class="div-izquierdo-controles flex-row justify-end align-center">
 
                         <div class="boton-general boton--grande boton-blanco  center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-chequeo-repetirCaptura marco-boton-dotted" href="#">Repetir Captura</a></div>
-                        <div class="boton-general boton--grande  boton-rosado  boton-subir-guifo__marginleft center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth boton-chequeo-subir-guifo  boton-subir-guifo__marginleft  marco-boton-dotted" href="#">Subir Guifo</a></div>
+                        <div class="boton-general boton--grande  boton-rosado  boton-subir-guifo__marginleft center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth boton-chequeo-subir-guifo marco-boton-dotted" href="#">Subir Guifo</a></div>
 
                     </div>
                 </div>
             </div>`;
+
+        
 
         document.getElementsByTagName("a")[4].onclick = function () {
             cuadroDialogo("subir");
@@ -425,32 +454,32 @@ function cuadroDialogo(boton) {
 
                 <div class="caja-contenedor-grabacion caja-contenedor-grabacion__margin flex-column center">
                     <img src="./assets/globe_img.png" alt="imagen-de mapa-mundi">
-                    <progress id="progress" value="0"></progress>
+                    
                     <p class"texto texto-bold " >Estamos subiendo tu guifo…</p>
                     <div class=" caja-contenedora-cargando  caja-contenedora-cargando-cancelar flex-row center">
-                        <div class="rectangulo-activo"></div>
-                        <div class="rectangulo-activo"></div>
-                        <div class="rectangulo-activo"></div>
-                        <div class="rectangulo-activo"></div>
-                        <div class="rectangulo-activo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
-                        <div class="rectangulo-inactivo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
                     </div>
                     <p class="texto-p-tiempo-restante">Tiempo restante: <span class="span-años">38 años</span> algunos minutos</p>
                 </div>
@@ -459,6 +488,25 @@ function cuadroDialogo(boton) {
                     <div class="boton-general boton--grande boton-blanco center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-chequeo-cancelar marco-boton-dotted" href="./crear-guifo.html">Cancelar</a></div> 
                 </div>
             </div>`;
+            let contadorRectangulos = 0;
+            let rectangulos = document.querySelectorAll(".rectangulo");
+            console.log(rectangulos);
+            setInterval(() => {
+                
+                if (contadorRectangulos < rectangulos.length) {
+                    
+                    rectangulos.item(contadorRectangulos).classList.toggle("activo");
+                    
+                    contadorRectangulos++;
+                } else {
+
+                contadorRectangulos = 0;
+
+                }
+
+
+            },200);
+
     }
 };
 

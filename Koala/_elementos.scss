@@ -18,6 +18,7 @@
     box-shadow: $box-shadow_boton-general;
     height: $alto-botones-general;
     border: 1px solid #110038;
+    cursor: pointer;
     
 }
 .boton--extra-large {width: $ancho-boton_extra-large; }
@@ -81,6 +82,11 @@
 }
 
 .a-imagen-boton {
+    width: 30px;
+    height: 30px;
+}
+
+.a-imagen-listo {
     width: 30px;
     height: 30px;
 }
@@ -171,9 +177,10 @@
 .boton-crear-guifos-cancelar { width: 102px;  padding-left: 34px;}
 .boton-crear-guifos-comenzar {width: 102px;  padding-left: 34px; }
 .boton-chequeo-capturar {width: 101px;  padding-left: 34px; }
-.boton-chequeo-listo {width: 94px;  padding-left: 42spx; }
-.boton-chequeo-repetirCaptura {width: 121px;  padding-left: 5px; }
-.boton-chequeo-subir-guifo {width: 105px;  padding-left: 23px; }
+.boton-chequeo-listo {width: 94px;  padding-left: 42px; }
+.boton-chequeo-repetirCaptura {width: 126px;  padding-left: 10px; }
+.boton-chequeo-subir-guifo {width: 110px;  padding-left: 27px; }
+.boton-chequeo-cancelar {width: 101px;  padding-left: 34px; }
 .boton-exito-copiar-guifo {width: 195px;  padding-left: 53px; }
 .boton-exito-descargar-guifo {width: 178px;  padding-left: 68px; }
 .boton-exito-listo {width: 90px; height: 28px;  padding-left: 46px; }
@@ -193,7 +200,7 @@
 .boton-texto--ver-mas {
     font-size: $font-size_mediana; 
     line-height: 27px;  
-    color: $color-texto_botones-oscuro;
+    color: $color-texto_botones-claro;
     width: 66px;
     height: 28px;
     margin-top: 3px;
@@ -268,6 +275,11 @@
     font-size:$font-size_pequeña;
     color: #11003869;
 }
+
+.texto-p-saylor {
+    margin: 0px;
+}
+
 .span-años {
     text-decoration: line-through ;
 }
@@ -442,6 +454,7 @@
     width: 99.4%;
     height: 435px;
     margin: 2.5px 0px 0px 1px;
+    object-fit: fill;
 }
 
 .imagen-video {
@@ -474,7 +487,7 @@
 }
 
 
-.rectangulo-inactivo {
+.rectangulo {
     width: 12px;
     height: 20px;
     background: #999999;
@@ -484,13 +497,8 @@
 }
 
 
-.rectangulo-activo {
-    width: 12px;
-    height: 20px;
+.activo {
     background: #F7C9F3;
-    border: 1px solid #cecccc;
-    border-bottom: none;
-    border-top: none;
 }
 
 

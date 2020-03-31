@@ -2,8 +2,8 @@
 const btnBuscar = document.getElementsByTagName("a")[7];
 const input = document.getElementsByTagName("input")[0];
 const divResultados = document.getElementsByTagName("div")[47];
-console.log(document.getElementsByTagName("a"));
-console.log(document.getElementsByTagName("div"));
+// console.log(document.getElementsByTagName("a"));
+// console.log(document.getElementsByTagName("div"));
 
 //cuando cliqueamos la x hace refresh.
 function cerrarX() {

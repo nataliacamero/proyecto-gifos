@@ -24,7 +24,8 @@
   display: inline-flex;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   height: 36px;
-  border: 1px solid #110038; }
+  border: 1px solid #110038;
+  cursor: pointer; }
 
 .boton--extra-large {
   width: 256px; }
@@ -88,6 +89,10 @@
   vertical-align: middle; }
 
 .a-imagen-boton {
+  width: 30px;
+  height: 30px; }
+
+.a-imagen-listo {
   width: 30px;
   height: 30px; }
 
@@ -196,15 +201,19 @@
 
 .boton-chequeo-listo {
   width: 94px;
-  padding-left: 42spx; }
+  padding-left: 42px; }
 
 .boton-chequeo-repetirCaptura {
-  width: 121px;
-  padding-left: 5px; }
+  width: 126px;
+  padding-left: 10px; }
 
 .boton-chequeo-subir-guifo {
-  width: 105px;
-  padding-left: 23px; }
+  width: 110px;
+  padding-left: 27px; }
+
+.boton-chequeo-cancelar {
+  width: 101px;
+  padding-left: 34px; }
 
 .boton-exito-copiar-guifo {
   width: 195px;
@@ -229,7 +238,7 @@
 .boton-texto--ver-mas {
   font-size: 14px;
   line-height: 27px;
-  color: #110038;
+  color: #FFFFFF;
   width: 66px;
   height: 28px;
   margin-top: 3px;
@@ -448,7 +457,8 @@
 .video {
   width: 99.4%;
   height: 435px;
-  margin: 2.5px 0px 0px 1px; }
+  margin: 2.5px 0px 0px 1px;
+  object-fit: fill; }
 
 .imagen-video {
   width: 99.4%;
@@ -473,7 +483,7 @@
   width: 324px;
   height: 27px; }
 
-.rectangulo-inactivo {
+.rectangulo {
   width: 12px;
   height: 20px;
   background: #999999;
@@ -481,13 +491,8 @@
   border-bottom: none;
   border-top: none; }
 
-.rectangulo-activo {
-  width: 12px;
-  height: 20px;
-  background: #F7C9F3;
-  border: 1px solid #cecccc;
-  border-bottom: none;
-  border-top: none; }
+.activo {
+  background: #F7C9F3; }
 
 .caja-exito {
   width: 721px;
@@ -806,6 +811,9 @@ a:active {
 a:visited {
   color: #110038; }
 
+.boton-chequeo-listo:visited {
+  color: #FFFFFF; }
+
 .marco-boton-dotted:hover {
   border: 1px dotted #110038; }
 
@@ -833,6 +841,14 @@ a:visited {
 .controles-grabacion:hover #boton-capturar {
   border: 1px dotted #110038;
   background: #E6BBE2; }
+
+.div-derecho-controles:hover #a-imagen-listo {
+  border: 1px dotted #FFFFFF;
+  background: rgba(255, 97, 97, 0.561); }
+
+.div-derecho-controles:hover #a-boton-listo {
+  border: 1px dotted #FFFFFF;
+  background: rgba(255, 97, 97, 0.561); }
 
 .boton-rosado:hover {
   background: #E6BBE2; }
@@ -898,6 +914,9 @@ a:visited {
 
 .boton-historial:hover {
   background: #4476d3; }
+
+.boton-texto--saylor:hover::first-letter {
+  text-decoration: underline; }
 
 /*Cajas*/
 .cajas-gif-interior:hover {
