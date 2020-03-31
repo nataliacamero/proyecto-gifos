@@ -168,7 +168,7 @@ function subirVideo() {
                                 </div>
 
                                 <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px boton-general_margin14px center"><a class="boton-texto   boton-texto-azul-oscuro  boton-texto-144px-line-heigth   boton-exito-copiar-guifo  marco-boton-dotted" href="#">Copiar Enlace Guifo</a></div>
-                                <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro   boton-texto-144px-line-heigth  boton-exito-descargar-guifo   marco-boton-dotted " href="#" download>Descargar Guifo</a></div>
+                                <div class="boton-general boton--extra-large boton-blanco boton-general__margin30px center"><a class="boton-texto boton-texto-azul-oscuro   boton-texto-144px-line-heigth  boton-exito-descargar-guifo   marco-boton-dotted">Descargar Guifo</a></div>
                                 
                                 <div class="div-contenedor-boton-listo flex-column">
                                     <div class="boton-general boton--grande  boton-rosado boton-general__margin46px center"><a class="boton-texto boton-texto-azul-oscuro boton-texto-144px-line-heigth  boton-exito-listo   marco-boton-dotted" >Listo</a></div>
@@ -374,7 +374,7 @@ function cuadroDialogo(boton) {
         let section = document.getElementsByTagName("section")[0].innerHTML = `  
             <div class="caja-crear-guifos-chequeo caja-crear-guifos-chequeo___margin  flex-column align-center">
                 <div class="div-pestaña-crear-guifos-2">
-                    <img class="x-close" src="./assets/close.svg" alt="imagen-close">
+                
                     <div class="pestaña pestaña-crear-guifos-chequeo" >
                         <h1 class="pestaña-texto pestaña--texto__margin" >Un Chequeo Antes de Empezar</h1>
                     </div>

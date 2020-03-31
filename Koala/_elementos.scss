@@ -5,7 +5,7 @@
     background: $color-boton_ligth;
     height: $alto-boton_crearguifos;
     border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     border: 1px solid #110038;
     cursor: pointer;
 }
@@ -138,15 +138,14 @@
     border: 1px solid #4C2F99;
     box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
     color: #FFFFFF;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
     line-height: 34px;
     list-style: none;
     cursor: pointer;
     height: 34px;
     margin-right: 10px;
     font-family: $font-family_principal;
-    hyphens: auto;
-    
+    font-size: $font-size_mediana;
     
 }
 
@@ -278,6 +277,7 @@
 
 .texto-p-saylor {
     margin: 0px;
+    width: 100%;
 }
 
 .span-años {

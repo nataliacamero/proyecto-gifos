@@ -5,6 +5,8 @@
     let sugeridos = document.getElementsByTagName("section")[1];
     let tendencias = document.getElementsByTagName("section")[2];
     let article = document.getElementsByTagName("article")[0];
+  
+    let textoMsGuifos = document.querySelectorAll(".texto-mis-guifos")[0];
     
     
 
@@ -20,6 +22,8 @@
         article.style.display = "none";
         misGuifos.style.display = "flex";
         misGuifos.style.margin = "0px";
+        textoMsGuifos.style.color = "#dbccdf"
+
         htmlToElements(html)
         getMisGuifos()
         

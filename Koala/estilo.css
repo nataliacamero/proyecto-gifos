@@ -16,7 +16,7 @@
   background: #F7C9F3;
   height: 36px;
   border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   border: 1px solid #110038;
   cursor: pointer; }
 
@@ -111,9 +111,9 @@
 .boton--ver-mas {
   width: 81px;
   height: 34px;
-  background: #2E32FB;
+  background: #4180F6;
   border: 1px solid #4C2F99;
-  box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+  box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
   cursor: pointer; }
 
 .boton--buscar {
@@ -132,14 +132,14 @@
   border: 1px solid #4C2F99;
   box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 5px 0px 5px;
   line-height: 34px;
   list-style: none;
   cursor: pointer;
   height: 34px;
   margin-right: 10px;
   font-family: "Chakra Petch", sans-serif;
-  hyphens: auto; }
+  font-size: 14px; }
 
 /*------------------------Texto botones---------------------*/
 .boton-texto {
@@ -298,7 +298,8 @@
   color: #11003869; }
 
 .texto-p-saylor {
-  margin: 0px; }
+  margin: 0px;
+  width: 100%; }
 
 .span-años {
   text-decoration: line-through; }
@@ -893,7 +894,7 @@ a:visited {
   background-image: url(../assets/lupa.svg);
   background-repeat: no-repeat;
   background-position: left 5px top 10px;
-  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
 
 .boton-texto--buscar:visited {
   color: #B4B4B4; }
@@ -908,7 +909,7 @@ a:visited {
   background: #dbdbdb; }
 
 .boton--ver-mas:hover {
-  background: #2629CC; }
+  background: #3A72DB; }
 
 .boton-texto--ver-mas:active {
   color: #FFFFFF; }
@@ -927,7 +928,8 @@ a:visited {
   line-height: 33px; }
 
 .texto-mis-guifos:active {
-  color: #dbccdf; }
+  color: #dbccdf;
+  border: none; }
 
 .boton-historial:hover {
   background: #4476d3; }

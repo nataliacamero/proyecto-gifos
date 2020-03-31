@@ -115,7 +115,7 @@ a:visited{
     background-image: url(../assets/lupa.svg); 
     background-repeat: no-repeat;
     background-position: left 5px top 10px;
-    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
     
     
 }
@@ -138,7 +138,7 @@ a:visited{
 }
 
 .boton--ver-mas:hover  {
-    background: #2629CC ;
+    background: #3A72DB ;
 }
 
 .boton-texto--ver-mas:active {
@@ -164,6 +164,7 @@ a:visited{
 
 .texto-mis-guifos:active {
     color: #dbccdf;
+    border: none; 
 }
 
 .boton-historial:hover {
