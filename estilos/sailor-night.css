@@ -155,6 +155,10 @@
 .boton-texto-azul-oscuro {
   color: #110038; }
 
+.boton-texto-azul-oscuro:visited {
+  color: #110038;
+}
+
 .boton-texto-blanco {
   color: #110038; }
 
@@ -188,6 +192,9 @@
   width: 98.5%;
   line-height: 27px; }
 
+.boton-texto-largo-buscar-resultados:visited {
+    color:#110038;}
+
 .boton-texto-144px-line-heigth {
   line-height: 27px; }
 
@@ -202,6 +209,9 @@
 .boton-chequeo-capturar {
   width: 101px;
   padding-left: 34px; }
+
+.boton-chequeo-capturar:visited {
+  color:#ffffff; }
 
 .boton-chequeo-listo {
   width: 94px;
@@ -949,6 +959,9 @@ a:visited {
 .boton-chequeo-repetirCaptura:hover {
   border: 1px dotted #FFFFFF; }
 
+.boton-chequeo-repetirCaptura:visited {
+    color: #ffffff;}
+
 .boton-buscar-largo-buscar-resultados:hover {
   background: #CCCCCC; }
 
@@ -985,4 +998,4 @@ a:visited {
 .cajas-gif-interior:hover {
   border: 1px dotted #110038; }
 
-/*# sourceMappingURL=estilo.css.map */
+

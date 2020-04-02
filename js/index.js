@@ -79,7 +79,7 @@ document.getElementById("div-resultados").addEventListener("click", myFunction2)
                 }
             }
         //Creamos el cambio del boton buscar al ponerse en el input.
-            if (true) {
+            if (sessionStorage.getItem("tema") === "estilos/sailor-day.css") {
                 document.querySelectorAll(".boton_buscar")[0].style.background = "#F7C9F3";
                 document.querySelectorAll(".boton_buscar")[0].style.backgroundImage = "url(../assets/lupa.svg)";
                 document.querySelectorAll(".boton_buscar")[0].style.backgroundRepeat= "no-repeat";
@@ -767,7 +767,6 @@ getMisGuifos();
     let tendencias = document.getElementsByTagName("section")[2];
     let textoMsGuifos = document.querySelectorAll(".texto-mis-guifos")[0];
     
-    console.log(document.getElementsByTagName("p")[2])
     document.getElementsByTagName("p")[2].onclick = function() {ocultarSugerimos()};
 
 //Ocultammos section sugeridos y section buscar, traemos la vista de mis guifos.

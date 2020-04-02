@@ -293,6 +293,16 @@ function cuadroDialogo(boton) {
 
 
         };
+        //Cambiamos el icono de capturar, segun el tema de la pagina.
+        if (sessionStorage.getItem("tema") === "estilos/sailor-day.css") {
+
+            document.querySelectorAll(".imagen-boton")[0].style.backgroundImage = "url(./assets/camera.svg)";
+            
+        } else {
+     
+            document.querySelectorAll(".imagen-boton")[0].setAttribute("src","./assets/camera_light.svg");
+        }
+
 
 
 
@@ -482,7 +492,7 @@ function cuadroDialogo(boton) {
 
     }
 };
-//------------------------------------------------FUNCIONLIDAD CAMBIO TEMA CREARGUIFOS
+//------------------------------------------------FUNCIONLIDAD CAMBIO TEMA CREARGUIFOS--------------------------------
 
 function setTema() {
         
