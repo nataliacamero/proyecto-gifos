@@ -727,8 +727,10 @@ body {
   width: 100%; }
 
 .div-barra-navegacion {
+  position: relative;
   height: 118px;
-  width: 82.9%; }
+  width: 82.9%;
+  justify-content: start;}
 
 .logo {
   display: flex;

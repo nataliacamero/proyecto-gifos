@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/*colores*/
-/*medidas*/
+
 /*------------------Pestañas-------------------*/
 /*-----------------Cajas-------------------------------------*/
 /*------------------------------------------------------------------*/
@@ -170,7 +169,8 @@
   font-size: 16px;
   line-height: 28px;
   width: 117px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  color:  #ffffff }
 
 .boton-texto--saylor {
   font-size: 16px;
@@ -182,7 +182,8 @@
 .boton-texto--mediano {
   font-size: 16px;
   line-height: 28px;
-  width: 122px; }
+  width: 122px; 
+  color: #ffffff;}
 
 .boton-texto--pequeno {
   font-size: 12px;
@@ -190,7 +191,8 @@
 
 .boton-texto-largo-buscar-resultados {
   width: 98.5%;
-  line-height: 27px; }
+  line-height: 27px;
+  color: #110038; }
 
 .boton-texto-largo-buscar-resultados:visited {
     color:#110038;}
@@ -204,26 +206,31 @@
 
 .boton-crear-guifos-comenzar {
   width: 102px;
-  padding-left: 34px; }
+  padding-left: 34px; 
+  color:#ffffff}
 
 .boton-chequeo-capturar {
   width: 101px;
-  padding-left: 34px; }
+  padding-left: 34px;
+  color:#ffffff }
 
 .boton-chequeo-capturar:visited {
   color:#ffffff; }
 
 .boton-chequeo-listo {
   width: 94px;
-  padding-left: 42px; }
+  padding-left: 42px;
+  color:#ffffff }
 
 .boton-chequeo-repetirCaptura {
   width: 126px;
-  padding-left: 10px; }
+  padding-left: 10px; 
+  color:#ffffff}
 
 .boton-chequeo-subir-guifo {
   width: 110px;
-  padding-left: 27px; }
+  padding-left: 27px;
+  color:#ffffff}
 
 .boton-chequeo-cancelar {
   width: 101px;
@@ -756,8 +763,10 @@ body {
   width: 100%; }
 
 .div-barra-navegacion {
+  position: relative;
   height: 118px;
-  width: 82.9%; }
+  width: 82.9%;
+  justify-content: start;}
 
 .logo {
   display: flex;
@@ -846,11 +855,11 @@ body {
   position: absolute;
   z-index: 5; }
 
-a:active {
-  color: #FFFFFF; }
+/* a:active {
+  color: #FFFFFF; } */
 
-a:visited {
-  color: #FFFFFF; }
+/* a:visited {
+  color: #FFFFFF; } */
 
 .boton-texto-blanco:active {
   color: #FFFFFF; }

@@ -1,9 +1,10 @@
 //---------------------------------------------1-----------------------------------------------------
                                     //CAMBIAR TEMA
 //js cambiar tema
-let anclaDay = document.getElementsByTagName("a")[4].onclick = function() {cambiarTema("day")};
-let anclaNight = document.getElementsByTagName("a")[5].onclick = function() {cambiarTema("night")};
-let likCrerGuifo = document.getElementsByTagName("a")[1].onclick = function() {setTema()};
+console.log(document.getElementsByTagName("a"))
+let anclaDay = document.getElementsByTagName("a")[5].onclick = function() {cambiarTema("day")};
+let anclaNight = document.getElementsByTagName("a")[6].onclick = function() {cambiarTema("night")};
+let likCrerGuifo = document.getElementsByTagName("a")[2].onclick = function() {setTema()};
 
 function cambiarTema(theme){
     console.log(!sessionStorage.getItem("tema"));
@@ -316,7 +317,7 @@ campoInput.addEventListener('input', function(){
                                     //FUNCION FETCH BUSCAR
                 //Incluye funcionalidades de botones ver mas, la "X" para cerrar
 //Traemos boton bucar, el input y el div para iyectarle el html.
-const btnBuscar = document.getElementsByTagName("a")[7];
+const btnBuscar = document.getElementsByTagName("a")[8];
 const input = document.getElementsByTagName("input")[0];
 const divResultados = document.getElementsByTagName("div")[47];
 
@@ -342,10 +343,10 @@ cerrarX();
 function botonVermas() {
     
     //Traemos todos los botones ver mas
-    document.getElementsByTagName("a")[11].onclick = function () { enviarTag("jonathan") };
-    document.getElementsByTagName("a")[12].onclick = function () { enviarTag("sailor") };
-    document.getElementsByTagName("a")[13].onclick = function () { enviarTag("fab") };
-    document.getElementsByTagName("a")[14].onclick = function () { enviarTag("unicorns") };
+    document.getElementsByTagName("a")[12].onclick = function () { enviarTag("jonathan") };
+    document.getElementsByTagName("a")[13].onclick = function () { enviarTag("sailor") };
+    document.getElementsByTagName("a")[14].onclick = function () { enviarTag("fab") };
+    document.getElementsByTagName("a")[15].onclick = function () { enviarTag("unicorns") };
 
 
     //Cada boton ver mas, envia su innerText a la busqueda   
@@ -438,6 +439,8 @@ btnBuscar.addEventListener('click', event => {
 
     //Ocultamos section sugeridos
     document.getElementsByTagName("section")[1].style.display = "none";
+    let flechaFoward = document.querySelectorAll(".flecha-atras")[0];    
+    flechaFoward.style.display = "block"; 
 
     //Asignamos lo que se escriba en el input, en caja titulo de tendencias.
     let tendencias = document.getElementsByTagName("h1")[3].innerText = q;
@@ -761,7 +764,9 @@ getMisGuifos();
    
    //Elementos vista mis guifos
     let misGuifos = document.getElementsByTagName("section")[3];
-    misGuifos.style.display = "none";           
+    misGuifos.style.display = "none";  
+    let flechAtras = document.querySelectorAll(".flecha-atras")[0];    
+    flechAtras.style.display = "none"; 
     let buscar = document.getElementsByTagName("section")[0];
     let sugeridos = document.getElementsByTagName("section")[1];
     let tendencias = document.getElementsByTagName("section")[2];
@@ -775,6 +780,7 @@ function ocultarSugerimos () {
     tendencias.style.display = "none";
     buscar.style.display = "none";  
     misGuifos.style.display = "flex";
+    flechAtras.style.display = "block";
     misGuifos.style.margin = "0px";
     textoMsGuifos.style.color = "#dbccdf"
 
